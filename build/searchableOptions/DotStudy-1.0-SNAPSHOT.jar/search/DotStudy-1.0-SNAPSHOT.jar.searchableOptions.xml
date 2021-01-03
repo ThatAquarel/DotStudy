@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<options>
+  <configurable id="reference.settingsdialog.IDE.editor.colors.Study" configurable_name="Study">
+    <option name="background" hit="Background" />
+    <option name="bold" hit="Bold" />
+    <option name="bold" hit="Bold Underscored" />
+    <option name="underscored" hit="Bold Underscored" />
+    <option name="bordered" hit="Bordered" />
+    <option name="dotted" hit="Dotted Line" />
+    <option name="line" hit="Dotted Line" />
+    <option name="effects" hit="Effects" />
+    <option name="error" hit="Error stripe mark" />
+    <option name="mark" hit="Error stripe mark" />
+    <option name="stripe" hit="Error stripe mark" />
+    <option name="font" hit="Font" />
+    <option name="foreground" hit="Foreground" />
+    <option name="from" hit="Inherit values from:" />
+    <option name="inherit" hit="Inherit values from:" />
+    <option name="values" hit="Inherit values from:" />
+    <option name="italic" hit="Italic" />
+    <option name="strikeout" hit="Strikeout" />
+    <option name="study" hit="Study" />
+    <option name="underscored" hit="Underscored" />
+    <option name="underwaved" hit="Underwaved" />
+    <option name="bad" hit="Bad Value" />
+    <option name="value" hit="Bad Value" />
+    <option name="key" hit="Key" />
+    <option name="separator" hit="Separator" />
+    <option name="title" hit="Title" />
+    <option name="value" hit="Value" />
+  </configurable>
+  <configurable id="org.intellij.sdk.settings.AppSettingsConfigurable" configurable_name="DotStudy">
+    <option name="client" hit="Client id: " />
+    <option name="id" hit="Client id: " />
+    <option name="dotstudy" hit="DotStudy" />
+  </configurable>
+</options>
+

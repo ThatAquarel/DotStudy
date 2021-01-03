@@ -1,0 +1,20 @@
+{
+  parserClass="org.intellij.sdk.DotStudy.Language.parser.SimpleParser"
+
+  extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
+
+  psiClassPrefix="Simple"
+  psiImplClassSuffix="Impl"
+  psiPackage="org.intellij.sdk.DotStudy.Language.psi"
+  psiImplPackage="org.intellij.sdk.DotStudy.Language.psi.impl"
+
+  elementTypeHolderClass="org.intellij.sdk.DotStudy.Language.psi.SimpleTypes"
+  elementTypeClass="org.intellij.sdk.DotStudy.Language.psi.SimpleElementType"
+  tokenTypeClass="org.intellij.sdk.DotStudy.Language.psi.SimpleTokenType"
+}
+
+simpleFile ::= item_*
+
+private item_ ::= (property|COMMENT|CRLF)
+
+property ::= (KEY? SEPARATOR VALUE?) | KEY

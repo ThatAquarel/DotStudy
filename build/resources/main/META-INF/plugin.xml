@@ -1,0 +1,23 @@
+<idea-plugin>
+  <version>1.0-SNAPSHOT</version>
+  <change-notes>
+      Add change notes here.&lt;br&gt;
+      &lt;em&gt;most HTML tags may be used&lt;/em&gt;</change-notes>
+  <idea-version since-build="202.7319" until-build="202.*"/>
+  <id>org.intellij.sdk.DotStudy</id>
+  <name>DotStudy</name>
+  <vendor email="xia_tianyi@outlook.com" url="https://github.com/ThatAquarel">Aquarel</vendor>
+  <description>Plugin made by Aquarel(https://github.com/ThatAquarel)</description>
+  <depends>com.intellij.modules.platform</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <toolWindow id="DotStudy" secondary="true" icon="AllIcons.General.Modified" anchor="right" factoryClass="org.intellij.sdk.DotStudy.ToolWindow.MyToolWindowFactory"/>
+    <applicationConfigurable parentId="tools" instance="org.intellij.sdk.DotStudy.Settings.AppSettingsConfigurable" id="org.intellij.sdk.settings.AppSettingsConfigurable" displayName="DotStudy"/>
+    <applicationService serviceImplementation="org.intellij.sdk.DotStudy.Settings.AppSettingsState"/>
+    <fileType name="Study" implementationClass="org.intellij.sdk.DotStudy.Language.SimpleFileType" fieldName="INSTANCE" language="Study" extensions="study"/>
+    <lang.parserDefinition language="Study" implementationClass="org.intellij.sdk.DotStudy.Language.SimpleParserDefinition"/>
+    <lang.syntaxHighlighterFactory language="Study" implementationClass="org.intellij.sdk.DotStudy.Language.SimpleSyntaxHighlighterFactory"/>
+    <colorSettingsPage implementation="org.intellij.sdk.DotStudy.Language.SimpleColorSettingsPage"/>
+    <lang.formatter language="Study" implementationClass="org.intellij.sdk.DotStudy.Language.SimpleFormattingModelBuilder"/>
+  </extensions>
+  <actions/>
+</idea-plugin>
