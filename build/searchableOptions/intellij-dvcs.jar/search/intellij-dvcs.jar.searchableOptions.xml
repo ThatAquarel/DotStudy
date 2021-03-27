@@ -86,8 +86,9 @@
     <option name="cached" path="ActionManager" hit="Clears cached revisions" />
     <option name="clears" path="ActionManager" hit="Clears cached revisions" />
     <option name="revisions" path="ActionManager" hit="Clears cached revisions" />
-    <option name="close" path="ActionManager" hit="Close Unmodified" />
-    <option name="unmodified" path="ActionManager" hit="Close Unmodified" />
+    <option name="close" path="ActionManager" hit="Close Unmodified Tabs" />
+    <option name="tabs" path="ActionManager" hit="Close Unmodified Tabs" />
+    <option name="unmodified" path="ActionManager" hit="Close Unmodified Tabs" />
     <option name="all" path="ActionManager" hit="Close all non-modified editors" />
     <option name="close" path="ActionManager" hit="Close all non-modified editors" />
     <option name="editors" path="ActionManager" hit="Close all non-modified editors" />
@@ -143,6 +144,9 @@
     <option name="compare" path="ActionManager" hit="Compare with Local" />
     <option name="local" path="ActionManager" hit="Compare with Local" />
     <option name="with" path="ActionManager" hit="Compare with Local" />
+    <option name="compare" path="ActionManager" hit="Compare with Revision..." />
+    <option name="revision" path="ActionManager" hit="Compare with Revision..." />
+    <option name="with" path="ActionManager" hit="Compare with Revision..." />
     <option name="compare" path="ActionManager" hit="Compare with Specified Revision..." />
     <option name="revision" path="ActionManager" hit="Compare with Specified Revision..." />
     <option name="specified" path="ActionManager" hit="Compare with Specified Revision..." />
@@ -153,8 +157,6 @@
     <option name="the" path="ActionManager" hit="Compare with the Same Repository Version" />
     <option name="version" path="ActionManager" hit="Compare with the Same Repository Version" />
     <option name="with" path="ActionManager" hit="Compare with the Same Repository Version" />
-    <option name="compare" path="ActionManager" hit="Compare with..." />
-    <option name="with" path="ActionManager" hit="Compare with..." />
     <option name="configure" path="ActionManager" hit="Configure Layout" />
     <option name="layout" path="ActionManager" hit="Configure Layout" />
     <option name="configure" path="ActionManager" hit="Configure presentation of the File History" />
@@ -306,6 +308,7 @@
     <option name="get" path="ActionManager" hit="Get version from repository" />
     <option name="repository" path="ActionManager" hit="Get version from repository" />
     <option name="version" path="ActionManager" hit="Get version from repository" />
+    <option name="git" path="ActionManager" hit="Git" />
     <option name="branch" path="ActionManager" hit="Go To Hash/Branch/Tag" />
     <option name="go" path="ActionManager" hit="Go To Hash/Branch/Tag" />
     <option name="hash" path="ActionManager" hit="Go To Hash/Branch/Tag" />
@@ -446,9 +449,6 @@
     <option name="tab" path="ActionManager" hit="Open new tab with Vcs Log" />
     <option name="vcs" path="ActionManager" hit="Open new tab with Vcs Log" />
     <option name="with" path="ActionManager" hit="Open new tab with Vcs Log" />
-    <option name="open" path="ActionManager" hit="Open shelf settings" />
-    <option name="settings" path="ActionManager" hit="Open shelf settings" />
-    <option name="shelf" path="ActionManager" hit="Open shelf settings" />
     <option name="presentation" path="ActionManager" hit="Presentation Settings" />
     <option name="settings" path="ActionManager" hit="Presentation Settings" />
     <option name="change" path="ActionManager" hit="Previous Change" />
@@ -587,8 +587,6 @@
     <option name="set" path="ActionManager" hit="Set changelist to which new changes are placed by default" />
     <option name="to" path="ActionManager" hit="Set changelist to which new changes are placed by default" />
     <option name="which" path="ActionManager" hit="Set changelist to which new changes are placed by default" />
-    <option name="settings" path="ActionManager" hit="Shelf Settings" />
-    <option name="shelf" path="ActionManager" hit="Shelf Settings" />
     <option name="changes" path="ActionManager" hit="Shelve Changes..." />
     <option name="shelve" path="ActionManager" hit="Shelve Changes..." />
     <option name="shelve" path="ActionManager" hit="Shelve Silently" />
@@ -626,6 +624,14 @@
     <option name="show" path="ActionManager" hit="Show Current Revision" />
     <option name="details" path="ActionManager" hit="Show Details" />
     <option name="show" path="ActionManager" hit="Show Details" />
+    <option name="content" path="ActionManager" hit="Show Diff Instead of File Content on Double-Click" />
+    <option name="diff" path="ActionManager" hit="Show Diff Instead of File Content on Double-Click" />
+    <option name="double-click" path="ActionManager" hit="Show Diff Instead of File Content on Double-Click" />
+    <option name="file" path="ActionManager" hit="Show Diff Instead of File Content on Double-Click" />
+    <option name="instead" path="ActionManager" hit="Show Diff Instead of File Content on Double-Click" />
+    <option name="of" path="ActionManager" hit="Show Diff Instead of File Content on Double-Click" />
+    <option name="on" path="ActionManager" hit="Show Diff Instead of File Content on Double-Click" />
+    <option name="show" path="ActionManager" hit="Show Diff Instead of File Content on Double-Click" />
     <option name="diff" path="ActionManager" hit="Show Diff Preview" />
     <option name="preview" path="ActionManager" hit="Show Diff Preview" />
     <option name="show" path="ActionManager" hit="Show Diff Preview" />
@@ -680,9 +686,9 @@
     <option name="table" path="ActionManager" hit="Show Tag Names in the Table" />
     <option name="tag" path="ActionManager" hit="Show Tag Names in the Table" />
     <option name="the" path="ActionManager" hit="Show Tag Names in the Table" />
-    <option name="log" path="ActionManager" hit="Show VCS Log" />
-    <option name="show" path="ActionManager" hit="Show VCS Log" />
-    <option name="vcs" path="ActionManager" hit="Show VCS Log" />
+    <option name="log" path="ActionManager" hit="Show Vcs Log" />
+    <option name="show" path="ActionManager" hit="Show Vcs Log" />
+    <option name="vcs" path="ActionManager" hit="Show Vcs Log" />
     <option name="all" path="ActionManager" hit="Show all changes made in the chosen revision" />
     <option name="changes" path="ActionManager" hit="Show all changes made in the chosen revision" />
     <option name="chosen" path="ActionManager" hit="Show all changes made in the chosen revision" />
@@ -729,18 +735,18 @@
     <option name="show" path="ActionManager" hit="Show long branch edges even if commits are invisible in the current view." />
     <option name="the" path="ActionManager" hit="Show long branch edges even if commits are invisible in the current view." />
     <option name="view" path="ActionManager" hit="Show long branch edges even if commits are invisible in the current view." />
-    <option name="affect" path="ActionManager" hit="Show only changes that affect files that were selected in the \&quot;Paths\&quot; menu" />
-    <option name="changes" path="ActionManager" hit="Show only changes that affect files that were selected in the \&quot;Paths\&quot; menu" />
-    <option name="files" path="ActionManager" hit="Show only changes that affect files that were selected in the \&quot;Paths\&quot; menu" />
-    <option name="in" path="ActionManager" hit="Show only changes that affect files that were selected in the \&quot;Paths\&quot; menu" />
-    <option name="menu" path="ActionManager" hit="Show only changes that affect files that were selected in the \&quot;Paths\&quot; menu" />
-    <option name="only" path="ActionManager" hit="Show only changes that affect files that were selected in the \&quot;Paths\&quot; menu" />
-    <option name="paths" path="ActionManager" hit="Show only changes that affect files that were selected in the \&quot;Paths\&quot; menu" />
-    <option name="selected" path="ActionManager" hit="Show only changes that affect files that were selected in the \&quot;Paths\&quot; menu" />
-    <option name="show" path="ActionManager" hit="Show only changes that affect files that were selected in the \&quot;Paths\&quot; menu" />
-    <option name="that" path="ActionManager" hit="Show only changes that affect files that were selected in the \&quot;Paths\&quot; menu" />
-    <option name="the" path="ActionManager" hit="Show only changes that affect files that were selected in the \&quot;Paths\&quot; menu" />
-    <option name="were" path="ActionManager" hit="Show only changes that affect files that were selected in the \&quot;Paths\&quot; menu" />
+    <option name="affect" path="ActionManager" hit="Show only changes that affect files that were selected in the &quot;Paths&quot; menu" />
+    <option name="changes" path="ActionManager" hit="Show only changes that affect files that were selected in the &quot;Paths&quot; menu" />
+    <option name="files" path="ActionManager" hit="Show only changes that affect files that were selected in the &quot;Paths&quot; menu" />
+    <option name="in" path="ActionManager" hit="Show only changes that affect files that were selected in the &quot;Paths&quot; menu" />
+    <option name="menu" path="ActionManager" hit="Show only changes that affect files that were selected in the &quot;Paths&quot; menu" />
+    <option name="only" path="ActionManager" hit="Show only changes that affect files that were selected in the &quot;Paths&quot; menu" />
+    <option name="paths" path="ActionManager" hit="Show only changes that affect files that were selected in the &quot;Paths&quot; menu" />
+    <option name="selected" path="ActionManager" hit="Show only changes that affect files that were selected in the &quot;Paths&quot; menu" />
+    <option name="show" path="ActionManager" hit="Show only changes that affect files that were selected in the &quot;Paths&quot; menu" />
+    <option name="that" path="ActionManager" hit="Show only changes that affect files that were selected in the &quot;Paths&quot; menu" />
+    <option name="the" path="ActionManager" hit="Show only changes that affect files that were selected in the &quot;Paths&quot; menu" />
+    <option name="were" path="ActionManager" hit="Show only changes that affect files that were selected in the &quot;Paths&quot; menu" />
     <option name="change" path="ActionManager" hit="Show popup for currently selected change" />
     <option name="currently" path="ActionManager" hit="Show popup for currently selected change" />
     <option name="for" path="ActionManager" hit="Show popup for currently selected change" />
@@ -824,6 +830,10 @@
     <option name="only" path="ActionManager" hit="Switch between showing only current branch and all branches" />
     <option name="showing" path="ActionManager" hit="Switch between showing only current branch and all branches" />
     <option name="switch" path="ActionManager" hit="Switch between showing only current branch and all branches" />
+    <option name="commit" path="ActionManager" hit="Switch to Commit Dialog" />
+    <option name="dialog" path="ActionManager" hit="Switch to Commit Dialog" />
+    <option name="switch" path="ActionManager" hit="Switch to Commit Dialog" />
+    <option name="to" path="ActionManager" hit="Switch to Commit Dialog" />
     <option name="filter" path="ActionManager" hit="Text Filter Settings" />
     <option name="settings" path="ActionManager" hit="Text Filter Settings" />
     <option name="text" path="ActionManager" hit="Text Filter Settings" />
@@ -846,9 +856,8 @@
     <option name="vcs" path="ActionManager" hit="VCS Group" />
     <option name="label" path="ActionManager" hit="VCS Label" />
     <option name="vcs" path="ActionManager" hit="VCS Label" />
-    <option name="operations" path="ActionManager" hit="VCS Operations Popup..." />
-    <option name="popup" path="ActionManager" hit="VCS Operations Popup..." />
-    <option name="vcs" path="ActionManager" hit="VCS Operations Popup..." />
+    <option name="operations" path="ActionManager" hit="VCS Operations" />
+    <option name="vcs" path="ActionManager" hit="VCS Operations" />
     <option name="control" path="ActionManager" hit="Version Control" />
     <option name="version" path="ActionManager" hit="Version Control" />
     <option name="control" path="ActionManager" hit="Version Control Group" />
@@ -956,21 +965,21 @@
     <option name="vcs" hit="VCS Annotations//Foreground" />
   </configurable>
   <configurable id="project.propVCSSupport.Mappings" configurable_name="Version Control">
-    <option name="" hit=" &amp;lt;Project&amp;gt; - Content roots of all modules, and all immediate descendants of project base directory " />
-    <option name="-" hit=" &amp;lt;Project&amp;gt; - Content roots of all modules, and all immediate descendants of project base directory " />
-    <option name="all" hit=" &amp;lt;Project&amp;gt; - Content roots of all modules, and all immediate descendants of project base directory " />
-    <option name="and" hit=" &amp;lt;Project&amp;gt; - Content roots of all modules, and all immediate descendants of project base directory " />
-    <option name="base" hit=" &amp;lt;Project&amp;gt; - Content roots of all modules, and all immediate descendants of project base directory " />
-    <option name="content" hit=" &amp;lt;Project&amp;gt; - Content roots of all modules, and all immediate descendants of project base directory " />
-    <option name="descendants" hit=" &amp;lt;Project&amp;gt; - Content roots of all modules, and all immediate descendants of project base directory " />
-    <option name="directory" hit=" &amp;lt;Project&amp;gt; - Content roots of all modules, and all immediate descendants of project base directory " />
-    <option name="gt" hit=" &amp;lt;Project&amp;gt; - Content roots of all modules, and all immediate descendants of project base directory " />
-    <option name="immediate" hit=" &amp;lt;Project&amp;gt; - Content roots of all modules, and all immediate descendants of project base directory " />
-    <option name="lt" hit=" &amp;lt;Project&amp;gt; - Content roots of all modules, and all immediate descendants of project base directory " />
-    <option name="modules" hit=" &amp;lt;Project&amp;gt; - Content roots of all modules, and all immediate descendants of project base directory " />
-    <option name="of" hit=" &amp;lt;Project&amp;gt; - Content roots of all modules, and all immediate descendants of project base directory " />
-    <option name="project" hit=" &amp;lt;Project&amp;gt; - Content roots of all modules, and all immediate descendants of project base directory " />
-    <option name="roots" hit=" &amp;lt;Project&amp;gt; - Content roots of all modules, and all immediate descendants of project base directory " />
+    <option name="" hit="  &amp;lt;Project&amp;gt; - Content roots of all modules, and all immediate descendants of project base directory  " />
+    <option name="-" hit="  &amp;lt;Project&amp;gt; - Content roots of all modules, and all immediate descendants of project base directory  " />
+    <option name="all" hit="  &amp;lt;Project&amp;gt; - Content roots of all modules, and all immediate descendants of project base directory  " />
+    <option name="and" hit="  &amp;lt;Project&amp;gt; - Content roots of all modules, and all immediate descendants of project base directory  " />
+    <option name="base" hit="  &amp;lt;Project&amp;gt; - Content roots of all modules, and all immediate descendants of project base directory  " />
+    <option name="content" hit="  &amp;lt;Project&amp;gt; - Content roots of all modules, and all immediate descendants of project base directory  " />
+    <option name="descendants" hit="  &amp;lt;Project&amp;gt; - Content roots of all modules, and all immediate descendants of project base directory  " />
+    <option name="directory" hit="  &amp;lt;Project&amp;gt; - Content roots of all modules, and all immediate descendants of project base directory  " />
+    <option name="gt" hit="  &amp;lt;Project&amp;gt; - Content roots of all modules, and all immediate descendants of project base directory  " />
+    <option name="immediate" hit="  &amp;lt;Project&amp;gt; - Content roots of all modules, and all immediate descendants of project base directory  " />
+    <option name="lt" hit="  &amp;lt;Project&amp;gt; - Content roots of all modules, and all immediate descendants of project base directory  " />
+    <option name="modules" hit="  &amp;lt;Project&amp;gt; - Content roots of all modules, and all immediate descendants of project base directory  " />
+    <option name="of" hit="  &amp;lt;Project&amp;gt; - Content roots of all modules, and all immediate descendants of project base directory  " />
+    <option name="project" hit="  &amp;lt;Project&amp;gt; - Content roots of all modules, and all immediate descendants of project base directory  " />
+    <option name="roots" hit="  &amp;lt;Project&amp;gt; - Content roots of all modules, and all immediate descendants of project base directory  " />
     <option name="history" hit="Limit history to: " />
     <option name="limit" hit="Limit history to: " />
     <option name="to" hit="Limit history to: " />
@@ -987,128 +996,6 @@
     <option name="version" hit="Version Control" />
     <option name="days" hit="days" />
     <option name="rows" hit="rows" />
-  </configurable>
-  <configurable id="project.propVCSSupport.Background" configurable_name="Background">
-    <option name="" hit="&quot;Changed on server&quot; conflicts" />
-    <option name="changed" hit="&quot;Changed on server&quot; conflicts" />
-    <option name="conflicts" hit="&quot;Changed on server&quot; conflicts" />
-    <option name="on" hit="&quot;Changed on server&quot; conflicts" />
-    <option name="server" hit="&quot;Changed on server&quot; conflicts" />
-    <option name="background" hit="Background" />
-    <option name="background" hit="Background Operations" />
-    <option name="operations" hit="Background Operations" />
-    <option name="check" hit="Check every" />
-    <option name="every" hit="Check every" />
-    <option name="add" hit="Perform Add/Remove in background" />
-    <option name="background" hit="Perform Add/Remove in background" />
-    <option name="in" hit="Perform Add/Remove in background" />
-    <option name="perform" hit="Perform Add/Remove in background" />
-    <option name="remove" hit="Perform Add/Remove in background" />
-    <option name="background" hit="Perform Edit/Checkout in background" />
-    <option name="checkout" hit="Perform Edit/Checkout in background" />
-    <option name="edit" hit="Perform Edit/Checkout in background" />
-    <option name="in" hit="Perform Edit/Checkout in background" />
-    <option name="perform" hit="Perform Edit/Checkout in background" />
-    <option name="background" hit="Perform checkout from VCS in background" />
-    <option name="checkout" hit="Perform checkout from VCS in background" />
-    <option name="from" hit="Perform checkout from VCS in background" />
-    <option name="in" hit="Perform checkout from VCS in background" />
-    <option name="perform" hit="Perform checkout from VCS in background" />
-    <option name="vcs" hit="Perform checkout from VCS in background" />
-    <option name="background" hit="Perform commit to VCS in background" />
-    <option name="commit" hit="Perform commit to VCS in background" />
-    <option name="in" hit="Perform commit to VCS in background" />
-    <option name="perform" hit="Perform commit to VCS in background" />
-    <option name="to" hit="Perform commit to VCS in background" />
-    <option name="vcs" hit="Perform commit to VCS in background" />
-    <option name="background" hit="Perform revert in background" />
-    <option name="in" hit="Perform revert in background" />
-    <option name="perform" hit="Perform revert in background" />
-    <option name="revert" hit="Perform revert in background" />
-    <option name="background" hit="Perform update from VCS in background" />
-    <option name="from" hit="Perform update from VCS in background" />
-    <option name="in" hit="Perform update from VCS in background" />
-    <option name="perform" hit="Perform update from VCS in background" />
-    <option name="update" hit="Perform update from VCS in background" />
-    <option name="vcs" hit="Perform update from VCS in background" />
-    <option name="minutes" hit="minutes" />
-  </configurable>
-  <configurable id="project.propVCSSupport.CommitDialog" configurable_name="Commit">
-    <option name="" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Applies to projects under Git and Mercurial   " />
-    <option name="589df6" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Applies to projects under Git and Mercurial   " />
-    <option name="800080" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Applies to projects under Git and Mercurial   " />
-    <option name="a" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Applies to projects under Git and Mercurial   " />
-    <option name="active" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Applies to projects under Git and Mercurial   " />
-    <option name="and" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Applies to projects under Git and Mercurial   " />
-    <option name="applies" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Applies to projects under Git and Mercurial   " />
-    <option name="color" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Applies to projects under Git and Mercurial   " />
-    <option name="f00000" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Applies to projects under Git and Mercurial   " />
-    <option name="git" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Applies to projects under Git and Mercurial   " />
-    <option name="hover" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Applies to projects under Git and Mercurial   " />
-    <option name="link" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Applies to projects under Git and Mercurial   " />
-    <option name="mercurial" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Applies to projects under Git and Mercurial   " />
-    <option name="projects" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Applies to projects under Git and Mercurial   " />
-    <option name="to" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Applies to projects under Git and Mercurial   " />
-    <option name="under" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Applies to projects under Git and Mercurial   " />
-    <option name="visited" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Applies to projects under Git and Mercurial   " />
-    <option name="" hit=" Optimize imports" />
-    <option name="imports" hit=" Optimize imports" />
-    <option name="optimize" hit=" Optimize imports" />
-    <option name="" hit=" Reformat code" />
-    <option name="code" hit=" Reformat code" />
-    <option name="reformat" hit=" Reformat code" />
-    <option name="ask" hit="Ask" />
-    <option name="before" hit="Before Commit" />
-    <option name="commit" hit="Before Commit" />
-    <option name="c" hit="C leanup" />
-    <option name="leanup" hit="C leanup" />
-    <option name="all" hit="Check TODO (Show All)" />
-    <option name="check" hit="Check TODO (Show All)" />
-    <option name="show" hit="Check TODO (Show All)" />
-    <option name="todo" hit="Check TODO (Show All)" />
-    <option name="clear" hit="Clear initial commit message" />
-    <option name="commit" hit="Clear initial commit message" />
-    <option name="initial" hit="Clear initial commit message" />
-    <option name="message" hit="Clear initial commit message" />
-    <option name="commit" hit="Commit" />
-    <option name="commit" hit="Commit message inspections" />
-    <option name="inspections" hit="Commit message inspections" />
-    <option name="message" hit="Commit message inspections" />
-    <option name="configure" hit="Configure" />
-    <option name="changelist" hit="Create changelist on failed commit:" />
-    <option name="commit" hit="Create changelist on failed commit:" />
-    <option name="create" hit="Create changelist on failed commit:" />
-    <option name="failed" hit="Create changelist on failed commit:" />
-    <option name="on" hit="Create changelist on failed commit:" />
-    <option name="comments" hit="Force non-empty commit comments" />
-    <option name="commit" hit="Force non-empty commit comments" />
-    <option name="force" hit="Force non-empty commit comments" />
-    <option name="non-empty" hit="Force non-empty commit comments" />
-    <option name="no" hit="No" />
-    <option name="analy" hit="Perform code analy sis" />
-    <option name="code" hit="Perform code analy sis" />
-    <option name="perform" hit="Perform code analy sis" />
-    <option name="sis" hit="Perform code analy sis" />
-    <option name="code" hit="Rearra nge code" />
-    <option name="nge" hit="Rearra nge code" />
-    <option name="rearra" hit="Rearra nge code" />
-    <option name="files" hit="Show unversioned files" />
-    <option name="show" hit="Show unversioned files" />
-    <option name="unversioned" hit="Show unversioned files" />
-    <option name="another" hit="Suggest to move uncommitted changes to another changelist" />
-    <option name="changelist" hit="Suggest to move uncommitted changes to another changelist" />
-    <option name="changes" hit="Suggest to move uncommitted changes to another changelist" />
-    <option name="move" hit="Suggest to move uncommitted changes to another changelist" />
-    <option name="suggest" hit="Suggest to move uncommitted changes to another changelist" />
-    <option name="to" hit="Suggest to move uncommitted changes to another changelist" />
-    <option name="uncommitted" hit="Suggest to move uncommitted changes to another changelist" />
-    <option name="copyright" hit="Update copyright" />
-    <option name="update" hit="Update copyright" />
-    <option name="commit" hit="Use non-modal commit interface" />
-    <option name="interface" hit="Use non-modal commit interface" />
-    <option name="non-modal" hit="Use non-modal commit interface" />
-    <option name="use" hit="Use non-modal commit interface" />
-    <option name="yes" hit="Yes" />
   </configurable>
   <configurable id="project.propVCSSupport.Confirmation" configurable_name="Confirmation">
     <option name="" hit=" Show options before adding to version control " />
@@ -1192,6 +1079,51 @@
     <option name="when" hit="When files are deleted" />
     <option name="yes" hit="Yes" />
   </configurable>
+  <configurable id="project.propVCSSupport.Background" configurable_name="Background">
+    <option name="" hit="&quot;Changed on server&quot; conflicts" />
+    <option name="changed" hit="&quot;Changed on server&quot; conflicts" />
+    <option name="conflicts" hit="&quot;Changed on server&quot; conflicts" />
+    <option name="on" hit="&quot;Changed on server&quot; conflicts" />
+    <option name="server" hit="&quot;Changed on server&quot; conflicts" />
+    <option name="background" hit="Background" />
+    <option name="background" hit="Background Operations" />
+    <option name="operations" hit="Background Operations" />
+    <option name="check" hit="Check every" />
+    <option name="every" hit="Check every" />
+    <option name="add" hit="Perform Add/Remove in background" />
+    <option name="background" hit="Perform Add/Remove in background" />
+    <option name="in" hit="Perform Add/Remove in background" />
+    <option name="perform" hit="Perform Add/Remove in background" />
+    <option name="remove" hit="Perform Add/Remove in background" />
+    <option name="background" hit="Perform Edit/Checkout in background" />
+    <option name="checkout" hit="Perform Edit/Checkout in background" />
+    <option name="edit" hit="Perform Edit/Checkout in background" />
+    <option name="in" hit="Perform Edit/Checkout in background" />
+    <option name="perform" hit="Perform Edit/Checkout in background" />
+    <option name="background" hit="Perform checkout from VCS in background" />
+    <option name="checkout" hit="Perform checkout from VCS in background" />
+    <option name="from" hit="Perform checkout from VCS in background" />
+    <option name="in" hit="Perform checkout from VCS in background" />
+    <option name="perform" hit="Perform checkout from VCS in background" />
+    <option name="vcs" hit="Perform checkout from VCS in background" />
+    <option name="background" hit="Perform commit to VCS in background" />
+    <option name="commit" hit="Perform commit to VCS in background" />
+    <option name="in" hit="Perform commit to VCS in background" />
+    <option name="perform" hit="Perform commit to VCS in background" />
+    <option name="to" hit="Perform commit to VCS in background" />
+    <option name="vcs" hit="Perform commit to VCS in background" />
+    <option name="background" hit="Perform revert in background" />
+    <option name="in" hit="Perform revert in background" />
+    <option name="perform" hit="Perform revert in background" />
+    <option name="revert" hit="Perform revert in background" />
+    <option name="background" hit="Perform update from VCS in background" />
+    <option name="from" hit="Perform update from VCS in background" />
+    <option name="in" hit="Perform update from VCS in background" />
+    <option name="perform" hit="Perform update from VCS in background" />
+    <option name="update" hit="Perform update from VCS in background" />
+    <option name="vcs" hit="Perform update from VCS in background" />
+    <option name="minutes" hit="minutes" />
+  </configurable>
   <configurable id="project.propVCSSupport.Issue.Navigation" configurable_name="Issue Navigation">
     <option name="" hit=" IntelliJ IDEA will search for the specified patterns in checkin comments and link them to issues in your issue tracker: " />
     <option name="and" hit=" IntelliJ IDEA will search for the specified patterns in checkin comments and link them to issues in your issue tracker: " />
@@ -1216,14 +1148,82 @@
     <option name="issue" hit="Issue Navigation" />
     <option name="navigation" hit="Issue Navigation" />
   </configurable>
+  <configurable id="project.propVCSSupport.CommitDialog" configurable_name="Commit">
+    <option name="" hit="   Applies to projects under Git and Mercurial   " />
+    <option name="and" hit="   Applies to projects under Git and Mercurial   " />
+    <option name="applies" hit="   Applies to projects under Git and Mercurial   " />
+    <option name="git" hit="   Applies to projects under Git and Mercurial   " />
+    <option name="mercurial" hit="   Applies to projects under Git and Mercurial   " />
+    <option name="projects" hit="   Applies to projects under Git and Mercurial   " />
+    <option name="to" hit="   Applies to projects under Git and Mercurial   " />
+    <option name="under" hit="   Applies to projects under Git and Mercurial   " />
+    <option name="ask" hit="Ask" />
+    <option name="before" hit="Before Commit" />
+    <option name="commit" hit="Before Commit" />
+    <option name="all" hit="Check TODO (Show All)" />
+    <option name="check" hit="Check TODO (Show All)" />
+    <option name="show" hit="Check TODO (Show All)" />
+    <option name="todo" hit="Check TODO (Show All)" />
+    <option name="c" hit="Cleanup" />
+    <option name="leanup" hit="Cleanup" />
+    <option name="clear" hit="Clear initial commit message" />
+    <option name="commit" hit="Clear initial commit message" />
+    <option name="initial" hit="Clear initial commit message" />
+    <option name="message" hit="Clear initial commit message" />
+    <option name="commit" hit="Commit" />
+    <option name="commit" hit="Commit message inspections" />
+    <option name="inspections" hit="Commit message inspections" />
+    <option name="message" hit="Commit message inspections" />
+    <option name="configure" hit="Configure" />
+    <option name="changelist" hit="Create changelist on failed commit:" />
+    <option name="commit" hit="Create changelist on failed commit:" />
+    <option name="create" hit="Create changelist on failed commit:" />
+    <option name="failed" hit="Create changelist on failed commit:" />
+    <option name="on" hit="Create changelist on failed commit:" />
+    <option name="comments" hit="Force non-empty commit comments" />
+    <option name="commit" hit="Force non-empty commit comments" />
+    <option name="force" hit="Force non-empty commit comments" />
+    <option name="non-empty" hit="Force non-empty commit comments" />
+    <option name="no" hit="No" />
+    <option name="" hit="Optimize imports" />
+    <option name="imports" hit="Optimize imports" />
+    <option name="optimize" hit="Optimize imports" />
+    <option name="analy" hit="Perform code analysis" />
+    <option name="code" hit="Perform code analysis" />
+    <option name="perform" hit="Perform code analysis" />
+    <option name="sis" hit="Perform code analysis" />
+    <option name="code" hit="Rearrange code" />
+    <option name="nge" hit="Rearrange code" />
+    <option name="rearra" hit="Rearrange code" />
+    <option name="" hit="Reformat code" />
+    <option name="code" hit="Reformat code" />
+    <option name="reformat" hit="Reformat code" />
+    <option name="files" hit="Show unversioned files" />
+    <option name="show" hit="Show unversioned files" />
+    <option name="unversioned" hit="Show unversioned files" />
+    <option name="another" hit="Suggest to move uncommitted changes to another changelist" />
+    <option name="changelist" hit="Suggest to move uncommitted changes to another changelist" />
+    <option name="changes" hit="Suggest to move uncommitted changes to another changelist" />
+    <option name="move" hit="Suggest to move uncommitted changes to another changelist" />
+    <option name="suggest" hit="Suggest to move uncommitted changes to another changelist" />
+    <option name="to" hit="Suggest to move uncommitted changes to another changelist" />
+    <option name="uncommitted" hit="Suggest to move uncommitted changes to another changelist" />
+    <option name="copyright" hit="Update copyright" />
+    <option name="update" hit="Update copyright" />
+    <option name="commit" hit="Use non-modal commit interface" />
+    <option name="interface" hit="Use non-modal commit interface" />
+    <option name="non-modal" hit="Use non-modal commit interface" />
+    <option name="use" hit="Use non-modal commit interface" />
+    <option name="yes" hit="Yes" />
+  </configurable>
   <configurable id="Shelf.Project.Settings" configurable_name="Shelf">
     <option name="change" hit="Change Shelves Location" />
     <option name="location" hit="Change Shelves Location" />
     <option name="shelves" hit="Change Shelves Location" />
-    <option name="default" hit="Default location is  \shelf" />
-    <option name="is" hit="Default location is  \shelf" />
-    <option name="location" hit="Default location is  \shelf" />
-    <option name="shelf" hit="Default location is  \shelf" />
+    <option name="default" hit="Default location is  /shelf" />
+    <option name="is" hit="Default location is  /shelf" />
+    <option name="location" hit="Default location is  /shelf" />
+    <option name="shelf" hit="Default location is  /shelf" />
     <option name="shelf" hit="Shelf" />
     <option name="base" hit="Shelve base revisions of files under distributed version control systems" />
     <option name="control" hit="Shelve base revisions of files under distributed version control systems" />

@@ -111,15 +111,15 @@
     <option name="in" path="Blank Lines" hit="In code:" />
     <option name="indent" path="Tabs and Indents" hit="Indent:" />
     <option name="json" hit="JSON" />
-    <option name="blank" path="Blank Lines" hit="Keep Maximum Blank Lines" />
-    <option name="keep" path="Blank Lines" hit="Keep Maximum Blank Lines" />
-    <option name="lines" path="Blank Lines" hit="Keep Maximum Blank Lines" />
-    <option name="maximum" path="Blank Lines" hit="Keep Maximum Blank Lines" />
     <option name="empty" path="Tabs and Indents" hit="Keep indents on empty lines" />
     <option name="indents" path="Tabs and Indents" hit="Keep indents on empty lines" />
     <option name="keep" path="Tabs and Indents" hit="Keep indents on empty lines" />
     <option name="lines" path="Tabs and Indents" hit="Keep indents on empty lines" />
     <option name="on" path="Tabs and Indents" hit="Keep indents on empty lines" />
+    <option name="blank" path="Blank Lines" hit="Keep maximum blank lines" />
+    <option name="keep" path="Blank Lines" hit="Keep maximum blank lines" />
+    <option name="lines" path="Blank Lines" hit="Keep maximum blank lines" />
+    <option name="maximum" path="Blank Lines" hit="Keep maximum blank lines" />
     <option name="loading" hit="Loading..." />
     <option name="scheme" hit="Scheme:" />
     <option name="from" hit="Set from..." />

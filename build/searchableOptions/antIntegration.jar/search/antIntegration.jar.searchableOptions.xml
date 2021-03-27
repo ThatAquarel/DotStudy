@@ -20,6 +20,7 @@
     <option name="the" path="ActionManager" hit="Add current XML file to the list of project's Ant build files" />
     <option name="to" path="ActionManager" hit="Add current XML file to the list of project's Ant build files" />
     <option name="xml" path="ActionManager" hit="Add current XML file to the list of project's Ant build files" />
+    <option name="ant" path="ActionManager" hit="Ant" />
     <option name="ant" path="ActionManager" hit="Run Ant Target" />
     <option name="run" path="ActionManager" hit="Run Ant Target" />
     <option name="target" path="ActionManager" hit="Run Ant Target" />

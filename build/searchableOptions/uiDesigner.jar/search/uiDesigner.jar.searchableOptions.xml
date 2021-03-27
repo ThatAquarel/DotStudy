@@ -67,18 +67,6 @@
     <option name="dialog" path="ActionManager" hit="Create Dialog Class" />
     <option name="create" path="ActionManager" hit="Create Listener" />
     <option name="listener" path="ActionManager" hit="Create Listener" />
-    <option name="a" path="ActionManager" hit="Create a GUI form based on the UI of a running Java application" />
-    <option name="application" path="ActionManager" hit="Create a GUI form based on the UI of a running Java application" />
-    <option name="based" path="ActionManager" hit="Create a GUI form based on the UI of a running Java application" />
-    <option name="create" path="ActionManager" hit="Create a GUI form based on the UI of a running Java application" />
-    <option name="form" path="ActionManager" hit="Create a GUI form based on the UI of a running Java application" />
-    <option name="gui" path="ActionManager" hit="Create a GUI form based on the UI of a running Java application" />
-    <option name="java" path="ActionManager" hit="Create a GUI form based on the UI of a running Java application" />
-    <option name="of" path="ActionManager" hit="Create a GUI form based on the UI of a running Java application" />
-    <option name="on" path="ActionManager" hit="Create a GUI form based on the UI of a running Java application" />
-    <option name="running" path="ActionManager" hit="Create a GUI form based on the UI of a running Java application" />
-    <option name="the" path="ActionManager" hit="Create a GUI form based on the UI of a running Java application" />
-    <option name="ui" path="ActionManager" hit="Create a GUI form based on the UI of a running Java application" />
     <option name="an" path="ActionManager" hit="Create an empty GUI form" />
     <option name="create" path="ActionManager" hit="Create an empty GUI form" />
     <option name="empty" path="ActionManager" hit="Create an empty GUI form" />
@@ -135,8 +123,6 @@
     <option name="selection" path="ActionManager" hit="Expand selection structurally" />
     <option name="structurally" path="ActionManager" hit="Expand selection structurally" />
     <option name="flatten" path="ActionManager" hit="Flatten" />
-    <option name="form" path="ActionManager" hit="Form Snapshot" />
-    <option name="snapshot" path="ActionManager" hit="Form Snapshot" />
     <option name="form" path="ActionManager" hit="Form Source" />
     <option name="source" path="ActionManager" hit="Form Source" />
     <option name="form" path="ActionManager" hit="Form main()" />

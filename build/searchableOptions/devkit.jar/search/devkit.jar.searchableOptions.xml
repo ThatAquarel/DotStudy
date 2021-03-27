@@ -3,17 +3,19 @@
   <configurable id="preferences.keymap" configurable_name="Keymap">
     <option name="" path="ActionManager" hit="" />
     <option name="action" path="ActionManager" hit="Action" />
-    <option name="analyze" path="ActionManager" hit="Analyze EP Usage" />
-    <option name="ep" path="ActionManager" hit="Analyze EP Usage" />
-    <option name="usage" path="ActionManager" hit="Analyze EP Usage" />
-    <option name="analyze" path="ActionManager" hit="Analyze EP Usage (Do not Follow Safe Types)" />
-    <option name="do" path="ActionManager" hit="Analyze EP Usage (Do not Follow Safe Types)" />
-    <option name="ep" path="ActionManager" hit="Analyze EP Usage (Do not Follow Safe Types)" />
-    <option name="follow" path="ActionManager" hit="Analyze EP Usage (Do not Follow Safe Types)" />
-    <option name="not" path="ActionManager" hit="Analyze EP Usage (Do not Follow Safe Types)" />
-    <option name="safe" path="ActionManager" hit="Analyze EP Usage (Do not Follow Safe Types)" />
-    <option name="types" path="ActionManager" hit="Analyze EP Usage (Do not Follow Safe Types)" />
-    <option name="usage" path="ActionManager" hit="Analyze EP Usage (Do not Follow Safe Types)" />
+    <option name="analyze" path="ActionManager" hit="Analyze Extension Point Usage" />
+    <option name="extension" path="ActionManager" hit="Analyze Extension Point Usage" />
+    <option name="point" path="ActionManager" hit="Analyze Extension Point Usage" />
+    <option name="usage" path="ActionManager" hit="Analyze Extension Point Usage" />
+    <option name="analyze" path="ActionManager" hit="Analyze Extension Point Usage (Do not Follow Safe Types)" />
+    <option name="do" path="ActionManager" hit="Analyze Extension Point Usage (Do not Follow Safe Types)" />
+    <option name="extension" path="ActionManager" hit="Analyze Extension Point Usage (Do not Follow Safe Types)" />
+    <option name="follow" path="ActionManager" hit="Analyze Extension Point Usage (Do not Follow Safe Types)" />
+    <option name="not" path="ActionManager" hit="Analyze Extension Point Usage (Do not Follow Safe Types)" />
+    <option name="point" path="ActionManager" hit="Analyze Extension Point Usage (Do not Follow Safe Types)" />
+    <option name="safe" path="ActionManager" hit="Analyze Extension Point Usage (Do not Follow Safe Types)" />
+    <option name="types" path="ActionManager" hit="Analyze Extension Point Usage (Do not Follow Safe Types)" />
+    <option name="usage" path="ActionManager" hit="Analyze Extension Point Usage (Do not Follow Safe Types)" />
     <option name="analyze" path="ActionManager" hit="Analyze Unloadable Plugins" />
     <option name="plugins" path="ActionManager" hit="Analyze Unloadable Plugins" />
     <option name="unloadable" path="ActionManager" hit="Analyze Unloadable Plugins" />

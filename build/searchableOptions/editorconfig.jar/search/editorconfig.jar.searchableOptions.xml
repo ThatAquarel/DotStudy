@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <options>
   <configurable id="preferences.keymap" configurable_name="Keymap">
+    <option name="" path="ActionManager" hit="" />
     <option name="" path="ActionManager" hit=".editorconfig file" />
     <option name="editorconfig" path="ActionManager" hit=".editorconfig file" />
     <option name="file" path="ActionManager" hit=".editorconfig file" />
     <option name="create" path="ActionManager" hit="Create .editorconfig file" />
     <option name="editorconfig" path="ActionManager" hit="Create .editorconfig file" />
     <option name="file" path="ActionManager" hit="Create .editorconfig file" />
-    <option name="create" path="ActionManager" hit="Create new EditorConfig file" />
-    <option name="editorconfig" path="ActionManager" hit="Create new EditorConfig file" />
-    <option name="file" path="ActionManager" hit="Create new EditorConfig file" />
-    <option name="new" path="ActionManager" hit="Create new EditorConfig file" />
     <option name="editorconfig" path="ActionManager" hit="EditorConfig File" />
     <option name="file" path="ActionManager" hit="EditorConfig File" />
   </configurable>
@@ -134,8 +131,8 @@
     <option name="align" path="Wrapping and Braces" hit="Align when multiline" />
     <option name="multiline" path="Wrapping and Braces" hit="Align when multiline" />
     <option name="when" path="Wrapping and Braces" hit="Align when multiline" />
-    <option name="around" path="Spaces" hit="Around Operators" />
-    <option name="operators" path="Spaces" hit="Around Operators" />
+    <option name="around" path="Spaces" hit="Around operators" />
+    <option name="operators" path="Spaces" hit="Around operators" />
     <option name="around" path="Spaces" hit="Around separator" />
     <option name="separator" path="Spaces" hit="Around separator" />
     <option name="array" path="Wrapping and Braces" hit="Array initializer" />

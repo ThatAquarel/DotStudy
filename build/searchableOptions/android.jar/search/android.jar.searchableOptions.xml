@@ -1,142 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <options>
-  <configurable id="AndroidSdkUpdater" configurable_name="Android SDK">
-    <option name="" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
-    <option name="an" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
-    <option name="are" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
-    <option name="automatically" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
-    <option name="available" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
-    <option name="below" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
-    <option name="check" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
-    <option name="details" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
-    <option name="developer" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
-    <option name="display" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
-    <option name="for" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
-    <option name="ide" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
-    <option name="installed" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
-    <option name="of" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
-    <option name="once" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
-    <option name="package" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
-    <option name="sdk" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
-    <option name="show" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
-    <option name="the" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
-    <option name="to" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
-    <option name="tool" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
-    <option name="tools" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
-    <option name="updates" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
-    <option name="versions" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
-    <option name="will" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
-    <option name="" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
-    <option name="an" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
-    <option name="and" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
-    <option name="android" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
-    <option name="api" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
-    <option name="automatically" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
-    <option name="by" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
-    <option name="check" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
-    <option name="components" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
-    <option name="default" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
-    <option name="details" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
-    <option name="display" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
-    <option name="each" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
-    <option name="for" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
-    <option name="ide" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
-    <option name="includes" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
-    <option name="individual" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
-    <option name="installed" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
-    <option name="level" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
-    <option name="once" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
-    <option name="package" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
-    <option name="pertaining" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
-    <option name="platform" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
-    <option name="sdk" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
-    <option name="show" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
-    <option name="sources" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
-    <option name="the" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
-    <option name="to" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
-    <option name="updates" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
-    <option name="will" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
-    <option name="" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
-    <option name="add" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
-    <option name="add-on" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
-    <option name="add-ons" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
-    <option name="adding" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
-    <option name="additional" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
-    <option name="android" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
-    <option name="are" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
-    <option name="can" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
-    <option name="check" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
-    <option name="checked" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
-    <option name="extra" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
-    <option name="for" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
-    <option name="manager" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
-    <option name="new" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
-    <option name="not" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
-    <option name="or" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
-    <option name="packages" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
-    <option name="sdk" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
-    <option name="site" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
-    <option name="sites" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
-    <option name="the" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
-    <option name="these" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
-    <option name="tools" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
-    <option name="unchecked" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
-    <option name="updates" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
-    <option name="when" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
-    <option name="will" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
-    <option name="android" hit="Android SDK" />
-    <option name="sdk" hit="Android SDK" />
-    <option name="android" hit="Android SDK Location:" />
-    <option name="location" hit="Android SDK Location:" />
-    <option name="sdk" hit="Android SDK Location:" />
-    <option name="diff" path="SDK Update Sites" hit="Disable SDK diff patching" />
-    <option name="disable" path="SDK Update Sites" hit="Disable SDK diff patching" />
-    <option name="patching" path="SDK Update Sites" hit="Disable SDK diff patching" />
-    <option name="sdk" path="SDK Update Sites" hit="Disable SDK diff patching" />
-    <option name="be" path="SDK Update Sites" hit="Force https://... sources to be fetched using http://..." />
-    <option name="fetched" path="SDK Update Sites" hit="Force https://... sources to be fetched using http://..." />
-    <option name="force" path="SDK Update Sites" hit="Force https://... sources to be fetched using http://..." />
-    <option name="http" path="SDK Update Sites" hit="Force https://... sources to be fetched using http://..." />
-    <option name="https" path="SDK Update Sites" hit="Force https://... sources to be fetched using http://..." />
-    <option name="sources" path="SDK Update Sites" hit="Force https://... sources to be fetched using http://..." />
-    <option name="to" path="SDK Update Sites" hit="Force https://... sources to be fetched using http://..." />
-    <option name="using" path="SDK Update Sites" hit="Force https://... sources to be fetched using http://..." />
-    <option name="hide" path="SDK Platforms" hit="Hide Obsolete Packages" />
-    <option name="obsolete" path="SDK Platforms" hit="Hide Obsolete Packages" />
-    <option name="packages" path="SDK Platforms" hit="Hide Obsolete Packages" />
-    <option name="loading" path="SDK Update Sites" hit="Loading sources..." />
-    <option name="sources" path="SDK Update Sites" hit="Loading sources..." />
-    <option name="for" path="SDK Platforms" hit="Looking for updates..." />
-    <option name="looking" path="SDK Platforms" hit="Looking for updates..." />
-    <option name="updates" path="SDK Platforms" hit="Looking for updates..." />
-    <option name="and" hit="Manager for the Android SDK and Tools used by the IDE" />
-    <option name="android" hit="Manager for the Android SDK and Tools used by the IDE" />
-    <option name="by" hit="Manager for the Android SDK and Tools used by the IDE" />
-    <option name="for" hit="Manager for the Android SDK and Tools used by the IDE" />
-    <option name="ide" hit="Manager for the Android SDK and Tools used by the IDE" />
-    <option name="manager" hit="Manager for the Android SDK and Tools used by the IDE" />
-    <option name="sdk" hit="Manager for the Android SDK and Tools used by the IDE" />
-    <option name="the" hit="Manager for the Android SDK and Tools used by the IDE" />
-    <option name="tools" hit="Manager for the Android SDK and Tools used by the IDE" />
-    <option name="used" hit="Manager for the Android SDK and Tools used by the IDE" />
-    <option name="be" hit="SDK Location must be set" />
-    <option name="location" hit="SDK Location must be set" />
-    <option name="must" hit="SDK Location must be set" />
-    <option name="sdk" hit="SDK Location must be set" />
-    <option name="set" hit="SDK Location must be set" />
-    <option name="platforms" path="SDK Platforms" hit="SDK Platforms" />
-    <option name="sdk" path="SDK Platforms" hit="SDK Platforms" />
-    <option name="sdk" path="SDK Tools" hit="SDK Tools" />
-    <option name="tools" path="SDK Tools" hit="SDK Tools" />
-    <option name="sdk" path="SDK Update Sites" hit="SDK Update Sites" />
-    <option name="sites" path="SDK Update Sites" hit="SDK Update Sites" />
-    <option name="update" path="SDK Update Sites" hit="SDK Update Sites" />
-    <option name="details" path="SDK Platforms" hit="Show Package Details" />
-    <option name="package" path="SDK Platforms" hit="Show Package Details" />
-    <option name="show" path="SDK Platforms" hit="Show Package Details" />
-  </configurable>
   <configurable id="preferences.keymap" configurable_name="Keymap">
     <option name="" path="ActionManager" hit="" />
+    <option name="avd" path="ActionManager" hit="AVD Manager" />
+    <option name="manager" path="ActionManager" hit="AVD Manager" />
     <option name="add" path="ActionManager" hit="Add &quot;Gradle-aware Make&quot; launch task to Android Run Configuration(s) if it is missing" />
     <option name="android" path="ActionManager" hit="Add &quot;Gradle-aware Make&quot; launch task to Android Run Configuration(s) if it is missing" />
     <option name="configuration" path="ActionManager" hit="Add &quot;Gradle-aware Make&quot; launch task to Android Run Configuration(s) if it is missing" />
@@ -155,12 +22,12 @@
     <option name="right-to-left" path="ActionManager" hit="Add Right-to-Left (RTL) Support..." />
     <option name="rtl" path="ActionManager" hit="Add Right-to-Left (RTL) Support..." />
     <option name="support" path="ActionManager" hit="Add Right-to-Left (RTL) Support..." />
-    <option name="add" path="ActionManager" hit="Add light-to-left (RTL) support where possible" />
-    <option name="light-to-left" path="ActionManager" hit="Add light-to-left (RTL) support where possible" />
-    <option name="possible" path="ActionManager" hit="Add light-to-left (RTL) support where possible" />
-    <option name="rtl" path="ActionManager" hit="Add light-to-left (RTL) support where possible" />
-    <option name="support" path="ActionManager" hit="Add light-to-left (RTL) support where possible" />
-    <option name="where" path="ActionManager" hit="Add light-to-left (RTL) support where possible" />
+    <option name="add" path="ActionManager" hit="Add right-to-left (RTL) support where possible" />
+    <option name="possible" path="ActionManager" hit="Add right-to-left (RTL) support where possible" />
+    <option name="right-to-left" path="ActionManager" hit="Add right-to-left (RTL) support where possible" />
+    <option name="rtl" path="ActionManager" hit="Add right-to-left (RTL) support where possible" />
+    <option name="support" path="ActionManager" hit="Add right-to-left (RTL) support where possible" />
+    <option name="where" path="ActionManager" hit="Add right-to-left (RTL) support where possible" />
     <option name="add" path="ActionManager" hit="Add sample data file" />
     <option name="data" path="ActionManager" hit="Add sample data file" />
     <option name="file" path="ActionManager" hit="Add sample data file" />
@@ -584,25 +451,166 @@
     <option name="verbose" hit="Verbose" />
     <option name="warning" hit="Warning" />
   </configurable>
-  <configurable id="fileTemplates" configurable_name="File and Code Templates">
-    <option name="activity" hit="Activity" />
-    <option name="androidmanifest" hit="AndroidManifest" />
-    <option name="annotationtype" hit="AnnotationType" />
-    <option name="application" hit="Application" />
-    <option name="broadcast_receiver" hit="Broadcast_Receiver" />
-    <option name="class" hit="Class" />
-    <option name="enum" hit="Enum" />
-    <option name="fragment" hit="Fragment" />
-    <option name="interface" hit="Interface" />
-    <option name="remote_interface" hit="Remote_Interface" />
-    <option name="service" hit="Service" />
-    <option name="singleton" hit="Singleton" />
-    <option name="default" hit="default" />
-    <option name="layoutresourcefile" hit="layoutResourceFile" />
-    <option name="layoutresourcefile_vertical" hit="layoutResourceFile_vertical" />
-    <option name="navigationresourcefile" hit="navigationResourceFile" />
-    <option name="resourcefile" hit="resourceFile" />
-    <option name="valueresourcefile" hit="valueResourceFile" />
+  <configurable id="project.propDebugger" configurable_name="Debugger">
+    <option name="logcat" hit="Logcat output" />
+    <option name="output" hit="Logcat output" />
+    <option name="application" hit="Show application logcat messages in Debug Console" />
+    <option name="console" hit="Show application logcat messages in Debug Console" />
+    <option name="debug" hit="Show application logcat messages in Debug Console" />
+    <option name="in" hit="Show application logcat messages in Debug Console" />
+    <option name="logcat" hit="Show application logcat messages in Debug Console" />
+    <option name="messages" hit="Show application logcat messages in Debug Console" />
+    <option name="show" hit="Show application logcat messages in Debug Console" />
+    <option name="application" hit="Show application logcat messages in Run Console" />
+    <option name="console" hit="Show application logcat messages in Run Console" />
+    <option name="in" hit="Show application logcat messages in Run Console" />
+    <option name="logcat" hit="Show application logcat messages in Run Console" />
+    <option name="messages" hit="Show application logcat messages in Run Console" />
+    <option name="run" hit="Show application logcat messages in Run Console" />
+    <option name="show" hit="Show application logcat messages in Run Console" />
+  </configurable>
+  <configurable id="AndroidSdkUpdater" configurable_name="Android SDK">
+    <option name="" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
+    <option name="an" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
+    <option name="are" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
+    <option name="automatically" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
+    <option name="available" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
+    <option name="below" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
+    <option name="check" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
+    <option name="details" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
+    <option name="developer" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
+    <option name="display" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
+    <option name="for" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
+    <option name="ide" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
+    <option name="installed" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
+    <option name="of" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
+    <option name="once" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
+    <option name="package" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
+    <option name="sdk" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
+    <option name="show" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
+    <option name="the" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
+    <option name="to" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
+    <option name="tool" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
+    <option name="tools" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
+    <option name="updates" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
+    <option name="versions" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
+    <option name="will" path="SDK Tools" hit=" Below are the available SDK developer tools. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display available versions of an SDK Tool. " />
+    <option name="" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
+    <option name="an" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
+    <option name="and" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
+    <option name="android" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
+    <option name="api" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
+    <option name="automatically" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
+    <option name="by" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
+    <option name="check" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
+    <option name="components" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
+    <option name="default" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
+    <option name="details" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
+    <option name="display" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
+    <option name="each" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
+    <option name="for" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
+    <option name="ide" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
+    <option name="includes" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
+    <option name="individual" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
+    <option name="installed" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
+    <option name="level" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
+    <option name="once" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
+    <option name="package" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
+    <option name="pertaining" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
+    <option name="platform" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
+    <option name="sdk" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
+    <option name="show" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
+    <option name="sources" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
+    <option name="the" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
+    <option name="to" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
+    <option name="updates" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
+    <option name="will" path="SDK Platforms" hit=" Each Android SDK Platform package includes the Android platform and sources pertaining to an API level by default. Once installed, IDE will automatically check for updates. Check &quot;show package details&quot; to display individual SDK components. " />
+    <option name="" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
+    <option name="add" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
+    <option name="add-on" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
+    <option name="add-ons" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
+    <option name="adding" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
+    <option name="additional" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
+    <option name="android" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
+    <option name="are" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
+    <option name="can" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
+    <option name="check" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
+    <option name="checked" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
+    <option name="extra" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
+    <option name="for" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
+    <option name="manager" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
+    <option name="new" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
+    <option name="not" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
+    <option name="or" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
+    <option name="packages" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
+    <option name="sdk" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
+    <option name="site" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
+    <option name="sites" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
+    <option name="the" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
+    <option name="these" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
+    <option name="tools" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
+    <option name="unchecked" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
+    <option name="updates" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
+    <option name="when" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
+    <option name="will" path="SDK Update Sites" hit=" These are the sites checked for Android SDK Updates  Tools. When unchecked, the SDK Manager will not check the site for updates. Adding additional add-on updates sites can add new add-ons or extra SDK packages. " />
+    <option name="android" hit="Android SDK" />
+    <option name="sdk" hit="Android SDK" />
+    <option name="android" hit="Android SDK Location:" />
+    <option name="location" hit="Android SDK Location:" />
+    <option name="sdk" hit="Android SDK Location:" />
+    <option name="diff" path="SDK Update Sites" hit="Disable SDK diff patching" />
+    <option name="disable" path="SDK Update Sites" hit="Disable SDK diff patching" />
+    <option name="patching" path="SDK Update Sites" hit="Disable SDK diff patching" />
+    <option name="sdk" path="SDK Update Sites" hit="Disable SDK diff patching" />
+    <option name="be" path="SDK Update Sites" hit="Force https://... sources to be fetched using http://..." />
+    <option name="fetched" path="SDK Update Sites" hit="Force https://... sources to be fetched using http://..." />
+    <option name="force" path="SDK Update Sites" hit="Force https://... sources to be fetched using http://..." />
+    <option name="http" path="SDK Update Sites" hit="Force https://... sources to be fetched using http://..." />
+    <option name="https" path="SDK Update Sites" hit="Force https://... sources to be fetched using http://..." />
+    <option name="sources" path="SDK Update Sites" hit="Force https://... sources to be fetched using http://..." />
+    <option name="to" path="SDK Update Sites" hit="Force https://... sources to be fetched using http://..." />
+    <option name="using" path="SDK Update Sites" hit="Force https://... sources to be fetched using http://..." />
+    <option name="hide" path="SDK Platforms" hit="Hide Obsolete Packages" />
+    <option name="obsolete" path="SDK Platforms" hit="Hide Obsolete Packages" />
+    <option name="packages" path="SDK Platforms" hit="Hide Obsolete Packages" />
+    <option name="loading" path="SDK Update Sites" hit="Loading sources..." />
+    <option name="sources" path="SDK Update Sites" hit="Loading sources..." />
+    <option name="for" path="SDK Platforms" hit="Looking for updates..." />
+    <option name="looking" path="SDK Platforms" hit="Looking for updates..." />
+    <option name="updates" path="SDK Platforms" hit="Looking for updates..." />
+    <option name="and" hit="Manager for the Android SDK and Tools used by the IDE" />
+    <option name="android" hit="Manager for the Android SDK and Tools used by the IDE" />
+    <option name="by" hit="Manager for the Android SDK and Tools used by the IDE" />
+    <option name="for" hit="Manager for the Android SDK and Tools used by the IDE" />
+    <option name="ide" hit="Manager for the Android SDK and Tools used by the IDE" />
+    <option name="manager" hit="Manager for the Android SDK and Tools used by the IDE" />
+    <option name="sdk" hit="Manager for the Android SDK and Tools used by the IDE" />
+    <option name="the" hit="Manager for the Android SDK and Tools used by the IDE" />
+    <option name="tools" hit="Manager for the Android SDK and Tools used by the IDE" />
+    <option name="used" hit="Manager for the Android SDK and Tools used by the IDE" />
+    <option name="be" hit="SDK Location must be set" />
+    <option name="location" hit="SDK Location must be set" />
+    <option name="must" hit="SDK Location must be set" />
+    <option name="sdk" hit="SDK Location must be set" />
+    <option name="set" hit="SDK Location must be set" />
+    <option name="platforms" path="SDK Platforms" hit="SDK Platforms" />
+    <option name="sdk" path="SDK Platforms" hit="SDK Platforms" />
+    <option name="sdk" path="SDK Tools" hit="SDK Tools" />
+    <option name="tools" path="SDK Tools" hit="SDK Tools" />
+    <option name="sdk" path="SDK Update Sites" hit="SDK Update Sites" />
+    <option name="sites" path="SDK Update Sites" hit="SDK Update Sites" />
+    <option name="update" path="SDK Update Sites" hit="SDK Update Sites" />
+    <option name="details" path="SDK Platforms" hit="Show Package Details" />
+    <option name="package" path="SDK Platforms" hit="Show Package Details" />
+    <option name="show" path="SDK Platforms" hit="Show Package Details" />
+  </configurable>
+  <configurable id="device.file.explorer" configurable_name="Android Device File Explorer">
+    <option name="android" hit="Android Device File Explorer" />
+    <option name="device" hit="Android Device File Explorer" />
+    <option name="explorer" hit="Android Device File Explorer" />
+    <option name="file" hit="Android Device File Explorer" />
+    <option name="download" hit="Download location" />
+    <option name="location" hit="Download location" />
   </configurable>
   <configurable id="nele.options" configurable_name="Android Layout Editor">
     <option name="android" hit="Android Layout Editor" />
@@ -628,51 +636,6 @@
     <option name="show" hit="Show lint icons on design surface" />
     <option name="surface" hit="Show lint icons on design surface" />
     <option name="split" hit="Split" />
-  </configurable>
-  <configurable id="android.dex.compiler" configurable_name="Android Compilers">
-    <option name="--core-library" hit="Add &quot;--core-library&quot; flag" />
-    <option name="add" hit="Add &quot;--core-library&quot; flag" />
-    <option name="flag" hit="Add &quot;--core-library&quot; flag" />
-    <option name="additional" hit="Additional VM options:" />
-    <option name="options" hit="Additional VM options:" />
-    <option name="vm" hit="Additional VM options:" />
-    <option name="android" hit="Android Compilers" />
-    <option name="compilers" hit="Android Compilers" />
-    <option name="dex" hit="DEX" />
-    <option name="force" hit="Force jumbo mode" />
-    <option name="jumbo" hit="Force jumbo mode" />
-    <option name="mode" hit="Force jumbo mode" />
-    <option name="heap" hit="Maximum heap size (MB):" />
-    <option name="maximum" hit="Maximum heap size (MB):" />
-    <option name="mb" hit="Maximum heap size (MB):" />
-    <option name="size" hit="Maximum heap size (MB):" />
-    <option name="optimize" hit="Optimize" />
-    <option name="proguard" hit="ProGuard" />
-    <option name="options" hit="VM options:" />
-    <option name="vm" hit="VM options:" />
-  </configurable>
-  <configurable id="project.propDebugger" configurable_name="Debugger">
-    <option name="logcat" hit="Logcat output" />
-    <option name="output" hit="Logcat output" />
-    <option name="application" hit="Show application logcat messages in Debug Console" />
-    <option name="console" hit="Show application logcat messages in Debug Console" />
-    <option name="debug" hit="Show application logcat messages in Debug Console" />
-    <option name="in" hit="Show application logcat messages in Debug Console" />
-    <option name="logcat" hit="Show application logcat messages in Debug Console" />
-    <option name="messages" hit="Show application logcat messages in Debug Console" />
-    <option name="show" hit="Show application logcat messages in Debug Console" />
-    <option name="application" hit="Show application logcat messages in Run Console" />
-    <option name="console" hit="Show application logcat messages in Run Console" />
-    <option name="in" hit="Show application logcat messages in Run Console" />
-    <option name="logcat" hit="Show application logcat messages in Run Console" />
-    <option name="messages" hit="Show application logcat messages in Run Console" />
-    <option name="run" hit="Show application logcat messages in Run Console" />
-    <option name="show" hit="Show application logcat messages in Run Console" />
-  </configurable>
-  <configurable id="android.project.structure" configurable_name="Android Project Structure">
-    <option name="android" hit="Android Project Structure" />
-    <option name="project" hit="Android Project Structure" />
-    <option name="structure" hit="Android Project Structure" />
   </configurable>
   <configurable id="instant.run" configurable_name="Deployment">
     <option name="apply" hit="Automatically perform &quot;Run&quot; when Apply Changes fails" />
@@ -742,6 +705,26 @@
     <option name="when" hit="In some cases, when Apply Changes or Apply Code Changes succeeds, you might need to manually restart your app to see your changes." />
     <option name="you" hit="In some cases, when Apply Changes or Apply Code Changes succeeds, you might need to manually restart your app to see your changes." />
     <option name="your" hit="In some cases, when Apply Changes or Apply Code Changes succeeds, you might need to manually restart your app to see your changes." />
+  </configurable>
+  <configurable id="fileTemplates" configurable_name="File and Code Templates">
+    <option name="activity" hit="Activity" />
+    <option name="androidmanifest" hit="AndroidManifest" />
+    <option name="annotationtype" hit="AnnotationType" />
+    <option name="application" hit="Application" />
+    <option name="broadcast_receiver" hit="Broadcast_Receiver" />
+    <option name="class" hit="Class" />
+    <option name="enum" hit="Enum" />
+    <option name="fragment" hit="Fragment" />
+    <option name="interface" hit="Interface" />
+    <option name="remote_interface" hit="Remote_Interface" />
+    <option name="service" hit="Service" />
+    <option name="singleton" hit="Singleton" />
+    <option name="default" hit="default" />
+    <option name="layoutresourcefile" hit="layoutResourceFile" />
+    <option name="layoutresourcefile_vertical" hit="layoutResourceFile_vertical" />
+    <option name="navigationresourcefile" hit="navigationResourceFile" />
+    <option name="resourcefile" hit="resourceFile" />
+    <option name="valueresourcefile" hit="valueResourceFile" />
   </configurable>
   <configurable id="gradle.compiler" configurable_name="Gradle-Android Compiler">
     <option name="" hit="  Note:  These settings are used for  compiling  Gradle-based Android projects. " />
@@ -838,13 +821,32 @@
     <option name="sync" hit="Use new dependency mechanism during Gradle sync" />
     <option name="use" hit="Use new dependency mechanism during Gradle sync" />
   </configurable>
-  <configurable id="device.file.explorer" configurable_name="Android Device File Explorer">
-    <option name="android" hit="Android Device File Explorer" />
-    <option name="device" hit="Android Device File Explorer" />
-    <option name="explorer" hit="Android Device File Explorer" />
-    <option name="file" hit="Android Device File Explorer" />
-    <option name="download" hit="Download location" />
-    <option name="location" hit="Download location" />
+  <configurable id="android.dex.compiler" configurable_name="Android Compilers">
+    <option name="--core-library" hit="Add &quot;--core-library&quot; flag" />
+    <option name="add" hit="Add &quot;--core-library&quot; flag" />
+    <option name="flag" hit="Add &quot;--core-library&quot; flag" />
+    <option name="additional" hit="Additional VM options:" />
+    <option name="options" hit="Additional VM options:" />
+    <option name="vm" hit="Additional VM options:" />
+    <option name="android" hit="Android Compilers" />
+    <option name="compilers" hit="Android Compilers" />
+    <option name="dex" hit="DEX" />
+    <option name="force" hit="Force jumbo mode" />
+    <option name="jumbo" hit="Force jumbo mode" />
+    <option name="mode" hit="Force jumbo mode" />
+    <option name="heap" hit="Maximum heap size (MB):" />
+    <option name="maximum" hit="Maximum heap size (MB):" />
+    <option name="mb" hit="Maximum heap size (MB):" />
+    <option name="size" hit="Maximum heap size (MB):" />
+    <option name="optimize" hit="Optimize" />
+    <option name="proguard" hit="ProGuard" />
+    <option name="options" hit="VM options:" />
+    <option name="vm" hit="VM options:" />
+  </configurable>
+  <configurable id="android.project.structure" configurable_name="Android Project Structure">
+    <option name="android" hit="Android Project Structure" />
+    <option name="project" hit="Android Project Structure" />
+    <option name="structure" hit="Android Project Structure" />
   </configurable>
 </options>
 

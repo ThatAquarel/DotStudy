@@ -213,13 +213,57 @@
     <option name="list" hit="Unordered list" />
     <option name="unordered" hit="Unordered list" />
   </configurable>
+  <configurable id="Settings.Markdown" configurable_name="Markdown">
+    <option name="markdown" hit="Markdown" />
+    <option name="are" hit="There are no available preview providers." />
+    <option name="available" hit="There are no available preview providers." />
+    <option name="no" hit="There are no available preview providers." />
+    <option name="preview" hit="There are no available preview providers." />
+    <option name="providers" hit="There are no available preview providers." />
+    <option name="there" hit="There are no available preview providers." />
+  </configurable>
   <configurable id="preferences.sourceCode.Markdown" configurable_name="Markdown">
+    <option name="around" path="Blank Lines" hit="Around block elements" />
+    <option name="block" path="Blank Lines" hit="Around block elements" />
+    <option name="elements" path="Blank Lines" hit="Around block elements" />
+    <option name="around" path="Blank Lines" hit="Around header" />
+    <option name="header" path="Blank Lines" hit="Around header" />
+    <option name="between" path="Blank Lines" hit="Between paragraphs" />
+    <option name="paragraphs" path="Blank Lines" hit="Between paragraphs" />
+    <option name="blank" path="Blank Lines" hit="Blank Lines" />
+    <option name="lines" path="Blank Lines" hit="Blank Lines" />
+    <option name="continuation" path="Tabs and Indents" hit="Continuation indent:" />
+    <option name="indent" path="Tabs and Indents" hit="Continuation indent:" />
     <option name="disable" hit="Disable" />
+    <option name="indent" path="Tabs and Indents" hit="Indent:" />
+    <option name="empty" path="Tabs and Indents" hit="Keep indents on empty lines" />
+    <option name="indents" path="Tabs and Indents" hit="Keep indents on empty lines" />
+    <option name="keep" path="Tabs and Indents" hit="Keep indents on empty lines" />
+    <option name="lines" path="Tabs and Indents" hit="Keep indents on empty lines" />
+    <option name="on" path="Tabs and Indents" hit="Keep indents on empty lines" />
+    <option name="blank" path="Blank Lines" hit="Keep maximum blank lines" />
+    <option name="keep" path="Blank Lines" hit="Keep maximum blank lines" />
+    <option name="lines" path="Blank Lines" hit="Keep maximum blank lines" />
+    <option name="maximum" path="Blank Lines" hit="Keep maximum blank lines" />
     <option name="loading" hit="Loading..." />
     <option name="markdown" hit="Markdown" />
+    <option name="blank" path="Blank Lines" hit="Minimum blank lines" />
+    <option name="lines" path="Blank Lines" hit="Minimum blank lines" />
+    <option name="minimum" path="Blank Lines" hit="Minimum blank lines" />
     <option name="scheme" hit="Scheme:" />
     <option name="from" hit="Set from..." />
     <option name="set" hit="Set from..." />
+    <option name="smart" path="Tabs and Indents" hit="Smart tabs" />
+    <option name="tabs" path="Tabs and Indents" hit="Smart tabs" />
+    <option name="spaces" path="Spaces" hit="Spaces" />
+    <option name="size" path="Tabs and Indents" hit="Tab size:" />
+    <option name="tab" path="Tabs and Indents" hit="Tab size:" />
+    <option name="and" path="Tabs and Indents" hit="Tabs and Indents" />
+    <option name="indents" path="Tabs and Indents" hit="Tabs and Indents" />
+    <option name="tabs" path="Tabs and Indents" hit="Tabs and Indents" />
+    <option name="character" path="Tabs and Indents" hit="Use tab character" />
+    <option name="tab" path="Tabs and Indents" hit="Use tab character" />
+    <option name="use" path="Tabs and Indents" hit="Use tab character" />
     <option name="and" path="Wrapping and Braces" hit="Wrapping and Braces" />
     <option name="braces" path="Wrapping and Braces" hit="Wrapping and Braces" />
     <option name="wrapping" path="Wrapping and Braces" hit="Wrapping and Braces" />
@@ -275,6 +319,15 @@
     <option name="" path="Wrapping and Braces" hit="'while()' statement" />
     <option name="statement" path="Wrapping and Braces" hit="'while()' statement" />
     <option name="while" path="Wrapping and Braces" hit="'while()' statement" />
+    <option name="after" path="Spaces" hit="After blockquote marker" />
+    <option name="blockquote" path="Spaces" hit="After blockquote marker" />
+    <option name="marker" path="Spaces" hit="After blockquote marker" />
+    <option name="after" path="Spaces" hit="After header symbol" />
+    <option name="header" path="Spaces" hit="After header symbol" />
+    <option name="symbol" path="Spaces" hit="After header symbol" />
+    <option name="after" path="Spaces" hit="After list marker" />
+    <option name="list" path="Spaces" hit="After list marker" />
+    <option name="marker" path="Spaces" hit="After list marker" />
     <option name="align" path="Wrapping and Braces" hit="Align 'throws' to method start" />
     <option name="method" path="Wrapping and Braces" hit="Align 'throws' to method start" />
     <option name="start" path="Wrapping and Braces" hit="Align 'throws' to method start" />
@@ -315,6 +368,8 @@
     <option name="sign" path="Wrapping and Braces" hit="Assignment sign on next line" />
     <option name="assignment" path="Wrapping and Braces" hit="Assignment statement" />
     <option name="statement" path="Wrapping and Braces" hit="Assignment statement" />
+    <option name="between" path="Spaces" hit="Between words" />
+    <option name="words" path="Spaces" hit="Between words" />
     <option name="binary" path="Wrapping and Braces" hit="Binary expressions" />
     <option name="expressions" path="Wrapping and Braces" hit="Binary expressions" />
     <option name="braces" path="Wrapping and Braces" hit="Braces placement" />
@@ -358,6 +413,9 @@
     <option name="field" path="Wrapping and Braces" hit="Field annotations" />
     <option name="braces" path="Wrapping and Braces" hit="Force braces" />
     <option name="force" path="Wrapping and Braces" hit="Force braces" />
+    <option name="force" path="Spaces" hit="Force one space" />
+    <option name="one" path="Spaces" hit="Force one space" />
+    <option name="space" path="Spaces" hit="Force one space" />
     <option name="declarations" path="Wrapping and Braces" hit="Group declarations" />
     <option name="group" path="Wrapping and Braces" hit="Group declarations" />
     <option name="at" path="Wrapping and Braces" hit="Hard wrap at" />
@@ -478,60 +536,6 @@
     <option name="on" path="Wrapping and Braces" hit="Wrap on typing" />
     <option name="typing" path="Wrapping and Braces" hit="Wrap on typing" />
     <option name="wrap" path="Wrapping and Braces" hit="Wrap on typing" />
-  </configurable>
-  <configurable id="Settings.Markdown" configurable_name="Markdown">
-    <option name="add" hit="Add CSS rules:" />
-    <option name="css" hit="Add CSS rules:" />
-    <option name="rules" hit="Add CSS rules:" />
-    <option name="auto-scroll" hit="Auto-scroll preview" />
-    <option name="preview" hit="Auto-scroll preview" />
-    <option name="css" hit="Custom CSS" />
-    <option name="custom" hit="Custom CSS" />
-    <option name="default" hit="Default layout:" />
-    <option name="layout" hit="Default layout:" />
-    <option name="automatic" hit="Disable automatic language injection in code fences" />
-    <option name="code" hit="Disable automatic language injection in code fences" />
-    <option name="disable" hit="Disable automatic language injection in code fences" />
-    <option name="fences" hit="Disable automatic language injection in code fences" />
-    <option name="in" hit="Disable automatic language injection in code fences" />
-    <option name="injection" hit="Disable automatic language injection in code fences" />
-    <option name="language" hit="Disable automatic language injection in code fences" />
-    <option name="and" hit="Editor and Preview Panel Layout:" />
-    <option name="editor" hit="Editor and Preview Panel Layout:" />
-    <option name="layout" hit="Editor and Preview Panel Layout:" />
-    <option name="panel" hit="Editor and Preview Panel Layout:" />
-    <option name="preview" hit="Editor and Preview Panel Layout:" />
-    <option name="and" hit="Editor and preview" />
-    <option name="editor" hit="Editor and preview" />
-    <option name="preview" hit="Editor and preview" />
-    <option name="editor" hit="Editor only" />
-    <option name="only" hit="Editor only" />
-    <option name="grayscale" hit="Grayscale" />
-    <option name="code" hit="Hide errors in code fences" />
-    <option name="errors" hit="Hide errors in code fences" />
-    <option name="fences" hit="Hide errors in code fences" />
-    <option name="hide" hit="Hide errors in code fences" />
-    <option name="in" hit="Hide errors in code fences" />
-    <option name="install" hit="Install" />
-    <option name="javafx" hit="JavaFX WebView" />
-    <option name="webview" hit="JavaFX WebView" />
-    <option name="from" hit="Load from URI:" />
-    <option name="load" hit="Load from URI:" />
-    <option name="uri" hit="Load from URI:" />
-    <option name="markdown" hit="Markdown" />
-    <option name="framework" hit="PlantUML framework isn't installed." />
-    <option name="installed" hit="PlantUML framework isn't installed." />
-    <option name="isn" hit="PlantUML framework isn't installed." />
-    <option name="plantuml" hit="PlantUML framework isn't installed." />
-    <option name="t" hit="PlantUML framework isn't installed." />
-    <option name="browser" hit="Preview browser:" />
-    <option name="preview" hit="Preview browser:" />
-    <option name="only" hit="Preview only" />
-    <option name="preview" hit="Preview only" />
-    <option name="horizontally" hit="Split horizontally" />
-    <option name="split" hit="Split horizontally" />
-    <option name="split" hit="Split vertically" />
-    <option name="vertically" hit="Split vertically" />
   </configurable>
 </options>
 

@@ -156,29 +156,29 @@
     <option name="update" path="ActionManager" hit="Update to..." />
   </configurable>
   <configurable id="vcs.Mercurial" configurable_name="Mercurial">
-    <option name="" hit=" Path to Mercurial executable:" />
-    <option name="executable" hit=" Path to Mercurial executable:" />
-    <option name="mercurial" hit=" Path to Mercurial executable:" />
-    <option name="path" hit=" Path to Mercurial executable:" />
-    <option name="to" hit=" Path to Mercurial executable:" />
-    <option name="and" hit="Check for  incoming and outgoing changesets" />
-    <option name="changesets" hit="Check for  incoming and outgoing changesets" />
-    <option name="check" hit="Check for  incoming and outgoing changesets" />
-    <option name="for" hit="Check for  incoming and outgoing changesets" />
-    <option name="incoming" hit="Check for  incoming and outgoing changesets" />
-    <option name="outgoing" hit="Check for  incoming and outgoing changesets" />
+    <option name="and" hit="Check for incoming and outgoing changesets" />
+    <option name="changesets" hit="Check for incoming and outgoing changesets" />
+    <option name="check" hit="Check for incoming and outgoing changesets" />
+    <option name="for" hit="Check for incoming and outgoing changesets" />
+    <option name="incoming" hit="Check for incoming and outgoing changesets" />
+    <option name="outgoing" hit="Check for incoming and outgoing changesets" />
     <option name="all" hit="Execute branch operations on all roots" />
     <option name="branch" hit="Execute branch operations on all roots" />
     <option name="execute" hit="Execute branch operations on all roots" />
     <option name="on" hit="Execute branch operations on all roots" />
     <option name="operations" hit="Execute branch operations on all roots" />
     <option name="roots" hit="Execute branch operations on all roots" />
-    <option name="annotations" hit="Ignore  whitespace differences in annotations" />
-    <option name="differences" hit="Ignore  whitespace differences in annotations" />
-    <option name="ignore" hit="Ignore  whitespace differences in annotations" />
-    <option name="in" hit="Ignore  whitespace differences in annotations" />
-    <option name="whitespace" hit="Ignore  whitespace differences in annotations" />
+    <option name="annotations" hit="Ignore whitespace differences in annotations" />
+    <option name="differences" hit="Ignore whitespace differences in annotations" />
+    <option name="ignore" hit="Ignore whitespace differences in annotations" />
+    <option name="in" hit="Ignore whitespace differences in annotations" />
+    <option name="whitespace" hit="Ignore whitespace differences in annotations" />
     <option name="mercurial" hit="Mercurial" />
+    <option name="" hit="Path to Mercurial executable:" />
+    <option name="executable" hit="Path to Mercurial executable:" />
+    <option name="mercurial" hit="Path to Mercurial executable:" />
+    <option name="path" hit="Path to Mercurial executable:" />
+    <option name="to" hit="Path to Mercurial executable:" />
     <option name="current" hit="Set this path only for the current project" />
     <option name="for" hit="Set this path only for the current project" />
     <option name="only" hit="Set this path only for the current project" />

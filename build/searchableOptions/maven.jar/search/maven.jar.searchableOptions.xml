@@ -213,6 +213,18 @@
     <option name="projects" path="ActionManager" hit="Group projects according to Maven structure" />
     <option name="structure" path="ActionManager" hit="Group projects according to Maven structure" />
     <option name="to" path="ActionManager" hit="Group projects according to Maven structure" />
+    <option name="be" path="ActionManager" hit="If switched off, Maven wrapper configured in .mvn/wrapper will not be used" />
+    <option name="configured" path="ActionManager" hit="If switched off, Maven wrapper configured in .mvn/wrapper will not be used" />
+    <option name="if" path="ActionManager" hit="If switched off, Maven wrapper configured in .mvn/wrapper will not be used" />
+    <option name="in" path="ActionManager" hit="If switched off, Maven wrapper configured in .mvn/wrapper will not be used" />
+    <option name="maven" path="ActionManager" hit="If switched off, Maven wrapper configured in .mvn/wrapper will not be used" />
+    <option name="mvn" path="ActionManager" hit="If switched off, Maven wrapper configured in .mvn/wrapper will not be used" />
+    <option name="not" path="ActionManager" hit="If switched off, Maven wrapper configured in .mvn/wrapper will not be used" />
+    <option name="off" path="ActionManager" hit="If switched off, Maven wrapper configured in .mvn/wrapper will not be used" />
+    <option name="switched" path="ActionManager" hit="If switched off, Maven wrapper configured in .mvn/wrapper will not be used" />
+    <option name="used" path="ActionManager" hit="If switched off, Maven wrapper configured in .mvn/wrapper will not be used" />
+    <option name="will" path="ActionManager" hit="If switched off, Maven wrapper configured in .mvn/wrapper will not be used" />
+    <option name="wrapper" path="ActionManager" hit="If switched off, Maven wrapper configured in .mvn/wrapper will not be used" />
     <option name="ignore" path="ActionManager" hit="Ignore Projects" />
     <option name="projects" path="ActionManager" hit="Ignore Projects" />
     <option name="maven" path="ActionManager" hit="Maven" />
@@ -326,6 +338,10 @@
     <option name="their" path="ActionManager" hit="Unlink selected Maven projects and their subprojects from the project tree" />
     <option name="tree" path="ActionManager" hit="Unlink selected Maven projects and their subprojects from the project tree" />
     <option name="unlink" path="ActionManager" hit="Unlink selected Maven projects and their subprojects from the project tree" />
+    <option name="detection" path="ActionManager" hit="Use maven wrapper detection" />
+    <option name="maven" path="ActionManager" hit="Use maven wrapper detection" />
+    <option name="use" path="ActionManager" hit="Use maven wrapper detection" />
+    <option name="wrapper" path="ActionManager" hit="Use maven wrapper detection" />
   </configurable>
   <configurable id="MavenSettings" configurable_name="Maven">
     <option name="-t" hit="-T option" />
@@ -336,27 +352,6 @@
     <option name="3" hit="Bundled (Maven 3)" />
     <option name="bundled" hit="Bundled (Maven 3)" />
     <option name="maven" hit="Bundled (Maven 3)" />
-    <option name="1" hit="C:/Users/xia_t/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2020.2.2/ffac4b30324b8a09445a5e52cfcc9db3dddb4b34/ideaIC-2020.2.2/plugins/maven/lib/maven3" />
-    <option name="2" hit="C:/Users/xia_t/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2020.2.2/ffac4b30324b8a09445a5e52cfcc9db3dddb4b34/ideaIC-2020.2.2/plugins/maven/lib/maven3" />
-    <option name="2020" hit="C:/Users/xia_t/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2020.2.2/ffac4b30324b8a09445a5e52cfcc9db3dddb4b34/ideaIC-2020.2.2/plugins/maven/lib/maven3" />
-    <option name="c" hit="C:/Users/xia_t/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2020.2.2/ffac4b30324b8a09445a5e52cfcc9db3dddb4b34/ideaIC-2020.2.2/plugins/maven/lib/maven3" />
-    <option name="caches" hit="C:/Users/xia_t/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2020.2.2/ffac4b30324b8a09445a5e52cfcc9db3dddb4b34/ideaIC-2020.2.2/plugins/maven/lib/maven3" />
-    <option name="com" hit="C:/Users/xia_t/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2020.2.2/ffac4b30324b8a09445a5e52cfcc9db3dddb4b34/ideaIC-2020.2.2/plugins/maven/lib/maven3" />
-    <option name="ffac4b30324b8a09445a5e52cfcc9db3dddb4b34" hit="C:/Users/xia_t/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2020.2.2/ffac4b30324b8a09445a5e52cfcc9db3dddb4b34/ideaIC-2020.2.2/plugins/maven/lib/maven3" />
-    <option name="files-2" hit="C:/Users/xia_t/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2020.2.2/ffac4b30324b8a09445a5e52cfcc9db3dddb4b34/ideaIC-2020.2.2/plugins/maven/lib/maven3" />
-    <option name="gradle" hit="C:/Users/xia_t/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2020.2.2/ffac4b30324b8a09445a5e52cfcc9db3dddb4b34/ideaIC-2020.2.2/plugins/maven/lib/maven3" />
-    <option name="idea" hit="C:/Users/xia_t/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2020.2.2/ffac4b30324b8a09445a5e52cfcc9db3dddb4b34/ideaIC-2020.2.2/plugins/maven/lib/maven3" />
-    <option name="ideaic" hit="C:/Users/xia_t/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2020.2.2/ffac4b30324b8a09445a5e52cfcc9db3dddb4b34/ideaIC-2020.2.2/plugins/maven/lib/maven3" />
-    <option name="ideaic-2020" hit="C:/Users/xia_t/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2020.2.2/ffac4b30324b8a09445a5e52cfcc9db3dddb4b34/ideaIC-2020.2.2/plugins/maven/lib/maven3" />
-    <option name="intellij" hit="C:/Users/xia_t/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2020.2.2/ffac4b30324b8a09445a5e52cfcc9db3dddb4b34/ideaIC-2020.2.2/plugins/maven/lib/maven3" />
-    <option name="jetbrains" hit="C:/Users/xia_t/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2020.2.2/ffac4b30324b8a09445a5e52cfcc9db3dddb4b34/ideaIC-2020.2.2/plugins/maven/lib/maven3" />
-    <option name="lib" hit="C:/Users/xia_t/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2020.2.2/ffac4b30324b8a09445a5e52cfcc9db3dddb4b34/ideaIC-2020.2.2/plugins/maven/lib/maven3" />
-    <option name="maven" hit="C:/Users/xia_t/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2020.2.2/ffac4b30324b8a09445a5e52cfcc9db3dddb4b34/ideaIC-2020.2.2/plugins/maven/lib/maven3" />
-    <option name="maven3" hit="C:/Users/xia_t/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2020.2.2/ffac4b30324b8a09445a5e52cfcc9db3dddb4b34/ideaIC-2020.2.2/plugins/maven/lib/maven3" />
-    <option name="modules-2" hit="C:/Users/xia_t/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2020.2.2/ffac4b30324b8a09445a5e52cfcc9db3dddb4b34/ideaIC-2020.2.2/plugins/maven/lib/maven3" />
-    <option name="plugins" hit="C:/Users/xia_t/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2020.2.2/ffac4b30324b8a09445a5e52cfcc9db3dddb4b34/ideaIC-2020.2.2/plugins/maven/lib/maven3" />
-    <option name="users" hit="C:/Users/xia_t/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2020.2.2/ffac4b30324b8a09445a5e52cfcc9db3dddb4b34/ideaIC-2020.2.2/plugins/maven/lib/maven3" />
-    <option name="xia_t" hit="C:/Users/xia_t/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2020.2.2/ffac4b30324b8a09445a5e52cfcc9db3dddb4b34/ideaIC-2020.2.2/plugins/maven/lib/maven3" />
     <option name="checksum" hit="Checksum policy:" />
     <option name="policy" hit="Checksum policy:" />
     <option name="debug" hit="Debug" />
@@ -379,9 +374,9 @@
     <option name="local" hit="Local repository:" />
     <option name="repository" hit="Local repository:" />
     <option name="maven" hit="Maven" />
-    <option name="directory" hit="Maven home directory:" />
-    <option name="home" hit="Maven home directory:" />
-    <option name="maven" hit="Maven home directory:" />
+    <option name="home" hit="Maven home path:" />
+    <option name="maven" hit="Maven home path:" />
+    <option name="path" hit="Maven home path:" />
     <option name="build" hit="Multiproject build fail policy:" />
     <option name="fail" hit="Multiproject build fail policy:" />
     <option name="multiproject" hit="Multiproject build fail policy:" />

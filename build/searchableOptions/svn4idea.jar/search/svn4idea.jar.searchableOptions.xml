@@ -2,12 +2,12 @@
 <options>
   <configurable id="preferences.keymap" configurable_name="Keymap">
     <option name="" path="ActionManager" hit="" />
-    <option name="branch" path="ActionManager" hit="Branch or Tag..." />
-    <option name="or" path="ActionManager" hit="Branch or Tag..." />
-    <option name="tag" path="ActionManager" hit="Branch or Tag..." />
-    <option name="browse" path="ActionManager" hit="Browse Subversion Repository..." />
-    <option name="repository" path="ActionManager" hit="Browse Subversion Repository..." />
-    <option name="subversion" path="ActionManager" hit="Browse Subversion Repository..." />
+    <option name="branch" path="ActionManager" hit="Branch or Tag…" />
+    <option name="or" path="ActionManager" hit="Branch or Tag…" />
+    <option name="tag" path="ActionManager" hit="Branch or Tag…" />
+    <option name="browse" path="ActionManager" hit="Browse Subversion Repository…" />
+    <option name="repository" path="ActionManager" hit="Browse Subversion Repository…" />
+    <option name="subversion" path="ActionManager" hit="Browse Subversion Repository…" />
     <option name="a" path="ActionManager" hit="Browse a Subversion repository" />
     <option name="browse" path="ActionManager" hit="Browse a Subversion repository" />
     <option name="repository" path="ActionManager" hit="Browse a Subversion repository" />
@@ -15,9 +15,9 @@
     <option name="cleanup" path="ActionManager" hit="Cleanup" />
     <option name="cleanup" path="ActionManager" hit="Cleanup Project" />
     <option name="project" path="ActionManager" hit="Cleanup Project" />
-    <option name="branch" path="ActionManager" hit="Compare with Branch..." />
-    <option name="compare" path="ActionManager" hit="Compare with Branch..." />
-    <option name="with" path="ActionManager" hit="Compare with Branch..." />
+    <option name="branch" path="ActionManager" hit="Compare with Branch…" />
+    <option name="compare" path="ActionManager" hit="Compare with Branch…" />
+    <option name="with" path="ActionManager" hit="Compare with Branch…" />
     <option name="copy" path="ActionManager" hit="Copy selected file or directory to the new repository location" />
     <option name="directory" path="ActionManager" hit="Copy selected file or directory to the new repository location" />
     <option name="file" path="ActionManager" hit="Copy selected file or directory to the new repository location" />
@@ -28,8 +28,8 @@
     <option name="selected" path="ActionManager" hit="Copy selected file or directory to the new repository location" />
     <option name="the" path="ActionManager" hit="Copy selected file or directory to the new repository location" />
     <option name="to" path="ActionManager" hit="Copy selected file or directory to the new repository location" />
-    <option name="create" path="ActionManager" hit="Create External..." />
-    <option name="external" path="ActionManager" hit="Create External..." />
+    <option name="create" path="ActionManager" hit="Create External…" />
+    <option name="external" path="ActionManager" hit="Create External…" />
     <option name="edit" path="ActionManager" hit="Edit Properties" />
     <option name="properties" path="ActionManager" hit="Edit Properties" />
     <option name="comment" path="ActionManager" hit="Edit Revision Comment" />
@@ -43,21 +43,21 @@
     <option name="revision" path="ActionManager" hit="Edit revision comment. Previous message is rewritten." />
     <option name="rewritten" path="ActionManager" hit="Edit revision comment. Previous message is rewritten." />
     <option name="ignore" path="ActionManager" hit="Ignore" />
-    <option name="import" path="ActionManager" hit="Import into Subversion..." />
-    <option name="into" path="ActionManager" hit="Import into Subversion..." />
-    <option name="subversion" path="ActionManager" hit="Import into Subversion..." />
+    <option name="import" path="ActionManager" hit="Import into Subversion…" />
+    <option name="into" path="ActionManager" hit="Import into Subversion…" />
+    <option name="subversion" path="ActionManager" hit="Import into Subversion…" />
     <option name="branch" path="ActionManager" hit="Integrate to Branch" />
     <option name="integrate" path="ActionManager" hit="Integrate to Branch" />
     <option name="to" path="ActionManager" hit="Integrate to Branch" />
     <option name="files" path="ActionManager" hit="Lock files" />
     <option name="lock" path="ActionManager" hit="Lock files" />
-    <option name="lock" path="ActionManager" hit="Lock..." />
-    <option name="mark" path="ActionManager" hit="Mark Resolved..." />
-    <option name="resolved" path="ActionManager" hit="Mark Resolved..." />
-    <option name="conflict" path="ActionManager" hit="Mark Tree Conflict Resolved..." />
-    <option name="mark" path="ActionManager" hit="Mark Tree Conflict Resolved..." />
-    <option name="resolved" path="ActionManager" hit="Mark Tree Conflict Resolved..." />
-    <option name="tree" path="ActionManager" hit="Mark Tree Conflict Resolved..." />
+    <option name="lock" path="ActionManager" hit="Lock…" />
+    <option name="mark" path="ActionManager" hit="Mark Resolved…" />
+    <option name="resolved" path="ActionManager" hit="Mark Resolved…" />
+    <option name="conflict" path="ActionManager" hit="Mark Tree Conflict Resolved…" />
+    <option name="mark" path="ActionManager" hit="Mark Tree Conflict Resolved…" />
+    <option name="resolved" path="ActionManager" hit="Mark Tree Conflict Resolved…" />
+    <option name="tree" path="ActionManager" hit="Mark Tree Conflict Resolved…" />
     <option name="and" path="ActionManager" hit="Mark text and properties conflicts as resolved" />
     <option name="as" path="ActionManager" hit="Mark text and properties conflicts as resolved" />
     <option name="conflicts" path="ActionManager" hit="Mark text and properties conflicts as resolved" />
@@ -87,10 +87,10 @@
     <option name="to" path="ActionManager" hit="Relocate working copy to a different URL" />
     <option name="url" path="ActionManager" hit="Relocate working copy to a different URL" />
     <option name="working" path="ActionManager" hit="Relocate working copy to a different URL" />
-    <option name="relocate" path="ActionManager" hit="Relocate..." />
-    <option name="conflict" path="ActionManager" hit="Resolve Text Conflict..." />
-    <option name="resolve" path="ActionManager" hit="Resolve Text Conflict..." />
-    <option name="text" path="ActionManager" hit="Resolve Text Conflict..." />
+    <option name="relocate" path="ActionManager" hit="Relocate…" />
+    <option name="conflict" path="ActionManager" hit="Resolve Text Conflict…" />
+    <option name="resolve" path="ActionManager" hit="Resolve Text Conflict…" />
+    <option name="text" path="ActionManager" hit="Resolve Text Conflict…" />
     <option name="conflict" path="ActionManager" hit="Resolve text conflict on file" />
     <option name="file" path="ActionManager" hit="Resolve text conflict on file" />
     <option name="on" path="ActionManager" hit="Resolve text conflict on file" />
@@ -106,8 +106,8 @@
     <option name="select" path="ActionManager" hit="Select URL, add svn:external property, and optionally checkout it" />
     <option name="svn" path="ActionManager" hit="Select URL, add svn:external property, and optionally checkout it" />
     <option name="url" path="ActionManager" hit="Select URL, add svn:external property, and optionally checkout it" />
-    <option name="property" path="ActionManager" hit="Set Property..." />
-    <option name="set" path="ActionManager" hit="Set Property..." />
+    <option name="property" path="ActionManager" hit="Set Property…" />
+    <option name="set" path="ActionManager" hit="Set Property…" />
     <option name="directory" path="ActionManager" hit="Set versioned property on file or directory" />
     <option name="file" path="ActionManager" hit="Set versioned property on file or directory" />
     <option name="on" path="ActionManager" hit="Set versioned property on file or directory" />
@@ -115,11 +115,11 @@
     <option name="property" path="ActionManager" hit="Set versioned property on file or directory" />
     <option name="set" path="ActionManager" hit="Set versioned property on file or directory" />
     <option name="versioned" path="ActionManager" hit="Set versioned property on file or directory" />
-    <option name="directory" path="ActionManager" hit="Share Directory..." />
-    <option name="share" path="ActionManager" hit="Share Directory..." />
-    <option name="project" path="ActionManager" hit="Share Project (Subversion)..." />
-    <option name="share" path="ActionManager" hit="Share Project (Subversion)..." />
-    <option name="subversion" path="ActionManager" hit="Share Project (Subversion)..." />
+    <option name="directory" path="ActionManager" hit="Share Directory…" />
+    <option name="share" path="ActionManager" hit="Share Directory…" />
+    <option name="project" path="ActionManager" hit="Share Project (Subversion)…" />
+    <option name="share" path="ActionManager" hit="Share Project (Subversion)…" />
+    <option name="subversion" path="ActionManager" hit="Share Project (Subversion)…" />
     <option name="copies" path="ActionManager" hit="Show Working Copies" />
     <option name="show" path="ActionManager" hit="Show Working Copies" />
     <option name="working" path="ActionManager" hit="Show Working Copies" />
@@ -195,6 +195,10 @@
     <option name="enable" hit="Enable interactive mode" />
     <option name="interactive" hit="Enable interactive mode" />
     <option name="mode" hit="Enable interactive mode" />
+    <option name="executable" hit="Path to Subversion executable:" />
+    <option name="path" hit="Path to Subversion executable:" />
+    <option name="subversion" hit="Path to Subversion executable:" />
+    <option name="to" hit="Path to Subversion executable:" />
     <option name="subversion" hit="Subversion" />
     <option name="configuration" hit="Use custom configuration directory:" />
     <option name="custom" hit="Use custom configuration directory:" />
@@ -243,9 +247,9 @@
     <option name="runtime" hit="Edit 'servers' Subversion runtime configuration file" />
     <option name="servers" hit="Edit 'servers' Subversion runtime configuration file" />
     <option name="subversion" hit="Edit 'servers' Subversion runtime configuration file" />
-    <option name="edit" hit="Edit Network Options..." />
-    <option name="network" hit="Edit Network Options..." />
-    <option name="options" hit="Edit Network Options..." />
+    <option name="edit" hit="Edit Network Options " />
+    <option name="network" hit="Edit Network Options " />
+    <option name="options" hit="Edit Network Options " />
     <option name="http" hit="HTTP timeout:" />
     <option name="timeout" hit="HTTP timeout:" />
     <option name="general" hit="Navigate to general proxy settings" />

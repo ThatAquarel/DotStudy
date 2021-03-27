@@ -9,8 +9,6 @@
     <option name="export" path="ActionManager" hit="Export global settings" />
     <option name="global" path="ActionManager" hit="Export global settings" />
     <option name="settings" path="ActionManager" hit="Export global settings" />
-    <option name="import" path="ActionManager" hit="Import Settings" />
-    <option name="settings" path="ActionManager" hit="Import Settings" />
     <option name="import" path="ActionManager" hit="Import Settings..." />
     <option name="settings" path="ActionManager" hit="Import Settings..." />
     <option name="global" path="ActionManager" hit="Import global settings" />

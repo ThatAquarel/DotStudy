@@ -2,6 +2,8 @@
 <options>
   <configurable id="preferences.keymap" configurable_name="Keymap">
     <option name="" path="ActionManager" hit="" />
+    <option name="clear" path="ActionManager" hit="Clear Terminal" />
+    <option name="terminal" path="ActionManager" hit="Clear Terminal" />
     <option name="copy" path="ActionManager" hit="Copy" />
     <option name="clipboard" path="ActionManager" hit="Copy selected text to clipboard" />
     <option name="copy" path="ActionManager" hit="Copy selected text to clipboard" />
@@ -66,18 +68,18 @@
     <option name="ide" path="ActionManager" hit="Run highlighted command using IDE" />
     <option name="run" path="ActionManager" hit="Run highlighted command using IDE" />
     <option name="using" path="ActionManager" hit="Run highlighted command using IDE" />
-    <option name="horizontally" path="ActionManager" hit="Split Horizontally" />
-    <option name="split" path="ActionManager" hit="Split Horizontally" />
-    <option name="split" path="ActionManager" hit="Split Vertically" />
-    <option name="vertically" path="ActionManager" hit="Split Vertically" />
+    <option name="down" path="ActionManager" hit="Split Down" />
+    <option name="split" path="ActionManager" hit="Split Down" />
+    <option name="right" path="ActionManager" hit="Split Right" />
+    <option name="split" path="ActionManager" hit="Split Right" />
     <option name="editor" path="ActionManager" hit="Switch Focus To Editor" />
     <option name="focus" path="ActionManager" hit="Switch Focus To Editor" />
     <option name="switch" path="ActionManager" hit="Switch Focus To Editor" />
     <option name="to" path="ActionManager" hit="Switch Focus To Editor" />
   </configurable>
   <configurable id="terminal" configurable_name="Terminal">
-    <option name="application" hit="Application settings" />
-    <option name="settings" hit="Application settings" />
+    <option name="application" hit="Application Settings" />
+    <option name="settings" hit="Application Settings" />
     <option name="audible" hit="Audible bell" />
     <option name="bell" hit="Audible bell" />
     <option name="close" hit="Close session when it ends" />
@@ -93,8 +95,8 @@
     <option name="on" hit="Copy to clipboard on selection" />
     <option name="selection" hit="Copy to clipboard on selection" />
     <option name="to" hit="Copy to clipboard on selection" />
-    <option name="environment" hit="Environment Variables" />
-    <option name="variables" hit="Environment Variables" />
+    <option name="environment" hit="Environment variables:" />
+    <option name="variables" hit="Environment variables:" />
     <option name="highlight" hit="Highlight hyperlinks" />
     <option name="hyperlinks" hit="Highlight hyperlinks" />
     <option name="mouse" hit="Mouse reporting" />
@@ -108,20 +110,20 @@
     <option name="mouse" hit="Paste on middle mouse button click" />
     <option name="on" hit="Paste on middle mouse button click" />
     <option name="paste" hit="Paste on middle mouse button click" />
-    <option name="project" hit="Project settings" />
-    <option name="settings" hit="Project settings" />
+    <option name="project" hit="Project Settings" />
+    <option name="settings" hit="Project Settings" />
     <option name="commands" hit="Run Commands using IDE" />
     <option name="ide" hit="Run Commands using IDE" />
     <option name="run" hit="Run Commands using IDE" />
     <option name="using" hit="Run Commands using IDE" />
     <option name="integration" hit="Shell integration" />
     <option name="shell" hit="Shell integration" />
-    <option name="path" hit="Shell path" />
-    <option name="shell" hit="Shell path" />
-    <option name="directory" hit="Start directory" />
-    <option name="start" hit="Start directory" />
-    <option name="name" hit="Tab name" />
-    <option name="tab" hit="Tab name" />
+    <option name="path" hit="Shell path:" />
+    <option name="shell" hit="Shell path:" />
+    <option name="directory" hit="Start directory:" />
+    <option name="start" hit="Start directory:" />
+    <option name="name" hit="Tab name:" />
+    <option name="tab" hit="Tab name:" />
     <option name="terminal" hit="Terminal" />
   </configurable>
 </options>

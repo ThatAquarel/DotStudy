@@ -14,6 +14,9 @@
     <option name="for" path="ActionManager" hit="Check for new timeline events" />
     <option name="new" path="ActionManager" hit="Check for new timeline events" />
     <option name="timeline" path="ActionManager" hit="Check for new timeline events" />
+    <option name="branch" path="ActionManager" hit="Checkout Local Branch…" />
+    <option name="checkout" path="ActionManager" hit="Checkout Local Branch…" />
+    <option name="local" path="ActionManager" hit="Checkout Local Branch…" />
     <option name="branch" path="ActionManager" hit="Checkout pull request branch" />
     <option name="checkout" path="ActionManager" hit="Checkout pull request branch" />
     <option name="pull" path="ActionManager" hit="Checkout pull request branch" />
@@ -23,10 +26,6 @@
     <option name="create" path="ActionManager" hit="Create GitHub gist" />
     <option name="gist" path="ActionManager" hit="Create GitHub gist" />
     <option name="github" path="ActionManager" hit="Create GitHub gist" />
-    <option name="branch" path="ActionManager" hit="Create New Local Branch…" />
-    <option name="create" path="ActionManager" hit="Create New Local Branch…" />
-    <option name="local" path="ActionManager" hit="Create New Local Branch…" />
-    <option name="new" path="ActionManager" hit="Create New Local Branch…" />
     <option name="create" path="ActionManager" hit="Create Pull Request" />
     <option name="pull" path="ActionManager" hit="Create Pull Request" />
     <option name="request" path="ActionManager" hit="Create Pull Request" />
@@ -95,6 +94,18 @@
     <option name="on" path="ActionManager" hit="Share Project on GitHub" />
     <option name="project" path="ActionManager" hit="Share Project on GitHub" />
     <option name="share" path="ActionManager" hit="Share Project on GitHub" />
+    <option name="pull" path="ActionManager" hit="Submit pull request review" />
+    <option name="request" path="ActionManager" hit="Submit pull request review" />
+    <option name="review" path="ActionManager" hit="Submit pull request review" />
+    <option name="submit" path="ActionManager" hit="Submit pull request review" />
+    <option name="branch" path="ActionManager" hit="Update Local Branch…" />
+    <option name="local" path="ActionManager" hit="Update Local Branch…" />
+    <option name="update" path="ActionManager" hit="Update Local Branch…" />
+    <option name="branch" path="ActionManager" hit="Update pull request local branch" />
+    <option name="local" path="ActionManager" hit="Update pull request local branch" />
+    <option name="pull" path="ActionManager" hit="Update pull request local branch" />
+    <option name="request" path="ActionManager" hit="Update pull request local branch" />
+    <option name="update" path="ActionManager" hit="Update pull request local branch" />
     <option name="conversations" path="ActionManager" hit="View Conversations" />
     <option name="view" path="ActionManager" hit="View Conversations" />
     <option name="pull" path="ActionManager" hit="View Pull Request" />

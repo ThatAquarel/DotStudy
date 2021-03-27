@@ -50,9 +50,9 @@
     <option name="module" path="ActionManager" hit="Build Module" />
     <option name="build" path="ActionManager" hit="Build Project" />
     <option name="project" path="ActionManager" hit="Build Project" />
-    <option name="calculate" path="ActionManager" hit="Calculate Retained Size" />
-    <option name="retained" path="ActionManager" hit="Calculate Retained Size" />
-    <option name="size" path="ActionManager" hit="Calculate Retained Size" />
+    <option name="calculate" path="ActionManager" hit="Calculate Retained Size..." />
+    <option name="retained" path="ActionManager" hit="Calculate Retained Size..." />
+    <option name="size" path="ActionManager" hit="Calculate Retained Size..." />
     <option name="all" path="ActionManager" hit="Change type of the return type of the method, field, parameter, variable or class type arguments and correct all references" />
     <option name="and" path="ActionManager" hit="Change type of the return type of the method, field, parameter, variable or class type arguments and correct all references" />
     <option name="arguments" path="ActionManager" hit="Change type of the return type of the method, field, parameter, variable or class type arguments and correct all references" />
@@ -812,79 +812,6 @@
     <option name="package-info" path="ActionManager" hit="package-info.java" />
     <option name="tostring" path="ActionManager" hit="toString()" />
   </configurable>
-  <configurable id="editor.preferences.import" configurable_name="Auto Import">
-    <option name="" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      For current project   " />
-    <option name="589df6" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      For current project   " />
-    <option name="800080" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      For current project   " />
-    <option name="a" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      For current project   " />
-    <option name="active" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      For current project   " />
-    <option name="color" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      For current project   " />
-    <option name="current" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      For current project   " />
-    <option name="f00000" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      For current project   " />
-    <option name="for" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      For current project   " />
-    <option name="hover" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      For current project   " />
-    <option name="link" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      For current project   " />
-    <option name="project" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      For current project   " />
-    <option name="visited" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      For current project   " />
-    <option name="" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Use the * wildcard to exclude all members of a specified class or package   " />
-    <option name="589df6" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Use the * wildcard to exclude all members of a specified class or package   " />
-    <option name="800080" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Use the * wildcard to exclude all members of a specified class or package   " />
-    <option name="a" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Use the * wildcard to exclude all members of a specified class or package   " />
-    <option name="active" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Use the * wildcard to exclude all members of a specified class or package   " />
-    <option name="all" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Use the * wildcard to exclude all members of a specified class or package   " />
-    <option name="class" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Use the * wildcard to exclude all members of a specified class or package   " />
-    <option name="color" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Use the * wildcard to exclude all members of a specified class or package   " />
-    <option name="exclude" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Use the * wildcard to exclude all members of a specified class or package   " />
-    <option name="f00000" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Use the * wildcard to exclude all members of a specified class or package   " />
-    <option name="hover" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Use the * wildcard to exclude all members of a specified class or package   " />
-    <option name="link" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Use the * wildcard to exclude all members of a specified class or package   " />
-    <option name="members" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Use the * wildcard to exclude all members of a specified class or package   " />
-    <option name="of" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Use the * wildcard to exclude all members of a specified class or package   " />
-    <option name="or" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Use the * wildcard to exclude all members of a specified class or package   " />
-    <option name="package" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Use the * wildcard to exclude all members of a specified class or package   " />
-    <option name="specified" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Use the * wildcard to exclude all members of a specified class or package   " />
-    <option name="the" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Use the * wildcard to exclude all members of a specified class or package   " />
-    <option name="to" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Use the * wildcard to exclude all members of a specified class or package   " />
-    <option name="use" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Use the * wildcard to exclude all members of a specified class or package   " />
-    <option name="visited" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Use the * wildcard to exclude all members of a specified class or package   " />
-    <option name="wildcard" hit="    a, a:link {color:#589df6;} a:visited {color:#800080;} a:hover {color:#589df6;} a:active {color:#f00000;}      Use the * wildcard to exclude all members of a specified class or package   " />
-    <option name="" hit=" Classes" />
-    <option name="classes" hit=" Classes" />
-    <option name="" hit=" Insert imports on paste:" />
-    <option name="imports" hit=" Insert imports on paste:" />
-    <option name="insert" hit=" Insert imports on paste:" />
-    <option name="on" hit=" Insert imports on paste:" />
-    <option name="paste" hit=" Insert imports on paste:" />
-    <option name="" hit=" Static methods and fields" />
-    <option name="and" hit=" Static methods and fields" />
-    <option name="fields" hit=" Static methods and fields" />
-    <option name="methods" hit=" Static methods and fields" />
-    <option name="static" hit=" Static methods and fields" />
-    <option name="add" hit="Add unambiguous imports on the fly" />
-    <option name="fly" hit="Add unambiguous imports on the fly" />
-    <option name="imports" hit="Add unambiguous imports on the fly" />
-    <option name="on" hit="Add unambiguous imports on the fly" />
-    <option name="the" hit="Add unambiguous imports on the fly" />
-    <option name="unambiguous" hit="Add unambiguous imports on the fly" />
-    <option name="always" hit="Always" />
-    <option name="ask" hit="Ask" />
-    <option name="and" hit="Exclude from auto-import and completion:" />
-    <option name="auto-import" hit="Exclude from auto-import and completion:" />
-    <option name="completion" hit="Exclude from auto-import and completion:" />
-    <option name="exclude" hit="Exclude from auto-import and completion:" />
-    <option name="from" hit="Exclude from auto-import and completion:" />
-    <option name="java" hit="Java" />
-    <option name="never" hit="Never" />
-    <option name="fly" hit="Optimize imports on the fly" />
-    <option name="imports" hit="Optimize imports on the fly" />
-    <option name="on" hit="Optimize imports on the fly" />
-    <option name="optimize" hit="Optimize imports on the fly" />
-    <option name="the" hit="Optimize imports on the fly" />
-    <option name="for" hit="Show import popup for:" />
-    <option name="import" hit="Show import popup for:" />
-    <option name="popup" hit="Show import popup for:" />
-    <option name="show" hit="Show import popup for:" />
-  </configurable>
   <configurable id="editor.breadcrumbs" configurable_name="Breadcrumbs">
     <option name="java" hit="Java" />
   </configurable>
@@ -1105,9 +1032,254 @@
     <option name="variable" hit="Variables//Reassigned local variable" />
     <option name="variables" hit="Variables//Reassigned local variable" />
   </configurable>
+  <configurable id="project.propDebugger" configurable_name="Debugger">
+    <option name="agent" hit="Attach memory agent" />
+    <option name="attach" hit="Attach memory agent" />
+    <option name="memory" hit="Attach memory agent" />
+    <option name="disable" hit="Disable JIT" />
+    <option name="jit" hit="Disable JIT" />
+    <option name="1" hit="Force Classic VM for JDK 1.3.x and earlier" />
+    <option name="3" hit="Force Classic VM for JDK 1.3.x and earlier" />
+    <option name="and" hit="Force Classic VM for JDK 1.3.x and earlier" />
+    <option name="class" hit="Force Classic VM for JDK 1.3.x and earlier" />
+    <option name="earlier" hit="Force Classic VM for JDK 1.3.x and earlier" />
+    <option name="for" hit="Force Classic VM for JDK 1.3.x and earlier" />
+    <option name="force" hit="Force Classic VM for JDK 1.3.x and earlier" />
+    <option name="ic" hit="Force Classic VM for JDK 1.3.x and earlier" />
+    <option name="jdk" hit="Force Classic VM for JDK 1.3.x and earlier" />
+    <option name="vm" hit="Force Classic VM for JDK 1.3.x and earlier" />
+    <option name="x" hit="Force Classic VM for JDK 1.3.x and earlier" />
+    <option name="java" hit="Java" />
+    <option name="debug" hit="Kill the debug process immediately" />
+    <option name="immediately" hit="Kill the debug process immediately" />
+    <option name="kill" hit="Kill the debug process immediately" />
+    <option name="process" hit="Kill the debug process immediately" />
+    <option name="the" hit="Kill the debug process immediately" />
+    <option name="memory" hit="Shared memory" />
+    <option name="shared" hit="Shared memory" />
+    <option name="alternative" hit="Show alternative source switcher" />
+    <option name="show" hit="Show alternative source switcher" />
+    <option name="source" hit="Show alternative source switcher" />
+    <option name="switcher" hit="Show alternative source switcher" />
+    <option name="" hit="Socket" />
+    <option name="socket" hit="Socket" />
+    <option name="transport" hit="Transport:" />
+  </configurable>
+  <configurable id="Debugger_Data_Views_Java" configurable_name="Java">
+    <option name="" hit="$val fields as local variables" />
+    <option name="as" hit="$val fields as local variables" />
+    <option name="fields" hit="$val fields as local variables" />
+    <option name="local" hit="$val fields as local variables" />
+    <option name="val" hit="$val fields as local variables" />
+    <option name="variables" hit="$val fields as local variables" />
+    <option name="auto" hit="Auto populate Throwable object's stack trace" />
+    <option name="object" hit="Auto populate Throwable object's stack trace" />
+    <option name="populate" hit="Auto populate Throwable object's stack trace" />
+    <option name="s" hit="Auto populate Throwable object's stack trace" />
+    <option name="stack" hit="Auto populate Throwable object's stack trace" />
+    <option name="throwable" hit="Auto populate Throwable object's stack trace" />
+    <option name="trace" hit="Auto populate Throwable object's stack trace" />
+    <option name="autoscroll" hit="Autoscroll to new local variables" />
+    <option name="local" hit="Autoscroll to new local variables" />
+    <option name="new" hit="Autoscroll to new local variables" />
+    <option name="to" hit="Autoscroll to new local variables" />
+    <option name="variables" hit="Autoscroll to new local variables" />
+    <option name="declared" hit="Declared type" />
+    <option name="type" hit="Declared type" />
+    <option name="enable" hit="Enable 'toString()' object view:" />
+    <option name="object" hit="Enable 'toString()' object view:" />
+    <option name="ostring" hit="Enable 'toString()' object view:" />
+    <option name="t" hit="Enable 'toString()' object view:" />
+    <option name="view" hit="Enable 'toString()' object view:" />
+    <option name="alternative" hit="Enable alternative view for Collections classes" />
+    <option name="classes" hit="Enable alternative view for Collections classes" />
+    <option name="coll" hit="Enable alternative view for Collections classes" />
+    <option name="ections" hit="Enable alternative view for Collections classes" />
+    <option name="enable" hit="Enable alternative view for Collections classes" />
+    <option name="for" hit="Enable alternative view for Collections classes" />
+    <option name="view" hit="Enable alternative view for Collections classes" />
+    <option name="all" hit="For all classes that override 'toString()' method" />
+    <option name="classes" hit="For all classes that override 'toString()' method" />
+    <option name="for" hit="For all classes that override 'toString()' method" />
+    <option name="method" hit="For all classes that override 'toString()' method" />
+    <option name="override" hit="For all classes that override 'toString()' method" />
+    <option name="that" hit="For all classes that override 'toString()' method" />
+    <option name="tostring" hit="For all classes that override 'toString()' method" />
+    <option name="classes" hit="For classes from the list:" />
+    <option name="for" hit="For classes from the list:" />
+    <option name="from" hit="For classes from the list:" />
+    <option name="list" hit="For classes from the list:" />
+    <option name="the" hit="For classes from the list:" />
+    <option name="fully" hit="Fully qualified names" />
+    <option name="names" hit="Fully qualified names" />
+    <option name="qualified" hit="Fully qualified names" />
+    <option name="and" hit="Hide null elements in arrays and collections" />
+    <option name="arrays" hit="Hide null elements in arrays and collections" />
+    <option name="collections" hit="Hide null elements in arrays and collections" />
+    <option name="elements" hit="Hide null elements in arrays and collections" />
+    <option name="hide" hit="Hide null elements in arrays and collections" />
+    <option name="in" hit="Hide null elements in arrays and collections" />
+    <option name="null" hit="Hide null elements in arrays and collections" />
+    <option name="java" hit="Java" />
+    <option name="id" hit="Object id" />
+    <option name="object" hit="Object id" />
+    <option name="analysis" hit="Predict condition values and exceptions based on data flow analysis" />
+    <option name="and" hit="Predict condition values and exceptions based on data flow analysis" />
+    <option name="based" hit="Predict condition values and exceptions based on data flow analysis" />
+    <option name="condition" hit="Predict condition values and exceptions based on data flow analysis" />
+    <option name="data" hit="Predict condition values and exceptions based on data flow analysis" />
+    <option name="exceptions" hit="Predict condition values and exceptions based on data flow analysis" />
+    <option name="flow" hit="Predict condition values and exceptions based on data flow analysis" />
+    <option name="on" hit="Predict condition values and exceptions based on data flow analysis" />
+    <option name="predict" hit="Predict condition values and exceptions based on data flow analysis" />
+    <option name="values" hit="Predict condition values and exceptions based on data flow analysis" />
+    <option name="show" hit="Show" />
+    <option name="for" hit="Show hex value for primitives" />
+    <option name="hex" hit="Show hex value for primitives" />
+    <option name="primitives" hit="Show hex value for primitives" />
+    <option name="show" hit="Show hex value for primitives" />
+    <option name="value" hit="Show hex value for primitives" />
+    <option name="for" hit="Show type for strings" />
+    <option name="show" hit="Show type for strings" />
+    <option name="strings" hit="Show type for strings" />
+    <option name="type" hit="Show type for strings" />
+    <option name="" hit="Static fields" />
+    <option name="fields" hit="Static fields" />
+    <option name="static" hit="Static fields" />
+    <option name="fields" hit="Static final fields" />
+    <option name="final" hit="Static final fields" />
+    <option name="static" hit="Static final fields" />
+    <option name="fields" hit="Synthetic fields" />
+    <option name="s" hit="Synthetic fields" />
+    <option name="ynthetic" hit="Synthetic fields" />
+  </configurable>
+  <configurable id="reference.idesettings.debugger.typerenderers" configurable_name="Java Type Renderers">
+    <option name="append" hit="Append default children" />
+    <option name="children" hit="Append default children" />
+    <option name="default" hit="Append default children" />
+    <option name="apply" hit="Apply renderer to objects of type (fully-qualified name):" />
+    <option name="fully-qualified" hit="Apply renderer to objects of type (fully-qualified name):" />
+    <option name="name" hit="Apply renderer to objects of type (fully-qualified name):" />
+    <option name="objects" hit="Apply renderer to objects of type (fully-qualified name):" />
+    <option name="of" hit="Apply renderer to objects of type (fully-qualified name):" />
+    <option name="renderer" hit="Apply renderer to objects of type (fully-qualified name):" />
+    <option name="to" hit="Apply renderer to objects of type (fully-qualified name):" />
+    <option name="type" hit="Apply renderer to objects of type (fully-qualified name):" />
+    <option name="java" hit="Java" />
+    <option name="java" hit="Java Type Renderers" />
+    <option name="renderers" hit="Java Type Renderers" />
+    <option name="type" hit="Java Type Renderers" />
+    <option name="on-demand" hit="On-demand" />
+    <option name="name" hit="Renderer name:" />
+    <option name="renderer" hit="Renderer name:" />
+    <option name="and" hit="Show type and object id" />
+    <option name="id" hit="Show type and object id" />
+    <option name="object" hit="Show type and object id" />
+    <option name="show" hit="Show type and object id" />
+    <option name="type" hit="Show type and object id" />
+    <option name="a" hit="Test if a node can be expanded (optional):" />
+    <option name="be" hit="Test if a node can be expanded (optional):" />
+    <option name="can" hit="Test if a node can be expanded (optional):" />
+    <option name="expanded" hit="Test if a node can be expanded (optional):" />
+    <option name="if" hit="Test if a node can be expanded (optional):" />
+    <option name="node" hit="Test if a node can be expanded (optional):" />
+    <option name="optional" hit="Test if a node can be expanded (optional):" />
+    <option name="test" hit="Test if a node can be expanded (optional):" />
+    <option name="default" hit="Use default renderer" />
+    <option name="renderer" hit="Use default renderer" />
+    <option name="use" hit="Use default renderer" />
+    <option name="expression" hit="Use following expression:" />
+    <option name="following" hit="Use following expression:" />
+    <option name="use" hit="Use following expression:" />
+    <option name="expressions" hit="Use list of expressions:" />
+    <option name="list" hit="Use list of expressions:" />
+    <option name="of" hit="Use list of expressions:" />
+    <option name="use" hit="Use list of expressions:" />
+    <option name="a" hit="When expanding a node" />
+    <option name="expanding" hit="When expanding a node" />
+    <option name="node" hit="When expanding a node" />
+    <option name="when" hit="When expanding a node" />
+    <option name="a" hit="When rendering a node" />
+    <option name="node" hit="When rendering a node" />
+    <option name="rendering" hit="When rendering a node" />
+    <option name="when" hit="When rendering a node" />
+  </configurable>
+  <configurable id="debugger.stepping" configurable_name="Stepping">
+    <option name="" hit="Always" />
+    <option name="always" hit="Always" />
+    <option name="a" hit="Always do smart step into" />
+    <option name="do" hit="Always do smart step into" />
+    <option name="into" hit="Always do smart step into" />
+    <option name="lways" hit="Always do smart step into" />
+    <option name="smart" hit="Always do smart step into" />
+    <option name="step" hit="Always do smart step into" />
+    <option name="as" hit="Ask" />
+    <option name="k" hit="Ask" />
+    <option name="classes" hit="Do not step into the classes" />
+    <option name="do" hit="Do not step into the classes" />
+    <option name="into" hit="Do not step into the classes" />
+    <option name="not" hit="Do not step into the classes" />
+    <option name="step" hit="Do not step into the classes" />
+    <option name="the" hit="Do not step into the classes" />
+    <option name="and" hit="Evaluate finally blocks on pop frame and early return:" />
+    <option name="blocks" hit="Evaluate finally blocks on pop frame and early return:" />
+    <option name="early" hit="Evaluate finally blocks on pop frame and early return:" />
+    <option name="evaluate" hit="Evaluate finally blocks on pop frame and early return:" />
+    <option name="finally" hit="Evaluate finally blocks on pop frame and early return:" />
+    <option name="frame" hit="Evaluate finally blocks on pop frame and early return:" />
+    <option name="on" hit="Evaluate finally blocks on pop frame and early return:" />
+    <option name="pop" hit="Evaluate finally blocks on pop frame and early return:" />
+    <option name="return" hit="Evaluate finally blocks on pop frame and early return:" />
+    <option name="java" hit="Java" />
+    <option name="ever" hit="Never" />
+    <option name="n" hit="Never" />
+    <option name="current" hit="Resume only the current thread" />
+    <option name="only" hit="Resume only the current thread" />
+    <option name="resume" hit="Resume only the current thread" />
+    <option name="the" hit="Resume only the current thread" />
+    <option name="thread" hit="Resume only the current thread" />
+    <option name="class" hit="Skip class loaders" />
+    <option name="l" hit="Skip class loaders" />
+    <option name="oaders" hit="Skip class loaders" />
+    <option name="skip" hit="Skip class loaders" />
+    <option name="constructors" hit="Skip constructors" />
+    <option name="skip" hit="Skip constructors" />
+    <option name="getters" hit="Skip simple getters" />
+    <option name="simple" hit="Skip simple getters" />
+    <option name="skip" hit="Skip simple getters" />
+    <option name="methods" hit="Skip synthetic methods" />
+    <option name="p" hit="Skip synthetic methods" />
+    <option name="ski" hit="Skip synthetic methods" />
+    <option name="synthetic" hit="Skip synthetic methods" />
+  </configurable>
+  <configurable id="debugger.hotswap" configurable_name="HotSwap">
+    <option name="" hit="Always" />
+    <option name="always" hit="Always" />
+    <option name="as" hit="Ask" />
+    <option name="k" hit="Ask" />
+    <option name="before" hit="Build project before reloading classes" />
+    <option name="build" hit="Build project before reloading classes" />
+    <option name="classes" hit="Build project before reloading classes" />
+    <option name="project" hit="Build project before reloading classes" />
+    <option name="reloading" hit="Build project before reloading classes" />
+    <option name="enable" hit="Enable 'JVM will hang' warning" />
+    <option name="hang" hit="Enable 'JVM will hang' warning" />
+    <option name="jvm" hit="Enable 'JVM will hang' warning" />
+    <option name="warning" hit="Enable 'JVM will hang' warning" />
+    <option name="will" hit="Enable 'JVM will hang' warning" />
+    <option name="java" hit="Java" />
+    <option name="" hit="Never" />
+    <option name="never" hit="Never" />
+    <option name="after" hit="Reload classes after compilation:" />
+    <option name="classes" hit="Reload classes after compilation:" />
+    <option name="compilation" hit="Reload classes after compilation:" />
+    <option name="reload" hit="Reload classes after compilation:" />
+    <option name="background" hit="Reload classes in background" />
+    <option name="classes" hit="Reload classes in background" />
+    <option name="in" hit="Reload classes in background" />
+    <option name="reload" hit="Reload classes in background" />
+  </configurable>
   <configurable id="preferences.sourceCode.Java" configurable_name="Java">
-    <option name="" path="Code Generation" hit=" Escalate" />
-    <option name="escalate" path="Code Generation" hit=" Escalate" />
     <option name="absolute" path="Tabs and Indents" hit="Absolute label indent" />
     <option name="indent" path="Tabs and Indents" hit="Absolute label indent" />
     <option name="label" path="Tabs and Indents" hit="Absolute label indent" />
@@ -1198,6 +1370,8 @@
     <option name="enable" path="JavaDoc" hit="Enable JavaDoc formatting" />
     <option name="formatting" path="JavaDoc" hit="Enable JavaDoc formatting" />
     <option name="javadoc" path="JavaDoc" hit="Enable JavaDoc formatting" />
+    <option name="" path="Code Generation" hit="Escalate" />
+    <option name="escalate" path="Code Generation" hit="Escalate" />
     <option name="field" path="Code Generation" hit="Field:" />
     <option name="final" path="Code Generation" hit="Final Modifier" />
     <option name="modifier" path="Code Generation" hit="Final Modifier" />
@@ -1226,15 +1400,15 @@
     <option name="insert" path="Imports" hit="Insert imports for inner classes" />
     <option name="java" hit="Java" />
     <option name="javadoc" path="JavaDoc" hit="JavaDoc" />
-    <option name="blank" path="Blank Lines" hit="Keep Maximum Blank Lines" />
-    <option name="keep" path="Blank Lines" hit="Keep Maximum Blank Lines" />
-    <option name="lines" path="Blank Lines" hit="Keep Maximum Blank Lines" />
-    <option name="maximum" path="Blank Lines" hit="Keep Maximum Blank Lines" />
     <option name="empty" path="Tabs and Indents" hit="Keep indents on empty lines" />
     <option name="indents" path="Tabs and Indents" hit="Keep indents on empty lines" />
     <option name="keep" path="Tabs and Indents" hit="Keep indents on empty lines" />
     <option name="lines" path="Tabs and Indents" hit="Keep indents on empty lines" />
     <option name="on" path="Tabs and Indents" hit="Keep indents on empty lines" />
+    <option name="blank" path="Blank Lines" hit="Keep maximum blank lines" />
+    <option name="keep" path="Blank Lines" hit="Keep maximum blank lines" />
+    <option name="lines" path="Blank Lines" hit="Keep maximum blank lines" />
+    <option name="maximum" path="Blank Lines" hit="Keep maximum blank lines" />
     <option name="indent" path="Tabs and Indents" hit="Label indent:" />
     <option name="label" path="Tabs and Indents" hit="Label indent:" />
     <option name="body" path="Code Generation" hit="Lambda Body" />
@@ -1262,9 +1436,9 @@
     <option name="parameters" path="Code Generation" hit="Make generated parameters final" />
     <option name="matching" path="Arrangement" hit="Matching rules:" />
     <option name="rules" path="Arrangement" hit="Matching rules:" />
-    <option name="blank" path="Blank Lines" hit="Minimum Blank Lines" />
-    <option name="lines" path="Blank Lines" hit="Minimum Blank Lines" />
-    <option name="minimum" path="Blank Lines" hit="Minimum Blank Lines" />
+    <option name="blank" path="Blank Lines" hit="Minimum blank lines" />
+    <option name="lines" path="Blank Lines" hit="Minimum blank lines" />
+    <option name="minimum" path="Blank Lines" hit="Minimum blank lines" />
     <option name="name" path="Code Generation" hit="Name prefix:" />
     <option name="prefix" path="Code Generation" hit="Name prefix:" />
     <option name="name" path="Code Generation" hit="Name suffix:" />
@@ -1287,19 +1461,19 @@
     <option name="method" path="Code Generation" hit="Override Method Signature" />
     <option name="override" path="Code Generation" hit="Override Method Signature" />
     <option name="signature" path="Code Generation" hit="Override Method Signature" />
-    <option name="kage" path="Code Generation" hit="Pac kage local" />
-    <option name="local" path="Code Generation" hit="Pac kage local" />
-    <option name="pac" path="Code Generation" hit="Pac kage local" />
+    <option name="kage" path="Code Generation" hit="Package local" />
+    <option name="local" path="Code Generation" hit="Package local" />
+    <option name="pac" path="Code Generation" hit="Package local" />
     <option name="parameter" path="Code Generation" hit="Parameter:" />
-    <option name="otected" path="Code Generation" hit="Pr otected" />
-    <option name="pr" path="Code Generation" hit="Pr otected" />
     <option name="longer" path="Code Generation" hit="Prefer longer names" />
     <option name="names" path="Code Generation" hit="Prefer longer names" />
     <option name="prefer" path="Code Generation" hit="Prefer longer names" />
-    <option name="pri" path="Code Generation" hit="Pri vate" />
-    <option name="vate" path="Code Generation" hit="Pri vate" />
-    <option name="blic" path="Code Generation" hit="Pu blic" />
-    <option name="pu" path="Code Generation" hit="Pu blic" />
+    <option name="pri" path="Code Generation" hit="Private" />
+    <option name="vate" path="Code Generation" hit="Private" />
+    <option name="otected" path="Code Generation" hit="Protected" />
+    <option name="pr" path="Code Generation" hit="Protected" />
+    <option name="blic" path="Code Generation" hit="Public" />
+    <option name="pu" path="Code Generation" hit="Public" />
     <option name="modifier" path="Code Generation" hit="Repeat synchronized modifier" />
     <option name="repeat" path="Code Generation" hit="Repeat synchronized modifier" />
     <option name="synchronized" path="Code Generation" hit="Repeat synchronized modifier" />
@@ -1568,8 +1742,8 @@
     <option name="parameters" path="Wrapping and Braces" hit="Annotation parameters" />
     <option name="annotation" path="Spaces" hit="Annotation parentheses" />
     <option name="parentheses" path="Spaces" hit="Annotation parentheses" />
-    <option name="around" path="Spaces" hit="Around Operators" />
-    <option name="operators" path="Spaces" hit="Around Operators" />
+    <option name="around" path="Spaces" hit="Around operators" />
+    <option name="operators" path="Spaces" hit="Around operators" />
     <option name="around" path="Spaces" hit="Around type bounds" />
     <option name="bounds" path="Spaces" hit="Around type bounds" />
     <option name="type" path="Spaces" hit="Around type bounds" />
@@ -1598,23 +1772,23 @@
     <option name="before" path="Spaces" hit="Before 'for' semicolon" />
     <option name="for" path="Spaces" hit="Before 'for' semicolon" />
     <option name="semicolon" path="Spaces" hit="Before 'for' semicolon" />
-    <option name="before" path="Spaces" hit="Before Keywords" />
-    <option name="keywords" path="Spaces" hit="Before Keywords" />
-    <option name="before" path="Spaces" hit="Before Left Brace" />
-    <option name="brace" path="Spaces" hit="Before Left Brace" />
-    <option name="left" path="Spaces" hit="Before Left Brace" />
-    <option name="before" path="Spaces" hit="Before Parentheses" />
-    <option name="parentheses" path="Spaces" hit="Before Parentheses" />
     <option name="before" path="Spaces" hit="Before colon in foreach" />
     <option name="colon" path="Spaces" hit="Before colon in foreach" />
     <option name="foreach" path="Spaces" hit="Before colon in foreach" />
     <option name="in" path="Spaces" hit="Before colon in foreach" />
     <option name="before" path="Spaces" hit="Before comma" />
     <option name="comma" path="Spaces" hit="Before comma" />
+    <option name="before" path="Spaces" hit="Before keywords" />
+    <option name="keywords" path="Spaces" hit="Before keywords" />
+    <option name="before" path="Spaces" hit="Before left brace" />
+    <option name="brace" path="Spaces" hit="Before left brace" />
+    <option name="left" path="Spaces" hit="Before left brace" />
     <option name="angle" path="Spaces" hit="Before opening angle bracket" />
     <option name="before" path="Spaces" hit="Before opening angle bracket" />
     <option name="bracket" path="Spaces" hit="Before opening angle bracket" />
     <option name="opening" path="Spaces" hit="Before opening angle bracket" />
+    <option name="before" path="Spaces" hit="Before parentheses" />
+    <option name="parentheses" path="Spaces" hit="Before parentheses" />
     <option name="binary" path="Wrapping and Braces" hit="Binary expressions" />
     <option name="expressions" path="Wrapping and Braces" hit="Binary expressions" />
     <option name="bitwise" path="Spaces" hit="Bitwise operators (&amp;, |, ^)" />
@@ -1709,9 +1883,6 @@
     <option name="at" path="Wrapping and Braces" hit="Hard wrap at" />
     <option name="hard" path="Wrapping and Braces" hit="Hard wrap at" />
     <option name="wrap" path="Wrapping and Braces" hit="Hard wrap at" />
-    <option name="in" path="Spaces" hit="In Ternary Operator (?:)" />
-    <option name="operator" path="Spaces" hit="In Ternary Operator (?:)" />
-    <option name="ternary" path="Spaces" hit="In Ternary Operator (?:)" />
     <option name="class" path="Wrapping and Braces" hit="In class declaration" />
     <option name="declaration" path="Wrapping and Braces" hit="In class declaration" />
     <option name="in" path="Wrapping and Braces" hit="In class declaration" />
@@ -1721,6 +1892,9 @@
     <option name="declaration" path="Wrapping and Braces" hit="In method declaration" />
     <option name="in" path="Wrapping and Braces" hit="In method declaration" />
     <option name="method" path="Wrapping and Braces" hit="In method declaration" />
+    <option name="in" path="Spaces" hit="In ternary operator (?:)" />
+    <option name="operator" path="Spaces" hit="In ternary operator (?:)" />
+    <option name="ternary" path="Spaces" hit="In ternary operator (?:)" />
     <option name="break" path="Wrapping and Braces" hit="Indent 'break' from 'case'" />
     <option name="case" path="Wrapping and Braces" hit="Indent 'break' from 'case'" />
     <option name="from" path="Wrapping and Braces" hit="Indent 'break' from 'case'" />
@@ -1832,6 +2006,8 @@
     <option name="preserve" path="JavaDoc" hit="Preserve line feeds" />
     <option name="components" path="Wrapping and Braces" hit="Record components" />
     <option name="record" path="Wrapping and Braces" hit="Record components" />
+    <option name="header" path="Spaces" hit="Record header" />
+    <option name="record" path="Spaces" hit="Record header" />
     <option name="operators" path="Spaces" hit="Relational operators (&lt;, &gt;, &lt;=, &gt;=)" />
     <option name="relational" path="Spaces" hit="Relational operators (&lt;, &gt;, &lt;=, &gt;=)" />
     <option name="operators" path="Spaces" hit="Shift operators (&lt;&lt;, &gt;&gt;, &gt;&gt;&gt;)" />
@@ -1874,13 +2050,13 @@
     <option name="throws" path="Wrapping and Braces" hit="Throws keyword" />
     <option name="list" path="Wrapping and Braces" hit="Throws list" />
     <option name="throws" path="Wrapping and Braces" hit="Throws list" />
-    <option name="arguments" path="Spaces" hit="Type Arguments" />
-    <option name="type" path="Spaces" hit="Type Arguments" />
-    <option name="parameters" path="Spaces" hit="Type Parameters" />
-    <option name="type" path="Spaces" hit="Type Parameters" />
+    <option name="arguments" path="Spaces" hit="Type arguments" />
+    <option name="type" path="Spaces" hit="Type arguments" />
     <option name="cast" path="Spaces" hit="Type cast parentheses" />
     <option name="parentheses" path="Spaces" hit="Type cast parentheses" />
     <option name="type" path="Spaces" hit="Type cast parentheses" />
+    <option name="parameters" path="Spaces" hit="Type parameters" />
+    <option name="type" path="Spaces" hit="Type parameters" />
     <option name="-" path="Spaces" hit="Unary operators (!, -, +, ++, --)" />
     <option name="--" path="Spaces" hit="Unary operators (!, -, +, ++, --)" />
     <option name="operators" path="Spaces" hit="Unary operators (!, -, +, ++, --)" />
@@ -1907,6 +2083,62 @@
     <option name="on" path="Wrapping and Braces" hit="Wrap on typing" />
     <option name="typing" path="Wrapping and Braces" hit="Wrap on typing" />
     <option name="wrap" path="Wrapping and Braces" hit="Wrap on typing" />
+  </configurable>
+  <configurable id="editor.preferences.import" configurable_name="Auto Import">
+    <option name="" hit="   For current project   " />
+    <option name="current" hit="   For current project   " />
+    <option name="for" hit="   For current project   " />
+    <option name="project" hit="   For current project   " />
+    <option name="" hit="   Use the * wildcard to exclude all members of a specified class or package   " />
+    <option name="a" hit="   Use the * wildcard to exclude all members of a specified class or package   " />
+    <option name="all" hit="   Use the * wildcard to exclude all members of a specified class or package   " />
+    <option name="class" hit="   Use the * wildcard to exclude all members of a specified class or package   " />
+    <option name="exclude" hit="   Use the * wildcard to exclude all members of a specified class or package   " />
+    <option name="members" hit="   Use the * wildcard to exclude all members of a specified class or package   " />
+    <option name="of" hit="   Use the * wildcard to exclude all members of a specified class or package   " />
+    <option name="or" hit="   Use the * wildcard to exclude all members of a specified class or package   " />
+    <option name="package" hit="   Use the * wildcard to exclude all members of a specified class or package   " />
+    <option name="specified" hit="   Use the * wildcard to exclude all members of a specified class or package   " />
+    <option name="the" hit="   Use the * wildcard to exclude all members of a specified class or package   " />
+    <option name="to" hit="   Use the * wildcard to exclude all members of a specified class or package   " />
+    <option name="use" hit="   Use the * wildcard to exclude all members of a specified class or package   " />
+    <option name="wildcard" hit="   Use the * wildcard to exclude all members of a specified class or package   " />
+    <option name="add" hit="Add unambiguous imports on the fly" />
+    <option name="fly" hit="Add unambiguous imports on the fly" />
+    <option name="imports" hit="Add unambiguous imports on the fly" />
+    <option name="on" hit="Add unambiguous imports on the fly" />
+    <option name="the" hit="Add unambiguous imports on the fly" />
+    <option name="unambiguous" hit="Add unambiguous imports on the fly" />
+    <option name="always" hit="Always" />
+    <option name="ask" hit="Ask" />
+    <option name="" hit="Classes" />
+    <option name="classes" hit="Classes" />
+    <option name="and" hit="Exclude from auto-import and completion:" />
+    <option name="auto-import" hit="Exclude from auto-import and completion:" />
+    <option name="completion" hit="Exclude from auto-import and completion:" />
+    <option name="exclude" hit="Exclude from auto-import and completion:" />
+    <option name="from" hit="Exclude from auto-import and completion:" />
+    <option name="" hit="Insert imports on paste:" />
+    <option name="imports" hit="Insert imports on paste:" />
+    <option name="insert" hit="Insert imports on paste:" />
+    <option name="on" hit="Insert imports on paste:" />
+    <option name="paste" hit="Insert imports on paste:" />
+    <option name="java" hit="Java" />
+    <option name="never" hit="Never" />
+    <option name="fly" hit="Optimize imports on the fly" />
+    <option name="imports" hit="Optimize imports on the fly" />
+    <option name="on" hit="Optimize imports on the fly" />
+    <option name="optimize" hit="Optimize imports on the fly" />
+    <option name="the" hit="Optimize imports on the fly" />
+    <option name="for" hit="Show import popup for:" />
+    <option name="import" hit="Show import popup for:" />
+    <option name="popup" hit="Show import popup for:" />
+    <option name="show" hit="Show import popup for:" />
+    <option name="" hit="Static methods and fields" />
+    <option name="and" hit="Static methods and fields" />
+    <option name="fields" hit="Static methods and fields" />
+    <option name="methods" hit="Static methods and fields" />
+    <option name="static" hit="Static methods and fields" />
   </configurable>
   <configurable id="copyright.filetypes.JAVA" configurable_name="Java">
     <option name="add" hit="Add blank line after" />
@@ -2090,11 +2322,6 @@
     <option name="first" hit="Automatically show first error in editor" />
     <option name="in" hit="Automatically show first error in editor" />
     <option name="show" hit="Automatically show first error in editor" />
-    <option name="build" hit="Build process heap size (Mbytes):" />
-    <option name="heap" hit="Build process heap size (Mbytes):" />
-    <option name="mbytes" hit="Build process heap size (Mbytes):" />
-    <option name="process" hit="Build process heap size (Mbytes):" />
-    <option name="size" hit="Build process heap size (Mbytes):" />
     <option name="automatically" hit="Build project automatically" />
     <option name="build" hit="Build project automatically" />
     <option name="project" hit="Build project automatically" />
@@ -2128,6 +2355,12 @@
     <option name="process" hit="Shared build process VM options:" />
     <option name="shared" hit="Shared build process VM options:" />
     <option name="vm" hit="Shared build process VM options:" />
+    <option name="build" hit="Shared build process heap size (Mbytes):" />
+    <option name="heap" hit="Shared build process heap size (Mbytes):" />
+    <option name="mbytes" hit="Shared build process heap size (Mbytes):" />
+    <option name="process" hit="Shared build process heap size (Mbytes):" />
+    <option name="shared" hit="Shared build process heap size (Mbytes):" />
+    <option name="size" hit="Shared build process heap size (Mbytes):" />
     <option name="build" hit="User-local build process VM options (overrides Shared options):" />
     <option name="options" hit="User-local build process VM options (overrides Shared options):" />
     <option name="overrides" hit="User-local build process VM options (overrides Shared options):" />
@@ -2135,6 +2368,14 @@
     <option name="shared" hit="User-local build process VM options (overrides Shared options):" />
     <option name="user-local" hit="User-local build process VM options (overrides Shared options):" />
     <option name="vm" hit="User-local build process VM options (overrides Shared options):" />
+    <option name="build" hit="User-local build process heap size (Mbytes) (overrides Shared size):" />
+    <option name="heap" hit="User-local build process heap size (Mbytes) (overrides Shared size):" />
+    <option name="mbytes" hit="User-local build process heap size (Mbytes) (overrides Shared size):" />
+    <option name="overrides" hit="User-local build process heap size (Mbytes) (overrides Shared size):" />
+    <option name="process" hit="User-local build process heap size (Mbytes) (overrides Shared size):" />
+    <option name="shared" hit="User-local build process heap size (Mbytes) (overrides Shared size):" />
+    <option name="size" hit="User-local build process heap size (Mbytes) (overrides Shared size):" />
+    <option name="user-local" hit="User-local build process heap size (Mbytes) (overrides Shared size):" />
   </configurable>
   <configurable id="reference.projectsettings.compiler.javacompiler" configurable_name="Java Compiler">
     <option name="1" hit="1.1" />
@@ -2163,9 +2404,9 @@
     <option name="bytecode" hit="Per-module bytecode version:" />
     <option name="per-module" hit="Per-module bytecode version:" />
     <option name="version" hit="Per-module bytecode version:" />
-    <option name="bytecode" hit="Project bytecode version: " />
-    <option name="project" hit="Project bytecode version: " />
-    <option name="version" hit="Project bytecode version: " />
+    <option name="bytecode" hit="Project bytecode version:" />
+    <option name="project" hit="Project bytecode version:" />
+    <option name="version" hit="Project bytecode version:" />
     <option name="--release" hit="Use '--release' option for cross-compilation (Java 9 and later)" />
     <option name="9" hit="Use '--release' option for cross-compilation (Java 9 and later)" />
     <option name="and" hit="Use '--release' option for cross-compilation (Java 9 and later)" />
@@ -2286,11 +2527,11 @@
     <option name="directory" hit="Production sources directory:" />
     <option name="production" hit="Production sources directory:" />
     <option name="sources" hit="Production sources directory:" />
-    <option name="generated" hit="Store generated sources relative to: " />
-    <option name="relative" hit="Store generated sources relative to: " />
-    <option name="sources" hit="Store generated sources relative to: " />
-    <option name="store" hit="Store generated sources relative to: " />
-    <option name="to" hit="Store generated sources relative to: " />
+    <option name="generated" hit="Store generated sources relative to:" />
+    <option name="relative" hit="Store generated sources relative to:" />
+    <option name="sources" hit="Store generated sources relative to:" />
+    <option name="store" hit="Store generated sources relative to:" />
+    <option name="to" hit="Store generated sources relative to:" />
     <option name="directory" hit="Test sources directory:" />
     <option name="sources" hit="Test sources directory:" />
     <option name="test" hit="Test sources directory:" />
@@ -2305,9 +2546,9 @@
     <option name="use" hit="Use --processor-module-path compiler option (for Java 9 and later)" />
   </configurable>
   <configurable id="project.validation" configurable_name="Validation">
-    <option name="exclude" hit="Exclude from validation:" />
-    <option name="from" hit="Exclude from validation:" />
-    <option name="validation" hit="Exclude from validation:" />
+    <option name="exclude" hit="Exclude From Validation:" />
+    <option name="from" hit="Exclude From Validation:" />
+    <option name="validation" hit="Exclude From Validation:" />
     <option name="build" hit="Validate on build" />
     <option name="on" hit="Validate on build" />
     <option name="validate" hit="Validate on build" />
@@ -2334,253 +2575,6 @@
     <option name="warnings" hit="Generate no warnings" />
     <option name="compiler" hit="RMI Compiler" />
     <option name="rmi" hit="RMI Compiler" />
-  </configurable>
-  <configurable id="project.propDebugger" configurable_name="Debugger">
-    <option name="" hit=" Socket" />
-    <option name="socket" hit=" Socket" />
-    <option name="agent" hit="Attach memory agent" />
-    <option name="attach" hit="Attach memory agent" />
-    <option name="memory" hit="Attach memory agent" />
-    <option name="disable" hit="Disable JIT" />
-    <option name="jit" hit="Disable JIT" />
-    <option name="1" hit="Force Class ic VM for JDK 1.3.x and earlier" />
-    <option name="3" hit="Force Class ic VM for JDK 1.3.x and earlier" />
-    <option name="and" hit="Force Class ic VM for JDK 1.3.x and earlier" />
-    <option name="class" hit="Force Class ic VM for JDK 1.3.x and earlier" />
-    <option name="earlier" hit="Force Class ic VM for JDK 1.3.x and earlier" />
-    <option name="for" hit="Force Class ic VM for JDK 1.3.x and earlier" />
-    <option name="force" hit="Force Class ic VM for JDK 1.3.x and earlier" />
-    <option name="ic" hit="Force Class ic VM for JDK 1.3.x and earlier" />
-    <option name="jdk" hit="Force Class ic VM for JDK 1.3.x and earlier" />
-    <option name="vm" hit="Force Class ic VM for JDK 1.3.x and earlier" />
-    <option name="x" hit="Force Class ic VM for JDK 1.3.x and earlier" />
-    <option name="java" hit="Java" />
-    <option name="debug" hit="Kill the debug process immediately" />
-    <option name="immediately" hit="Kill the debug process immediately" />
-    <option name="kill" hit="Kill the debug process immediately" />
-    <option name="process" hit="Kill the debug process immediately" />
-    <option name="the" hit="Kill the debug process immediately" />
-    <option name="memory" hit="Shared  memory" />
-    <option name="shared" hit="Shared  memory" />
-    <option name="alternative" hit="Show alternative source switcher" />
-    <option name="show" hit="Show alternative source switcher" />
-    <option name="source" hit="Show alternative source switcher" />
-    <option name="switcher" hit="Show alternative source switcher" />
-    <option name="transport" hit="Transport:" />
-  </configurable>
-  <configurable id="Debugger_Data_Views_Java" configurable_name="Java">
-    <option name="" hit=" Static fields" />
-    <option name="fields" hit=" Static fields" />
-    <option name="static" hit=" Static fields" />
-    <option name="" hit="$val fields as local  variables" />
-    <option name="as" hit="$val fields as local  variables" />
-    <option name="fields" hit="$val fields as local  variables" />
-    <option name="local" hit="$val fields as local  variables" />
-    <option name="val" hit="$val fields as local  variables" />
-    <option name="variables" hit="$val fields as local  variables" />
-    <option name="auto" hit="Auto populate Throwable object's stack trace" />
-    <option name="object" hit="Auto populate Throwable object's stack trace" />
-    <option name="populate" hit="Auto populate Throwable object's stack trace" />
-    <option name="s" hit="Auto populate Throwable object's stack trace" />
-    <option name="stack" hit="Auto populate Throwable object's stack trace" />
-    <option name="throwable" hit="Auto populate Throwable object's stack trace" />
-    <option name="trace" hit="Auto populate Throwable object's stack trace" />
-    <option name="autoscroll" hit="Autoscroll to new  local variables" />
-    <option name="local" hit="Autoscroll to new  local variables" />
-    <option name="new" hit="Autoscroll to new  local variables" />
-    <option name="to" hit="Autoscroll to new  local variables" />
-    <option name="variables" hit="Autoscroll to new  local variables" />
-    <option name="declared" hit="Declared  type" />
-    <option name="type" hit="Declared  type" />
-    <option name="enable" hit="Enable 't oString()' object view:" />
-    <option name="object" hit="Enable 't oString()' object view:" />
-    <option name="ostring" hit="Enable 't oString()' object view:" />
-    <option name="t" hit="Enable 't oString()' object view:" />
-    <option name="view" hit="Enable 't oString()' object view:" />
-    <option name="alternative" hit="Enable alternative view for Coll ections classes" />
-    <option name="classes" hit="Enable alternative view for Coll ections classes" />
-    <option name="coll" hit="Enable alternative view for Coll ections classes" />
-    <option name="ections" hit="Enable alternative view for Coll ections classes" />
-    <option name="enable" hit="Enable alternative view for Coll ections classes" />
-    <option name="for" hit="Enable alternative view for Coll ections classes" />
-    <option name="view" hit="Enable alternative view for Coll ections classes" />
-    <option name="all" hit="For all classes that override 'toString()' method" />
-    <option name="classes" hit="For all classes that override 'toString()' method" />
-    <option name="for" hit="For all classes that override 'toString()' method" />
-    <option name="method" hit="For all classes that override 'toString()' method" />
-    <option name="override" hit="For all classes that override 'toString()' method" />
-    <option name="that" hit="For all classes that override 'toString()' method" />
-    <option name="tostring" hit="For all classes that override 'toString()' method" />
-    <option name="classes" hit="For classes from the list:" />
-    <option name="for" hit="For classes from the list:" />
-    <option name="from" hit="For classes from the list:" />
-    <option name="list" hit="For classes from the list:" />
-    <option name="the" hit="For classes from the list:" />
-    <option name="fully" hit="Fully  qualified names" />
-    <option name="names" hit="Fully  qualified names" />
-    <option name="qualified" hit="Fully  qualified names" />
-    <option name="and" hit="Hide  null elements in arrays and collections" />
-    <option name="arrays" hit="Hide  null elements in arrays and collections" />
-    <option name="collections" hit="Hide  null elements in arrays and collections" />
-    <option name="elements" hit="Hide  null elements in arrays and collections" />
-    <option name="hide" hit="Hide  null elements in arrays and collections" />
-    <option name="in" hit="Hide  null elements in arrays and collections" />
-    <option name="null" hit="Hide  null elements in arrays and collections" />
-    <option name="java" hit="Java" />
-    <option name="id" hit="Object  id" />
-    <option name="object" hit="Object  id" />
-    <option name="analysis" hit="Predict condition values and exceptions based on data flow analysis" />
-    <option name="and" hit="Predict condition values and exceptions based on data flow analysis" />
-    <option name="based" hit="Predict condition values and exceptions based on data flow analysis" />
-    <option name="condition" hit="Predict condition values and exceptions based on data flow analysis" />
-    <option name="data" hit="Predict condition values and exceptions based on data flow analysis" />
-    <option name="exceptions" hit="Predict condition values and exceptions based on data flow analysis" />
-    <option name="flow" hit="Predict condition values and exceptions based on data flow analysis" />
-    <option name="on" hit="Predict condition values and exceptions based on data flow analysis" />
-    <option name="predict" hit="Predict condition values and exceptions based on data flow analysis" />
-    <option name="values" hit="Predict condition values and exceptions based on data flow analysis" />
-    <option name="fields" hit="S ynthetic fields" />
-    <option name="s" hit="S ynthetic fields" />
-    <option name="ynthetic" hit="S ynthetic fields" />
-    <option name="show" hit="Show" />
-    <option name="for" hit="Show hex value for primitives" />
-    <option name="hex" hit="Show hex value for primitives" />
-    <option name="primitives" hit="Show hex value for primitives" />
-    <option name="show" hit="Show hex value for primitives" />
-    <option name="value" hit="Show hex value for primitives" />
-    <option name="for" hit="Show type for strings" />
-    <option name="show" hit="Show type for strings" />
-    <option name="strings" hit="Show type for strings" />
-    <option name="type" hit="Show type for strings" />
-    <option name="fields" hit="Static  final fields" />
-    <option name="final" hit="Static  final fields" />
-    <option name="static" hit="Static  final fields" />
-  </configurable>
-  <configurable id="reference.idesettings.debugger.typerenderers" configurable_name="Java Type Renderers">
-    <option name="append" hit="Append default children" />
-    <option name="children" hit="Append default children" />
-    <option name="default" hit="Append default children" />
-    <option name="apply" hit="Apply renderer to objects of type (fully-qualified name):" />
-    <option name="fully-qualified" hit="Apply renderer to objects of type (fully-qualified name):" />
-    <option name="name" hit="Apply renderer to objects of type (fully-qualified name):" />
-    <option name="objects" hit="Apply renderer to objects of type (fully-qualified name):" />
-    <option name="of" hit="Apply renderer to objects of type (fully-qualified name):" />
-    <option name="renderer" hit="Apply renderer to objects of type (fully-qualified name):" />
-    <option name="to" hit="Apply renderer to objects of type (fully-qualified name):" />
-    <option name="type" hit="Apply renderer to objects of type (fully-qualified name):" />
-    <option name="java" hit="Java" />
-    <option name="java" hit="Java Type Renderers" />
-    <option name="renderers" hit="Java Type Renderers" />
-    <option name="type" hit="Java Type Renderers" />
-    <option name="on-demand" hit="On-demand" />
-    <option name="name" hit="Renderer name:" />
-    <option name="renderer" hit="Renderer name:" />
-    <option name="and" hit="Show type and object id" />
-    <option name="id" hit="Show type and object id" />
-    <option name="object" hit="Show type and object id" />
-    <option name="show" hit="Show type and object id" />
-    <option name="type" hit="Show type and object id" />
-    <option name="a" hit="Test if a node can be expanded (optional):" />
-    <option name="be" hit="Test if a node can be expanded (optional):" />
-    <option name="can" hit="Test if a node can be expanded (optional):" />
-    <option name="expanded" hit="Test if a node can be expanded (optional):" />
-    <option name="if" hit="Test if a node can be expanded (optional):" />
-    <option name="node" hit="Test if a node can be expanded (optional):" />
-    <option name="optional" hit="Test if a node can be expanded (optional):" />
-    <option name="test" hit="Test if a node can be expanded (optional):" />
-    <option name="default" hit="Use default renderer" />
-    <option name="renderer" hit="Use default renderer" />
-    <option name="use" hit="Use default renderer" />
-    <option name="expression" hit="Use following expression:" />
-    <option name="following" hit="Use following expression:" />
-    <option name="use" hit="Use following expression:" />
-    <option name="expressions" hit="Use list of expressions:" />
-    <option name="list" hit="Use list of expressions:" />
-    <option name="of" hit="Use list of expressions:" />
-    <option name="use" hit="Use list of expressions:" />
-    <option name="a" hit="When expanding a node" />
-    <option name="expanding" hit="When expanding a node" />
-    <option name="node" hit="When expanding a node" />
-    <option name="when" hit="When expanding a node" />
-    <option name="a" hit="When rendering a node" />
-    <option name="node" hit="When rendering a node" />
-    <option name="rendering" hit="When rendering a node" />
-    <option name="when" hit="When rendering a node" />
-  </configurable>
-  <configurable id="debugger.stepping" configurable_name="Stepping">
-    <option name="" hit=" Always" />
-    <option name="always" hit=" Always" />
-    <option name="a" hit="A lways do smart step into" />
-    <option name="do" hit="A lways do smart step into" />
-    <option name="into" hit="A lways do smart step into" />
-    <option name="lways" hit="A lways do smart step into" />
-    <option name="smart" hit="A lways do smart step into" />
-    <option name="step" hit="A lways do smart step into" />
-    <option name="as" hit="As k" />
-    <option name="k" hit="As k" />
-    <option name="classes" hit="Do not step  into the classes" />
-    <option name="do" hit="Do not step  into the classes" />
-    <option name="into" hit="Do not step  into the classes" />
-    <option name="not" hit="Do not step  into the classes" />
-    <option name="step" hit="Do not step  into the classes" />
-    <option name="the" hit="Do not step  into the classes" />
-    <option name="and" hit="Evaluate finally blocks on pop frame and early return:" />
-    <option name="blocks" hit="Evaluate finally blocks on pop frame and early return:" />
-    <option name="early" hit="Evaluate finally blocks on pop frame and early return:" />
-    <option name="evaluate" hit="Evaluate finally blocks on pop frame and early return:" />
-    <option name="finally" hit="Evaluate finally blocks on pop frame and early return:" />
-    <option name="frame" hit="Evaluate finally blocks on pop frame and early return:" />
-    <option name="on" hit="Evaluate finally blocks on pop frame and early return:" />
-    <option name="pop" hit="Evaluate finally blocks on pop frame and early return:" />
-    <option name="return" hit="Evaluate finally blocks on pop frame and early return:" />
-    <option name="java" hit="Java" />
-    <option name="ever" hit="N ever" />
-    <option name="n" hit="N ever" />
-    <option name="current" hit="Resume only the current thread" />
-    <option name="only" hit="Resume only the current thread" />
-    <option name="resume" hit="Resume only the current thread" />
-    <option name="the" hit="Resume only the current thread" />
-    <option name="thread" hit="Resume only the current thread" />
-    <option name="methods" hit="Ski p synthetic methods" />
-    <option name="p" hit="Ski p synthetic methods" />
-    <option name="ski" hit="Ski p synthetic methods" />
-    <option name="synthetic" hit="Ski p synthetic methods" />
-    <option name="constructors" hit="Skip  constructors" />
-    <option name="skip" hit="Skip  constructors" />
-    <option name="class" hit="Skip class l oaders" />
-    <option name="l" hit="Skip class l oaders" />
-    <option name="oaders" hit="Skip class l oaders" />
-    <option name="skip" hit="Skip class l oaders" />
-    <option name="getters" hit="Skip simple  getters" />
-    <option name="simple" hit="Skip simple  getters" />
-    <option name="skip" hit="Skip simple  getters" />
-  </configurable>
-  <configurable id="debugger.hotswap" configurable_name="HotSwap">
-    <option name="" hit=" Always" />
-    <option name="always" hit=" Always" />
-    <option name="" hit=" Never" />
-    <option name="never" hit=" Never" />
-    <option name="as" hit="As k" />
-    <option name="k" hit="As k" />
-    <option name="before" hit="Build project before reloading classes" />
-    <option name="build" hit="Build project before reloading classes" />
-    <option name="classes" hit="Build project before reloading classes" />
-    <option name="project" hit="Build project before reloading classes" />
-    <option name="reloading" hit="Build project before reloading classes" />
-    <option name="enable" hit="Enable 'JVM will hang' warning" />
-    <option name="hang" hit="Enable 'JVM will hang' warning" />
-    <option name="jvm" hit="Enable 'JVM will hang' warning" />
-    <option name="warning" hit="Enable 'JVM will hang' warning" />
-    <option name="will" hit="Enable 'JVM will hang' warning" />
-    <option name="java" hit="Java" />
-    <option name="after" hit="Reload classes after compilation:" />
-    <option name="classes" hit="Reload classes after compilation:" />
-    <option name="compilation" hit="Reload classes after compilation:" />
-    <option name="reload" hit="Reload classes after compilation:" />
-    <option name="background" hit="Reload classes in  background" />
-    <option name="classes" hit="Reload classes in  background" />
-    <option name="in" hit="Reload classes in  background" />
-    <option name="reload" hit="Reload classes in  background" />
   </configurable>
   <configurable id="reference.idesettings.debugger.capture" configurable_name="Async Stack Traces">
     <option name="async" hit="Async Stack Traces" />
@@ -2614,9 +2608,9 @@
     <option name="service" hit="Artifactory, Nexus or Bintray Service URLs:" />
     <option name="urls" hit="Artifactory, Nexus or Bintray Service URLs:" />
     <option name="edit" hit="Edit" />
-    <option name="jar" hit="Maven jar repositories:" />
-    <option name="maven" hit="Maven jar repositories:" />
-    <option name="repositories" hit="Maven jar repositories:" />
+    <option name="jar" hit="Maven Jar Repositories:" />
+    <option name="maven" hit="Maven Jar Repositories:" />
+    <option name="repositories" hit="Maven Jar Repositories:" />
     <option name="jar" hit="Remote Jar Repositories" />
     <option name="remote" hit="Remote Jar Repositories" />
     <option name="repositories" hit="Remote Jar Repositories" />

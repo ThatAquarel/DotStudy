@@ -73,6 +73,17 @@
     <option name="open" path="ActionManager" hit="Open FUS Test Scheme File" />
     <option name="scheme" path="ActionManager" hit="Open FUS Test Scheme File" />
     <option name="test" path="ActionManager" hit="Open FUS Test Scheme File" />
+    <option name="event" path="ActionManager" hit="Open Statistics Event Log" />
+    <option name="log" path="ActionManager" hit="Open Statistics Event Log" />
+    <option name="open" path="ActionManager" hit="Open Statistics Event Log" />
+    <option name="statistics" path="ActionManager" hit="Open Statistics Event Log" />
+    <option name="a" path="ActionManager" hit="Opens a toolwindow with statistics event log" />
+    <option name="event" path="ActionManager" hit="Opens a toolwindow with statistics event log" />
+    <option name="log" path="ActionManager" hit="Opens a toolwindow with statistics event log" />
+    <option name="opens" path="ActionManager" hit="Opens a toolwindow with statistics event log" />
+    <option name="statistics" path="ActionManager" hit="Opens a toolwindow with statistics event log" />
+    <option name="toolwindow" path="ActionManager" hit="Opens a toolwindow with statistics event log" />
+    <option name="with" path="ActionManager" hit="Opens a toolwindow with statistics event log" />
     <option name="active" path="ActionManager" hit="Opens active event log file in IDE" />
     <option name="event" path="ActionManager" hit="Opens active event log file in IDE" />
     <option name="file" path="ActionManager" hit="Opens active event log file in IDE" />
