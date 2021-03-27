@@ -3,7 +3,7 @@
   <change-notes>
       Add change notes here.&lt;br&gt;
       &lt;em&gt;most HTML tags may be used&lt;/em&gt;</change-notes>
-  <idea-version since-build="202.7319" until-build="202.*"/>
+  <idea-version since-build="203.7717" until-build="203.*"/>
   <id>org.intellij.sdk.DotStudy</id>
   <name>DotStudy</name>
   <vendor email="xia_tianyi@outlook.com" url="https://github.com/ThatAquarel">Aquarel</vendor>
