@@ -36,6 +36,26 @@ public class SimpleParser implements PsiParser, LightPsiParser {
   }
 
   /* ********************************************************** */
+  // (LIST_SEPARATOR)? VALUE VALUE_SEPARATOR
+  public static boolean answer(PsiBuilder b, int l) {
+    if (!recursion_guard_(b, l, "answer")) return false;
+    if (!nextTokenIs(b, "<answer>", LIST_SEPARATOR, VALUE)) return false;
+    boolean r;
+    Marker m = enter_section_(b, l, _NONE_, ANSWER, "<answer>");
+    r = answer_0(b, l + 1);
+    r = r && consumeTokens(b, 0, VALUE, VALUE_SEPARATOR);
+    exit_section_(b, l, m, r, false, null);
+    return r;
+  }
+
+  // (LIST_SEPARATOR)?
+  private static boolean answer_0(PsiBuilder b, int l) {
+    if (!recursion_guard_(b, l, "answer_0")) return false;
+    consumeToken(b, LIST_SEPARATOR);
+    return true;
+  }
+
+  /* ********************************************************** */
   // property|TITLE|SUBTITLE|LINK|CRLF
   static boolean item_(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "item_")) return false;
@@ -49,37 +69,28 @@ public class SimpleParser implements PsiParser, LightPsiParser {
   }
 
   /* ********************************************************** */
-  // KEY SEPARATOR (VALUE VALUE_SEPARATOR)*
+  // KEY SEPARATOR answer answer*
   public static boolean property(PsiBuilder b, int l) {
     if (!recursion_guard_(b, l, "property")) return false;
     if (!nextTokenIs(b, KEY)) return false;
     boolean r;
     Marker m = enter_section_(b);
     r = consumeTokens(b, 0, KEY, SEPARATOR);
-    r = r && property_2(b, l + 1);
+    r = r && answer(b, l + 1);
+    r = r && property_3(b, l + 1);
     exit_section_(b, m, PROPERTY, r);
     return r;
   }
 
-  // (VALUE VALUE_SEPARATOR)*
-  private static boolean property_2(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "property_2")) return false;
+  // answer*
+  private static boolean property_3(PsiBuilder b, int l) {
+    if (!recursion_guard_(b, l, "property_3")) return false;
     while (true) {
       int c = current_position_(b);
-      if (!property_2_0(b, l + 1)) break;
-      if (!empty_element_parsed_guard_(b, "property_2", c)) break;
+      if (!answer(b, l + 1)) break;
+      if (!empty_element_parsed_guard_(b, "property_3", c)) break;
     }
     return true;
-  }
-
-  // VALUE VALUE_SEPARATOR
-  private static boolean property_2_0(PsiBuilder b, int l) {
-    if (!recursion_guard_(b, l, "property_2_0")) return false;
-    boolean r;
-    Marker m = enter_section_(b);
-    r = consumeTokens(b, 0, VALUE, VALUE_SEPARATOR);
-    exit_section_(b, m, null, r);
-    return r;
   }
 
   /* ********************************************************** */

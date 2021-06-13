@@ -27,4 +27,10 @@ public class SimplePropertyImpl extends ASTWrapperPsiElement implements SimplePr
     else super.accept(visitor);
   }
 
+  @Override
+  @NotNull
+  public List<SimpleAnswer> getAnswerList() {
+    return PsiTreeUtil.getChildrenOfTypeAsList(this, SimpleAnswer.class);
+  }
+
 }

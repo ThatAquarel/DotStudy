@@ -17,6 +17,5 @@ simpleFile ::= item_*
 
 private item_ ::= (property|TITLE|SUBTITLE|LINK|CRLF)
 
-//property ::= (KEY SEPARATOR VALUE)
-property ::= (KEY SEPARATOR (VALUE VALUE_SEPARATOR)*)
-//answer ::= (CRLF LIST_SEPARATOR)? (VALUE VALUE_SEPARATOR)
+answer ::= ((LIST_SEPARATOR)? VALUE VALUE_SEPARATOR)
+property ::= KEY SEPARATOR answer answer*

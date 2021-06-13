@@ -7,4 +7,7 @@ import com.intellij.psi.PsiElement;
 
 public interface SimpleProperty extends PsiElement {
 
+  @NotNull
+  List<SimpleAnswer> getAnswerList();
+
 }
