@@ -17,6 +17,7 @@ public interface SimpleTypes {
   IElementType SUBTITLE = new SimpleTokenType("SUBTITLE");
   IElementType TITLE = new SimpleTokenType("TITLE");
   IElementType VALUE = new SimpleTokenType("VALUE");
+  IElementType VALUE_SEPARATOR = new SimpleTokenType("VALUE_SEPARATOR");
 
   class Factory {
     public static PsiElement createElement(ASTNode node) {
