@@ -2,7 +2,8 @@ package org.intellij.sdk.DotStudy.Language;
 
 import com.intellij.lexer.FlexLexer;
 import com.intellij.psi.tree.IElementType;
-import org.intellij.sdk.language.psi.SimpleTypes;
+//import org.intellij.sdk.language.psi.SimpleTypes;
+import org.intellij.sdk.DotStudy.Language.psi.SimpleTypes;
 import com.intellij.psi.TokenType;
 
 %%
@@ -15,15 +16,28 @@ import com.intellij.psi.TokenType;
 %eof{  return;
 %eof}
 
-CRLF=\R
-WHITE_SPACE=[\ \n\t\f]
-FIRST_VALUE_CHARACTER=[^ \n\f\\] | "\\"{CRLF} | "\\".
-VALUE_CHARACTER=[^\n\f\\] | "\\"{CRLF} | "\\".
-END_OF_LINE_COMMENT=("#"|"!")[^\r\n]*
-SEPARATOR=[.?]
-KEY_CHARACTER=[^.?\ \n\t\f\\] | " "
+//CRLF=\R
+//WHITE_SPACE=[\ \n\t\f]
+//FIRST_VALUE_CHARACTER=[^ \n\f\\] | "\\"{CRLF} | "\\".
+//VALUE_CHARACTER=[^\n\f\\] | "\\"{CRLF} | "\\".
+//END_OF_LINE_COMMENT=("#"|"!")[^\r\n]*
+//SEPARATOR=[.?]
+//KEY_CHARACTER=[^.?\ \n\t\f\\] | " "
 //SEPARATOR=[.?]
 //KEY_CHARACTER=[^.?\ \n\t\f\\] | "\\ "
+
+CRLF=\R
+WHITE_SPACE=[\ \n\t\f]
+
+FIRST_VALUE_CHARACTER=[^ \n\f\\] | "\\"{CRLF} | "\\". | {CRLF}"-"
+VALUE_CHARACTER=[^\n\f\\] | "\\"{CRLF} | "\\".  | {CRLF}"-"
+
+END_OF_LINE_COMMENT=("#"|"!")[^\r\n]*
+
+SEPARATOR=[.?]
+
+FIRST_KEY_CARACTER=[^.?#! \n\t\f\\]
+KEY_CHARACTER={CRLF}?{FIRST_KEY_CARACTER}
 
 %state WAITING_VALUE
 
@@ -31,7 +45,8 @@ KEY_CHARACTER=[^.?\ \n\t\f\\] | " "
 
 <YYINITIAL> {END_OF_LINE_COMMENT}                           { yybegin(YYINITIAL); return SimpleTypes.COMMENT; }
 
-<YYINITIAL> {KEY_CHARACTER}+                                { yybegin(YYINITIAL); return SimpleTypes.KEY; }
+//<YYINITIAL> {KEY_CHARACTER}+                                { yybegin(YYINITIAL); return SimpleTypes.KEY; }
+<YYINITIAL> {FIRST_KEY_CARACTER}{KEY_CHARACTER}+            { yybegin(YYINITIAL); return SimpleTypes.KEY; }
 
 <YYINITIAL> {SEPARATOR}                                     { yybegin(WAITING_VALUE); return SimpleTypes.SEPARATOR; }
 

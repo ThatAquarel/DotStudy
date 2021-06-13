@@ -18,7 +18,7 @@ public class SimpleColorSettingsPage implements ColorSettingsPage {
             new AttributesDescriptor("Separator", SimpleSyntaxHighlighter.SEPARATOR),
             new AttributesDescriptor("Value", SimpleSyntaxHighlighter.VALUE),
             new AttributesDescriptor("Title", SimpleSyntaxHighlighter.COMMENT),
-            new AttributesDescriptor("Bad Value", SimpleSyntaxHighlighter.BAD_CHARACTER)
+            new AttributesDescriptor("Bad value", SimpleSyntaxHighlighter.BAD_CHARACTER)
     };
 
     @Nullable
@@ -55,13 +55,13 @@ public class SimpleColorSettingsPage implements ColorSettingsPage {
 
     @NotNull
     @Override
-    public AttributesDescriptor[] getAttributeDescriptors() {
+    public AttributesDescriptor @NotNull [] getAttributeDescriptors() {
         return DESCRIPTORS;
     }
 
     @NotNull
     @Override
-    public ColorDescriptor[] getColorDescriptors() {
+    public ColorDescriptor @NotNull [] getColorDescriptors() {
         return ColorDescriptor.EMPTY_ARRAY;
     }
 
