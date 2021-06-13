@@ -2,7 +2,6 @@ package org.intellij.sdk.DotStudy.Language;
 
 import com.intellij.lexer.FlexLexer;
 import com.intellij.psi.tree.IElementType;
-//import org.intellij.sdk.language.psi.SimpleTypes;
 import org.intellij.sdk.DotStudy.Language.psi.SimpleTypes;
 import com.intellij.psi.TokenType;
 
@@ -29,23 +28,26 @@ import com.intellij.psi.TokenType;
 CRLF=\R
 WHITE_SPACE=[\ \n\t\f]
 
-FIRST_VALUE_CHARACTER=[^ \n\f\\] | "\\"{CRLF} | "\\". | {CRLF}"-"
-VALUE_CHARACTER=[^\n\f\\] | "\\"{CRLF} | "\\".  | {CRLF}"-"
+TITLE=("!")[^\r\n]*
+SUBTITLE=("#")[^\r\n]*
+LINK=("&")[^\r\n]*
 
-END_OF_LINE_COMMENT=("#"|"!")[^\r\n]*
+FIRST_KEY_CARACTER=[^.?#!& \n\t\f\\]
+KEY_CHARACTER={CRLF}?{FIRST_KEY_CARACTER}
 
 SEPARATOR=[.?]
 
-FIRST_KEY_CARACTER=[^.?#! \n\t\f\\]
-KEY_CHARACTER={CRLF}?{FIRST_KEY_CARACTER}
+FIRST_VALUE_CHARACTER=[^ \n\f\\] | "\\"{CRLF} | "\\". | {CRLF}"-"
+VALUE_CHARACTER=[^\n\f\\] | "\\"{CRLF} | "\\".  | {CRLF}"-"
 
 %state WAITING_VALUE
 
 %%
 
-<YYINITIAL> {END_OF_LINE_COMMENT}                           { yybegin(YYINITIAL); return SimpleTypes.COMMENT; }
+<YYINITIAL> {TITLE}                                         { yybegin(YYINITIAL); return SimpleTypes.TITLE; }
+<YYINITIAL> {SUBTITLE}                                      { yybegin(YYINITIAL); return SimpleTypes.SUBTITLE; }
+<YYINITIAL> {LINK}                                          { yybegin(YYINITIAL); return SimpleTypes.LINK; }
 
-//<YYINITIAL> {KEY_CHARACTER}+                                { yybegin(YYINITIAL); return SimpleTypes.KEY; }
 <YYINITIAL> {FIRST_KEY_CARACTER}{KEY_CHARACTER}+            { yybegin(YYINITIAL); return SimpleTypes.KEY; }
 
 <YYINITIAL> {SEPARATOR}                                     { yybegin(WAITING_VALUE); return SimpleTypes.SEPARATOR; }

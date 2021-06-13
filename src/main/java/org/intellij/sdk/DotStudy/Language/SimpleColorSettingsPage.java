@@ -17,7 +17,10 @@ public class SimpleColorSettingsPage implements ColorSettingsPage {
             new AttributesDescriptor("Key", SimpleSyntaxHighlighter.KEY),
             new AttributesDescriptor("Separator", SimpleSyntaxHighlighter.SEPARATOR),
             new AttributesDescriptor("Value", SimpleSyntaxHighlighter.VALUE),
-            new AttributesDescriptor("Title", SimpleSyntaxHighlighter.COMMENT),
+
+            new AttributesDescriptor("Title", SimpleSyntaxHighlighter.TITLE),
+            new AttributesDescriptor("Subtitle", SimpleSyntaxHighlighter.SUBTITLE),
+            new AttributesDescriptor("Link", SimpleSyntaxHighlighter.LINK),
             new AttributesDescriptor("Bad value", SimpleSyntaxHighlighter.BAD_CHARACTER)
     };
 
@@ -36,9 +39,10 @@ public class SimpleColorSettingsPage implements ColorSettingsPage {
     @NotNull
     @Override
     public String getDemoText() {
-        return "# DotStudy demo text.\n" +
-                "# Title\n" +
-                "! Subtitle\n" +
+        return "! DotStudy demo text.\n" +
+                "! Title\n" +
+                "# Subtitle\n" +
+                "& Link\n" +
                 "Question? Answer.\n" +
                 "Question. Answer.\n" +
                 "\n" +

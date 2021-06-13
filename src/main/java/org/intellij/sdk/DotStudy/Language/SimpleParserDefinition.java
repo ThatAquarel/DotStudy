@@ -19,7 +19,9 @@ import org.jetbrains.annotations.NotNull;
 public class SimpleParserDefinition implements ParserDefinition {
 
     public static final TokenSet WHITE_SPACES = TokenSet.create(TokenType.WHITE_SPACE);
-    public static final TokenSet COMMENTS = TokenSet.create(SimpleTypes.COMMENT);
+    public static final TokenSet TITLES = TokenSet.create(SimpleTypes.TITLE);
+    public static final TokenSet SUBTITLES = TokenSet.create(SimpleTypes.SUBTITLE);
+    public static final TokenSet LINKS = TokenSet.create(SimpleTypes.LINK);
 
     public static final IFileElementType FILE = new IFileElementType(SimpleLanguage.INSTANCE);
 
@@ -38,7 +40,7 @@ public class SimpleParserDefinition implements ParserDefinition {
     @NotNull
     @Override
     public TokenSet getCommentTokens() {
-        return COMMENTS;
+        return TokenSet.orSet(TITLES, SUBTITLES, LINKS);
     }
 
     @NotNull
