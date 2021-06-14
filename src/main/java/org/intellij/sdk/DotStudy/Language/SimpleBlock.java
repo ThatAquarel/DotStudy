@@ -26,8 +26,9 @@ public class SimpleBlock extends AbstractBlock {
         ASTNode child = myNode.getFirstChildNode();
         while (child != null) {
             if (child.getElementType() != TokenType.WHITE_SPACE) {
-                Block block = new SimpleBlock(child, Wrap.createWrap(WrapType.NONE, false), Alignment.createAlignment(),
+                Block block = new SimpleBlock(child, myWrap, Alignment.createAlignment(),
                         spacingBuilder);
+
                 blocks.add(block);
             }
             child = child.getTreeNext();
@@ -50,5 +51,4 @@ public class SimpleBlock extends AbstractBlock {
     public boolean isLeaf() {
         return myNode.getFirstChildNode() == null;
     }
-
 }
