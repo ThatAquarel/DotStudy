@@ -8122,7 +8122,27 @@
     <option name="scheme" hit="Color Scheme" />
   </configurable>
   <configurable id="reference.settingsdialog.IDE.editor.colors.General" configurable_name="General">
+    <option name="background" hit="Background" />
+    <option name="bold" hit="Bold" />
+    <option name="bold" hit="Bold Underscored" />
+    <option name="underscored" hit="Bold Underscored" />
+    <option name="bordered" hit="Bordered" />
+    <option name="dotted" hit="Dotted Line" />
+    <option name="line" hit="Dotted Line" />
+    <option name="effects" hit="Effects" />
+    <option name="error" hit="Error stripe mark" />
+    <option name="mark" hit="Error stripe mark" />
+    <option name="stripe" hit="Error stripe mark" />
+    <option name="font" hit="Font" />
+    <option name="foreground" hit="Foreground" />
     <option name="general" hit="General" />
+    <option name="from" hit="Inherit values from:" />
+    <option name="inherit" hit="Inherit values from:" />
+    <option name="values" hit="Inherit values from:" />
+    <option name="italic" hit="Italic" />
+    <option name="strikeout" hit="Strikeout" />
+    <option name="underscored" hit="Underscored" />
+    <option name="underwaved" hit="Underwaved" />
     <option name="caret" hit="Code//Identifier under caret" />
     <option name="code" hit="Code//Identifier under caret" />
     <option name="identifier" hit="Code//Identifier under caret" />
@@ -8985,8 +9005,8 @@
     <option name="hotswap" hit="HotSwap" />
   </configurable>
   <configurable id="preferences.pluginManager" configurable_name="Plugins">
-    <option name="1" hit="1.1-SNAPSHOT" />
-    <option name="1-snapshot" hit="1.1-SNAPSHOT" />
+    <option name="1" hit="1.2" />
+    <option name="2" hit="1.2" />
     <option name="10-release-ij7717" hit="203-1.4.10-release-IJ7717.8" />
     <option name="203-1" hit="203-1.4.10-release-IJ7717.8" />
     <option name="4" hit="203-1.4.10-release-IJ7717.8" />

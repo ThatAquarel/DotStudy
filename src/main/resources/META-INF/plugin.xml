@@ -1,9 +1,10 @@
 <idea-plugin>
     <id>org.intellij.sdk.DotStudy</id>
     <name>DotStudy</name>
-    <vendor email="xia_tianyi@outlook.com" url="https://github.com/ThatAquarel">Aquarel</vendor>
+    <idea-version since-build="203"/>
 
-    <description>Plugin made by Aquarel(https://github.com/ThatAquarel)</description>
+    <vendor url="https://github.com/ThatAquarel">Aquarel</vendor>
+    <description>Plugin made by Aquarel (https://github.com/ThatAquarel)</description>
 
     <depends>com.intellij.modules.platform</depends>
 
@@ -29,8 +30,4 @@
         <lang.formatter language="Study"
                         implementationClass="org.intellij.sdk.DotStudy.Language.SimpleFormattingModelBuilder"/>
     </extensions>
-
-    <actions>
-        <!-- Add your actions here -->
-    </actions>
 </idea-plugin>

@@ -23,12 +23,12 @@ TITLE=("!")[^\r\n]*
 SUBTITLE=("#")[^\r\n]*
 LINK=("&")[^\r\n]*
 
-FIRST_KEY_CARACTER=[^-.?#!& \n\t\f\\]
-KEY_CHARACTER={CRLF}?{FIRST_KEY_CARACTER}
+FIRST_KEY_CARACTER=[^.?#!& \n\t\f\\]
+KEY_CHARACTER=[^.?#!&\n\t\f\\]
 SEPARATOR=[.?]
 
-FIRST_VALUE_CHARACTER=[^-.?#!& \n\t\f\\]
-VALUE_CHARACTER={CRLF}?[^-.?#!&\n\t\f\\]
+FIRST_VALUE_CHARACTER=[^.?#!& \n\t\f\\]
+VALUE_CHARACTER=[^.?#!&\n\t\f\\]
 VALUE_SEPARATOR="."
 
 LIST_SEPARATOR="-"

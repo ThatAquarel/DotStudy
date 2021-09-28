@@ -24,6 +24,7 @@ import java.util.Map;
 
 public class MyToolWindow {
 
+    private final Map<Guild, List<GuildChannel>> servers = new HashMap<>();
     private JButton send;
     private JButton update;
     private JComboBox<String> server;
@@ -32,8 +33,6 @@ public class MyToolWindow {
     private JPanel window;
     private JTextArea preview;
     private JScrollPane viewport;
-
-    private final Map<Guild, List<GuildChannel>> servers = new HashMap<>();
     private Guild selectedGuild;
     private GuildChannel selectedGuildChannel;
 

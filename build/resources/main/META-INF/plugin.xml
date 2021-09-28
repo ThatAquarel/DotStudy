@@ -1,13 +1,12 @@
 <idea-plugin>
-  <version>1.1-SNAPSHOT</version>
+  <version>1.2</version>
   <change-notes>
-      Add change notes here.&lt;br&gt;
-      &lt;em&gt;most HTML tags may be used&lt;/em&gt;</change-notes>
-  <idea-version since-build="203.7717" until-build="203.*"/>
+      DotStudy build 1.2</change-notes>
   <id>org.intellij.sdk.DotStudy</id>
   <name>DotStudy</name>
-  <vendor email="xia_tianyi@outlook.com" url="https://github.com/ThatAquarel">Aquarel</vendor>
-  <description>Plugin made by Aquarel(https://github.com/ThatAquarel)</description>
+  <idea-version since-build="203.7717" until-build="203.*"/>
+  <vendor url="https://github.com/ThatAquarel">Aquarel</vendor>
+  <description>Plugin made by Aquarel (https://github.com/ThatAquarel)</description>
   <depends>com.intellij.modules.platform</depends>
   <extensions defaultExtensionNs="com.intellij">
     <toolWindow id="DotStudy" secondary="true" icon="AllIcons.General.Modified" anchor="right" factoryClass="org.intellij.sdk.DotStudy.ToolWindow.MyToolWindowFactory"/>
@@ -19,5 +18,4 @@
     <colorSettingsPage implementation="org.intellij.sdk.DotStudy.Language.SimpleColorSettingsPage"/>
     <lang.formatter language="Study" implementationClass="org.intellij.sdk.DotStudy.Language.SimpleFormattingModelBuilder"/>
   </extensions>
-  <actions/>
 </idea-plugin>
