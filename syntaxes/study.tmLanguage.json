@@ -1,0 +1,56 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "study",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#title"
+		},
+		{
+			"include": "#subtitle"
+		}
+	],
+	"repository": {
+		"title": {
+			"patterns": [
+				{
+					"name": "keyword.control.study",
+					"match": "#.*"
+				}
+			]
+		},
+		"subtitle": {
+			"patterns": [
+				{
+					"name": "variable.name.study",
+					"match": "!.*"
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.study",
+					"match": "(if|while|for|return)"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.study",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.study",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.study"
+}
