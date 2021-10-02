@@ -21,13 +21,13 @@
 			}
 		],
 		"languages": [{
-            "id": "study",
-            "aliases": ["study", "study"],
+            "id": "DotStudy",
+            "aliases": ["DotStudy"],
             "extensions": [".study"],
-            "configuration": "./language-configuration.json"
+            "configuration": "./syntaxes/language-configuration.json"
         }],
         "grammars": [{
-            "language": "study",
+            "language": "DotStudy",
             "scopeName": "source.study",
             "path": "./syntaxes/study.tmLanguage.json"
         }]

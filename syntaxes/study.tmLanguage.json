@@ -1,18 +1,15 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "study",
+	"name": "DotStudy",
 	"patterns": [
-		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
-		},
 		{
 			"include": "#title"
 		},
 		{
 			"include": "#subtitle"
+		},
+		{
+			"include": "#expression"
 		}
 	],
 	"repository": {
@@ -32,22 +29,36 @@
 				}
 			]
 		},
-		"keywords": {
+		"expression": {
 			"patterns": [
 				{
-					"name": "keyword.control.study",
-					"match": "(if|while|for|return)"
+					"include": "#question"
+				},
+				{
+					"include": "#answer"
 				}
 			]
 		},
-		"strings": {
-			"name": "string.quoted.double.study",
-			"begin": "\"",
-			"end": "\"",
+		"question": {
+			"begin": "^",
+			"end": "(\\.|\\?|\\-)",
+			"endCaptures": {
+				"0": {
+					"name": "keyword.operator.new.study"
+				}
+			},
 			"patterns": [
 				{
-					"name": "constant.character.escape.study",
-					"match": "\\\\."
+					"name": "entity.name.class.study",
+					"match": "([^!#\\.\\?\\-]?)+"
+				}
+			]
+		},
+		"answer": {
+			"patterns": [
+				{
+					"name":"string.study",
+					"match": "(?<=^[^!#\\.\\-\\?]+\\.|\\-|\\?).*$"
 				}
 			]
 		}
