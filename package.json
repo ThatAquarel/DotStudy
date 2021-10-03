@@ -10,10 +10,22 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onNotebook:study-notebook"
+		"onNotebook:dotstudy-notebook"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
+		"notebooks": [
+            {
+                "id": "dotstudy-notebook",
+                "type": "dotstudy-notebook",
+                "displayName": "DotStudy Notebook",
+                "selector": [
+                    {
+                        "filenamePattern": "*.study"
+                    }
+                ]
+            }
+        ],
 		"languages": [{
             "id": "dotstudy-language",
             "aliases": ["DotStudy"],
