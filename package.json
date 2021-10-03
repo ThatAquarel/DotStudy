@@ -15,13 +15,13 @@
 	"main": "./out/extension.js",
 	"contributes": {
 		"languages": [{
-            "id": "DotStudy",
+            "id": "dotstudy-language",
             "aliases": ["DotStudy"],
             "extensions": [".study"],
             "configuration": "./syntaxes/language-configuration.json"
         }],
         "grammars": [{
-            "language": "DotStudy",
+            "language": "dotstudy-language",
             "scopeName": "source.study",
             "path": "./syntaxes/study.tmLanguage.json"
         }]
