@@ -1,6 +1,6 @@
 {
-	"name": "test",
-	"displayName": "test",
+	"name": "dotstudy",
+	"displayName": "DotStudy Notebook",
 	"description": "",
 	"version": "0.0.1",
 	"engines": {
@@ -10,16 +10,10 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:test.helloWorld"
+		"onNotebook:study-notebook"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [
-			{
-				"command": "test.helloWorld",
-				"title": "Hello World"
-			}
-		],
 		"languages": [{
             "id": "DotStudy",
             "aliases": ["DotStudy"],

@@ -41,7 +41,7 @@
 		},
 		"question": {
 			"begin": "^",
-			"end": "(\\.|\\?|\\-)",
+			"end": "(\\.|\\?)",
 			"endCaptures": {
 				"0": {
 					"name": "keyword.operator.new.study"
@@ -50,7 +50,7 @@
 			"patterns": [
 				{
 					"name": "entity.name.class.study",
-					"match": "([^!#\\.\\?\\-]?)+"
+					"match": "([^!#\\.\\?]?)+"
 				}
 			]
 		},
@@ -58,7 +58,7 @@
 			"patterns": [
 				{
 					"name":"string.study",
-					"match": "(?<=^[^!#\\.\\-\\?]+\\.|\\-|\\?).*$"
+					"match": "(?<=^[^!#\\.\\?]*\\.|\\?).*$"
 				}
 			]
 		}
