@@ -12,7 +12,7 @@ function questionSymbolFactory(line) {
         return (i >= 0) ? i : Infinity;
     });
     let end = Math.min(...indices) + 1;
-    return new vscode.DocumentSymbol(line.text.substring(0, end), line.text.substring(end, line.text.length - 1), vscode.SymbolKind.Field, line.range, line.range);
+    return new vscode.DocumentSymbol(line.text.substring(0, end), line.text.substring(end, line.text.length), vscode.SymbolKind.Field, line.range, line.range);
 }
 const symbolTypes = {
     "#": (line) => { return defaultSymbolFactory(line, vscode.SymbolKind.Class); },

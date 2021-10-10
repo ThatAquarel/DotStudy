@@ -20,7 +20,7 @@ function questionSymbolFactory(line: vscode.TextLine): vscode.DocumentSymbol {
 
     return new vscode.DocumentSymbol(
         line.text.substring(0, end),
-        line.text.substring(end, line.text.length - 1),
+        line.text.substring(end, line.text.length),
         vscode.SymbolKind.Field,
         line.range, line.range
     );

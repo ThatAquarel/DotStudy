@@ -10,6 +10,7 @@
 		"Other"
 	],
 	"activationEvents": [
+		"onLanguage:dotstudy-language",
 		"onCustomEditor:dotstudy.preview"
 	],
 	"main": "./out/extension.js",
