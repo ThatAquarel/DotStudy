@@ -11,31 +11,69 @@
 	],
 	"activationEvents": [
 		"onLanguage:dotstudy-language",
-		"onCustomEditor:dotstudy.preview"
+		"onCustomEditor:dotstudy.preview",
+		"*"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"customEditors": [{
-			"viewType": "dotstudy.preview",
-			"displayName": "DotStudy Preview",
-			"selector": [
-				{
-					"filenamePattern": "*.study"
+		"commands": [
+			{
+				"command": "dotstudy.publish",
+				"title": "DotStudy Publish"
+			}
+		],
+		"customEditors": [
+			{
+				"viewType": "dotstudy.preview",
+				"displayName": "DotStudy Preview",
+				"selector": [
+					{
+						"filenamePattern": "*.study"
+					}
+				],
+				"priority": "option"
+			}
+		],
+		"languages": [
+			{
+				"id": "dotstudy-language",
+				"aliases": [
+					"DotStudy"
+				],
+				"extensions": [
+					".study"
+				],
+				"configuration": "./syntaxes/language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "dotstudy-language",
+				"scopeName": "source.study",
+				"path": "./syntaxes/study.tmLanguage.json"
+			}
+		],
+		"configuration": {
+			"title": "DotStudy",
+			"properties": {
+				"dotstudy.botAuthKey": {
+					"type": [
+						"string",
+						"null"
+					],
+					"default": null,
+					"description": "Discord bot authentication key."
+				},
+				"dotstudy.publishChannel": {
+					"type": [
+						"string",
+						"null"
+					],
+					"default": null,
+					"description": "Specifies the Discord channel in which study guides get published."
 				}
-			],
-			"priority": "option"
-		}],
-		"languages": [{
-            "id": "dotstudy-language",
-            "aliases": ["DotStudy"],
-            "extensions": [".study"],
-            "configuration": "./syntaxes/language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "dotstudy-language",
-            "scopeName": "source.study",
-            "path": "./syntaxes/study.tmLanguage.json"
-        }]
+			}
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
@@ -44,6 +82,10 @@
 		"pretest": "npm run compile && npm run lint",
 		"lint": "eslint src --ext ts",
 		"test": "node ./out/test/runTest.js"
+	},
+	"dependencies": {
+		"discord.js": "^12.x",
+		"reflect-metadata": "^0.1.13"
 	},
 	"devDependencies": {
 		"@types/vscode": "^1.60.0",
@@ -56,6 +98,8 @@
 		"glob": "^7.1.7",
 		"mocha": "^9.1.1",
 		"typescript": "^4.4.3",
-		"@vscode/test-electron": "^1.6.2"
+		"@vscode/test-electron": "^1.6.2",
+		"discord.js": "^12.x",
+		"reflect-metadata": "^0.1.13"
 	}
 }
