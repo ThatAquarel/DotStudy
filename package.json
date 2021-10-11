@@ -2,6 +2,11 @@
 	"name": "dotstudy",
 	"displayName": "DotStudy Notebook",
 	"description": "",
+	"author": {
+		"name": "aquarel"
+	},
+	"publisher": "aquarel",
+	"repository": {"url": "https://github.com/ThatAquarel/DotStudy"},
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.60.0"
