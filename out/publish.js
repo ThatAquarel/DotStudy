@@ -21,8 +21,8 @@ function publish() {
             ;
             vscode.commands.executeCommand("vscode.executeDocumentSymbolProvider", editor.document.uri).then((values) => {
                 let symbols = values;
-                let text = discordFormattedString(symbols);
-                let messages = discordSplitMessages(text);
+                let strings = discordFormattedString(symbols);
+                let messages = discordSplitMessages(strings);
                 const key = vscode.workspace.getConfiguration('').get("dotstudy.botAuthKey");
                 const channel = vscode.workspace.getConfiguration('').get("dotstudy.publishChannel");
                 if (key === null || channel === null) {
@@ -49,20 +49,25 @@ function publish() {
 }
 exports.publish = publish;
 function discordFormattedString(symbols) {
-    let text = "";
+    let formattedStrings = [];
+    let i = -1;
     function stringifySymbols(symbol) {
         switch (symbol.kind) {
             case vscode.SymbolKind.Class: {
-                text += `__**${symbol.name}**__`;
+                formattedStrings.push("");
+                i++;
+                formattedStrings[i] += `__**${symbol.name}**__\n`;
                 break;
             }
             case vscode.SymbolKind.Method: {
-                text += `** **\n**${symbol.name}**\n`;
+                formattedStrings.push("");
+                i++;
+                formattedStrings[i] += `** **\n**${symbol.name}**\n`;
                 break;
             }
             case vscode.SymbolKind.Field: {
-                text += symbol.name;
-                text += ` ||${symbol.detail}||\n`;
+                formattedStrings[i] += symbol.name;
+                formattedStrings[i] += ` ||${symbol.detail}||\n`;
                 break;
             }
         }
@@ -71,25 +76,31 @@ function discordFormattedString(symbols) {
         }
     }
     stringifySymbols(symbols[0]);
-    return text;
+    return formattedStrings;
 }
-function discordSplitMessages(text) {
-    let messages = [];
-    let lineBreakIndices = [...text.matchAll(/\n/g)].map(match => match.index ?? -1);
-    let lineBreakIndicesMod = lineBreakIndices.map((value) => { return value % 1500; });
-    let startingIndex = 0;
-    for (let i = 0; i < lineBreakIndices.length; i++) {
-        let currentLineBreak = lineBreakIndicesMod[i];
-        let nextLineBreak = lineBreakIndicesMod[i + 1];
-        if (nextLineBreak === undefined) {
-            nextLineBreak = -1;
+function discordSplitMessages(strings) {
+    let allMessages = [];
+    for (const text of strings) {
+        let messages = [];
+        let lineBreakIndices = [...text.matchAll(/\n/g)].map(match => match.index ?? -1);
+        let lineBreakIndicesMod = lineBreakIndices.map((value) => { return value % 1500; });
+        let startingIndex = 0;
+        for (let i = 0; i < lineBreakIndices.length; i++) {
+            let currentLineBreak = lineBreakIndicesMod[i];
+            let nextLineBreak = lineBreakIndicesMod[i + 1];
+            if (nextLineBreak === undefined) {
+                nextLineBreak = -1;
+            }
+            ;
+            if (currentLineBreak >= nextLineBreak) {
+                messages.push(text.substring(startingIndex, lineBreakIndices[i] + 1));
+                startingIndex = lineBreakIndices[i] + 1;
+            }
         }
-        ;
-        if (currentLineBreak >= nextLineBreak) {
-            messages.push(text.substring(startingIndex, lineBreakIndices[i] + 1));
-            startingIndex = lineBreakIndices[i] + 1;
+        for (const message of messages) {
+            allMessages.push(message);
         }
     }
-    return messages;
+    return allMessages;
 }
 //# sourceMappingURL=publish.js.map
