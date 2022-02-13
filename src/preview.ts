@@ -1,6 +1,7 @@
 'use strict';
 import * as vscode from 'vscode';
 import { recursiveSymbolProcessor } from './language';
+import { getCurrentEditorPath, getCurrentEditorSymbols, getRandomId } from './util';
 
 export class DotStudyEditorProvider implements vscode.CustomTextEditorProvider {
 
@@ -25,24 +26,46 @@ export class DotStudyEditorProvider implements vscode.CustomTextEditorProvider {
             enableScripts: true,
         };
 
-        let values: unknown = await vscode.commands.executeCommand("vscode.executeDocumentSymbolProvider", document.uri);
-        let symbols = values as vscode.DocumentSymbol[];
+        const symbols = await new Promise((resolve, _reject) => {
+            getCurrentEditorSymbols(document.uri, symbols => {
+                resolve(symbols);
+            });
+        }) as vscode.DocumentSymbol[];
+        if (symbols.length === 0) {
+            webviewPanel.webview.html = '<h1>No symbols found</h1>';
+            return;
+        }
 
+        const remote = vscode.workspace.getConfiguration('').get("dotstudy.remoteRaw") as string;
+        const path = getCurrentEditorPath(document);
         let html = "";
-
         recursiveSymbolProcessor(
             symbols[0],
             {
                 [vscode.SymbolKind.Class]: (symbol: vscode.DocumentSymbol) => {
-                    html += `<h1>${symbol.name}<h1>`;
+                    html += `<h1>${symbol.name}</h1>`;
                 },
                 [vscode.SymbolKind.Method]: (symbol: vscode.DocumentSymbol) => {
-                    html += `<h2>${symbol.name}<h2>`;
+                    html += `<h2>${symbol.name}</h2>`;
+                },
+                [vscode.SymbolKind.File]: (symbol: vscode.DocumentSymbol) => {
+                    let absolute = vscode.Uri.file(path + symbol.name);
+                    let relative = vscode.workspace.asRelativePath(absolute);
+                    
+                    let id = getRandomId(16);
+                    html += `
+                    <div class="img-container">
+                        <input type="checkbox" id="zoom-check-${id}">
+                        <label for="zoom-check-${id}">
+                            <img src="${remote + relative}" alt=${symbol.name}>
+                        </label>
+                    </div>
+                    `;
                 },
                 [vscode.SymbolKind.Field]: (symbol: vscode.DocumentSymbol) => {
-                    html += `<h3>${symbol.name}<h3>`;
+                    html += `<div class="expression"><h3>${symbol.name}</h3>`;
                     for (const answer of symbol.detail.split("|| ||")) {
-                        html += `<p>${answer}</p>`;
+                        html += `<p>${answer}</p></div>`;
                     };
                 }
             }
@@ -51,68 +74,95 @@ export class DotStudyEditorProvider implements vscode.CustomTextEditorProvider {
         webviewPanel.webview.html = `
         <!DOCTYPE html>
         <html lang="en">
-
             <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            <title>DotStudy Preview ---</title>
+            <title>DotStudy Preview</title>
             <style>
-                #container {
-                    margin: 8px;
-                }
+              #container {
+                margin: 8px;
+                color: var(--vscode-menu-background);
+                margin-bottom: 32px;
+              }
+        
+              h1,
+              h2 {
+                font-weight: 700;
+                text-decoration: underline;
+                color: var(--vscode-checkbox-foreground);
+              }
+        
+              h1 {
+                  font-size: 2em;
+              }
 
-                h1 {
-                    padding-bottom: .1em;
-                    font-size: 2em;
-                    font-weight: 600;
-                }
+              h2 {
+                  margin-top: 32px;
+                  font-size: 1.5em;
+              }
+        
+              h3,
+              p {
+                display: inline-block;
+                font-weight: 400;
+                font-size: 1.25em;
+        
+                margin: 0;
+              }
+        
+              .expression {
+                display: block;
+                margin-bottom: 5px;
+              }
+        
+              h3 {
+                color: var(--vscode-foreground);
+              }
+        
+              p {
+                margin-left: 16px;
+                border-radius: 4px;
+        
+                background-color: var(--vscode-input-background);
+                color: transparent;
+                transition: all 0.25s ease;
+              }
+        
+              p:hover {
+                background-color: var(--vscode-focusBorder);
+                color: var(--vscode-foreground);
+              }
+        
+              img {
+                max-width: 30vw;
+                max-height: 50vh;
+                border-radius: 4px;
+              }
+              
+              input[type=checkbox] {
+                display: none;
+              }
 
-                h2 {
-                    padding-top: .3em
-                    padding-bottom: .1em;
-                    font-size: 1.5em;
-                    margin-top: 12px;
-                }
+              .img-container img {
+                max-width: 30vw;
+                max-height: 50vh;
+                  transition: all 0.25s ease;
+                  cursor: zoom-in;
+              }
 
-                h3 {
-                    margin-left: 16px;
-                    margin-bottom: 0px;
-                    margin-top: 0px;
-                    font-weight: 400;
-                    line-height: 1.25;
-                    color: #aab1be;
-                }
-
-                h1,
-                h2 {
-                    margin-bottom: 16px;
-                    font-weight: 600;
-                    line-height: 1.25;
-                    color: #f0f0f0;
-                }
-
-                p {
-                    font-weight: 400;
-                    margin-top: 0;
-                    margin-bottom: 16px;
-                    margin-left: 24px;
-                    border-radius: 4px;
-                    background-color: #1e2227;
-                    color: transparent;
-                    transition: all 0.25s;
-                }
-
-                p:hover{
-                    background-color: #3a3f4b;
-                    color: #aab1be;
-                }
+              input[type=checkbox]:checked ~ label > img {
+                max-width: 60vw;
+                max-height: 100vh;
+                cursor: zoom-out;
+              }
             </style>
         </head>
         <body>
             <div id="container">
                 ${html}
             </div>
+            <footer>aquarel 2022</footer>
         </body>
         </html>`;
     }

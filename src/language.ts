@@ -3,7 +3,9 @@ import * as vscode from 'vscode';
 
 export function recursiveSymbolProcessor(parent: vscode.DocumentSymbol, functions: { [id: number]: (symbol: vscode.DocumentSymbol) => void; }) {
     function recursiveTree(symbol: vscode.DocumentSymbol) {
-        functions[symbol.kind](symbol);
+        if (symbol.kind in functions) {
+            functions[symbol.kind](symbol);
+        }
         for (const child of symbol.children) {
             recursiveTree(child);
         }

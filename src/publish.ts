@@ -2,6 +2,7 @@
 import * as vscode from 'vscode';
 import { DiscordClient, DiscordMessage } from './discord';
 import { recursiveSymbolProcessor } from './language';
+import { getCurrentEditorPath, getCurrentEditorSymbols } from './util';
 
 interface ChannelPickItem extends vscode.QuickPickItem {
     _discordId: string;
@@ -38,22 +39,14 @@ export async function publish() {
         quickPick.onDidHide(() => quickPick.dispose());
         quickPick.show();
     });
-
     const channel = (selection as ChannelPickItem)._discordId;
 
-    const editor = vscode.window.activeTextEditor;
-    if (editor === undefined) { return; };
-
-    const symbols = await vscode.commands.executeCommand(
-        "vscode.executeDocumentSymbolProvider",
-        editor.document.uri
-    ) as vscode.DocumentSymbol[];
-
-    let path = editor?.document.fileName;
-    path = (path === undefined) ? ".\\" : path;
-    path = path.substring(0, path.lastIndexOf("\\") + 1);
-
-    const discordMessages: DiscordMessage[] = discordFormattedMessages(symbols, path);
+    const symbols = await new Promise((resolve, _reject) => {
+        getCurrentEditorSymbols(null, symbols => {
+            resolve(symbols);
+        });
+    }) as vscode.DocumentSymbol[];
+    const discordMessages: DiscordMessage[] = discordFormattedMessages(symbols);
 
     vscode.window.withProgress({
         location: vscode.ProgressLocation.Notification,
@@ -82,16 +75,18 @@ export async function publish() {
     });
 }
 
-function discordFormattedMessages(symbols: vscode.DocumentSymbol[], path: string): DiscordMessage[] {
+function discordFormattedMessages(symbols: vscode.DocumentSymbol[]): DiscordMessage[] {
+    const path = getCurrentEditorPath();
+
     let messages: DiscordMessage[] = [new DiscordMessage("", "")];
     let i = 0;
 
-    let newMessage = () => {
+    function newMessage() {
         messages.push(new DiscordMessage("", ""));
         i++;
     };
 
-    let pushMessages = (text: string) => {
+    function pushMessages(text: string) {
         if (messages[i].text.length + text.length > 2000) { newMessage(); };
         messages[i].text += text;
     };

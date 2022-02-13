@@ -4,6 +4,7 @@ exports.publish = void 0;
 const vscode = require("vscode");
 const discord_1 = require("./discord");
 const language_1 = require("./language");
+const util_1 = require("./util");
 async function publish() {
     const key = vscode.workspace.getConfiguration('').get("dotstudy.botAuthKey");
     if (key === null) {
@@ -33,16 +34,12 @@ async function publish() {
         quickPick.show();
     });
     const channel = selection._discordId;
-    const editor = vscode.window.activeTextEditor;
-    if (editor === undefined) {
-        return;
-    }
-    ;
-    const symbols = await vscode.commands.executeCommand("vscode.executeDocumentSymbolProvider", editor.document.uri);
-    let path = editor?.document.fileName;
-    path = (path === undefined) ? ".\\" : path;
-    path = path.substring(0, path.lastIndexOf("\\") + 1);
-    const discordMessages = discordFormattedMessages(symbols, path);
+    const symbols = await new Promise((resolve, _reject) => {
+        (0, util_1.getCurrentEditorSymbols)(null, symbols => {
+            resolve(symbols);
+        });
+    });
+    const discordMessages = discordFormattedMessages(symbols);
     vscode.window.withProgress({
         location: vscode.ProgressLocation.Notification,
         title: "DotStudy Publish to Discord",
@@ -68,20 +65,23 @@ async function publish() {
     });
 }
 exports.publish = publish;
-function discordFormattedMessages(symbols, path) {
+function discordFormattedMessages(symbols) {
+    const path = (0, util_1.getCurrentEditorPath)();
     let messages = [new discord_1.DiscordMessage("", "")];
     let i = 0;
-    let newMessage = () => {
+    function newMessage() {
         messages.push(new discord_1.DiscordMessage("", ""));
         i++;
-    };
-    let pushMessages = (text) => {
+    }
+    ;
+    function pushMessages(text) {
         if (messages[i].text.length + text.length > 2000) {
             newMessage();
         }
         ;
         messages[i].text += text;
-    };
+    }
+    ;
     (0, language_1.recursiveSymbolProcessor)(symbols[0], {
         [vscode.SymbolKind.Class]: (symbol) => {
             pushMessages(`__**${symbol.name}**__\n`);

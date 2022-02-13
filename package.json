@@ -69,6 +69,14 @@
 					],
 					"default": null,
 					"description": "Discord bot authentication key."
+				},
+				"dotstudy.remoteRaw": {
+					"type": [
+						"string",
+						"null"
+					],
+					"default": null,
+					"description": "Remote git repository"
 				}
 			}
 		}

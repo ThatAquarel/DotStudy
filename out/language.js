@@ -4,7 +4,9 @@ exports.DotStudySymbolProvider = exports.recursiveSymbolProcessor = void 0;
 const vscode = require("vscode");
 function recursiveSymbolProcessor(parent, functions) {
     function recursiveTree(symbol) {
-        functions[symbol.kind](symbol);
+        if (symbol.kind in functions) {
+            functions[symbol.kind](symbol);
+        }
         for (const child of symbol.children) {
             recursiveTree(child);
         }
