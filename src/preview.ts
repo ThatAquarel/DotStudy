@@ -1,6 +1,6 @@
 'use strict';
-import { setMaxListeners } from 'process';
 import * as vscode from 'vscode';
+import { recursiveSymbolProcessor } from './language';
 
 export class DotStudyEditorProvider implements vscode.CustomTextEditorProvider {
 
@@ -29,32 +29,24 @@ export class DotStudyEditorProvider implements vscode.CustomTextEditorProvider {
         let symbols = values as vscode.DocumentSymbol[];
 
         let html = "";
-        function stringifySymbols(symbol: vscode.DocumentSymbol) {
-            switch (symbol.kind) {
-                case vscode.SymbolKind.Class: {
+
+        recursiveSymbolProcessor(
+            symbols[0],
+            {
+                [vscode.SymbolKind.Class]: (symbol: vscode.DocumentSymbol) => {
                     html += `<h1>${symbol.name}<h1>`;
-                    break;
-                }
-                case vscode.SymbolKind.Method: {
+                },
+                [vscode.SymbolKind.Method]: (symbol: vscode.DocumentSymbol) => {
                     html += `<h2>${symbol.name}<h2>`;
-                    break;
-                }
-                case vscode.SymbolKind.Field: {
+                },
+                [vscode.SymbolKind.Field]: (symbol: vscode.DocumentSymbol) => {
                     html += `<h3>${symbol.name}<h3>`;
-                    for (const answer of symbol.detail.split("|| ||")){
+                    for (const answer of symbol.detail.split("|| ||")) {
                         html += `<p>${answer}</p>`;
-                    }
-
-                    break;
+                    };
                 }
             }
-
-            for (const child of symbol.children) {
-                stringifySymbols(child);
-            }
-        }
-
-        stringifySymbols(symbols[0]);
+        );
 
         webviewPanel.webview.html = `
         <!DOCTYPE html>

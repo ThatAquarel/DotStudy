@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.publish = void 0;
 const vscode = require("vscode");
 const discord_1 = require("./discord");
+const language_1 = require("./language");
 function publish() {
     vscode.window.withProgress({
         location: vscode.ProgressLocation.Notification,
@@ -51,31 +52,47 @@ exports.publish = publish;
 function discordFormattedString(symbols) {
     let formattedStrings = [];
     let i = -1;
-    function stringifySymbols(symbol) {
-        switch (symbol.kind) {
-            case vscode.SymbolKind.Class: {
-                formattedStrings.push("");
-                i++;
-                formattedStrings[i] += `__**${symbol.name}**__\n`;
-                break;
-            }
-            case vscode.SymbolKind.Method: {
-                formattedStrings.push("");
-                i++;
-                formattedStrings[i] += `** **\n**${symbol.name}**\n`;
-                break;
-            }
-            case vscode.SymbolKind.Field: {
-                formattedStrings[i] += symbol.name;
-                formattedStrings[i] += ` ||${symbol.detail}||\n`;
-                break;
-            }
+    // function stringifySymbols(symbol: vscode.DocumentSymbol) {
+    //     switch (symbol.kind) {
+    //         case vscode.SymbolKind.Class: {
+    //             formattedStrings.push("");
+    //             i++;
+    //             formattedStrings[i] += `__**${symbol.name}**__\n`;
+    //             break;
+    //         }
+    //         case vscode.SymbolKind.Method: {
+    //             formattedStrings.push("");
+    //             i++;
+    //             formattedStrings[i] += `** **\n**${symbol.name}**\n`;
+    //             break;
+    //         }
+    //         case vscode.SymbolKind.Field: {
+    //             formattedStrings[i] += symbol.name;
+    //             formattedStrings[i] += ` ||${symbol.detail}||\n`;
+    //             break;
+    //         }
+    //     }
+    //     for (const child of symbol.children) {
+    //         stringifySymbols(child);
+    //     }
+    // }
+    // stringifySymbols(symbols[0]);
+    (0, language_1.recursiveSymbolProcessor)(symbols[0], {
+        [vscode.SymbolKind.Class]: (symbol) => {
+            formattedStrings.push("");
+            i++;
+            formattedStrings[i] += `__**${symbol.name}**__\n`;
+        },
+        [vscode.SymbolKind.Method]: (symbol) => {
+            formattedStrings.push("");
+            i++;
+            formattedStrings[i] += `** **\n**${symbol.name}**\n`;
+        },
+        [vscode.SymbolKind.Field]: (symbol) => {
+            formattedStrings[i] += symbol.name;
+            formattedStrings[i] += ` ||${symbol.detail}||\n`;
         }
-        for (const child of symbol.children) {
-            stringifySymbols(child);
-        }
-    }
-    stringifySymbols(symbols[0]);
+    });
     return formattedStrings;
 }
 function discordSplitMessages(strings) {

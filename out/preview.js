@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DotStudyEditorProvider = void 0;
 const vscode = require("vscode");
+const language_1 = require("./language");
 class DotStudyEditorProvider {
     constructor(context) {
         this.context = context;
@@ -18,29 +19,21 @@ class DotStudyEditorProvider {
         let values = await vscode.commands.executeCommand("vscode.executeDocumentSymbolProvider", document.uri);
         let symbols = values;
         let html = "";
-        function stringifySymbols(symbol) {
-            switch (symbol.kind) {
-                case vscode.SymbolKind.Class: {
-                    html += `<h1>${symbol.name}<h1>`;
-                    break;
+        (0, language_1.recursiveSymbolProcessor)(symbols[0], {
+            [vscode.SymbolKind.Class]: (symbol) => {
+                html += `<h1>${symbol.name}<h1>`;
+            },
+            [vscode.SymbolKind.Method]: (symbol) => {
+                html += `<h2>${symbol.name}<h2>`;
+            },
+            [vscode.SymbolKind.Field]: (symbol) => {
+                html += `<h3>${symbol.name}<h3>`;
+                for (const answer of symbol.detail.split("|| ||")) {
+                    html += `<p>${answer}</p>`;
                 }
-                case vscode.SymbolKind.Method: {
-                    html += `<h2>${symbol.name}<h2>`;
-                    break;
-                }
-                case vscode.SymbolKind.Field: {
-                    html += `<h3>${symbol.name}<h3>`;
-                    for (const answer of symbol.detail.split("|| ||")) {
-                        html += `<p>${answer}</p>`;
-                    }
-                    break;
-                }
+                ;
             }
-            for (const child of symbol.children) {
-                stringifySymbols(child);
-            }
-        }
-        stringifySymbols(symbols[0]);
+        });
         webviewPanel.webview.html = `
         <!DOCTYPE html>
         <html lang="en">

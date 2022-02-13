@@ -1,6 +1,17 @@
 'use strict';
 import * as vscode from 'vscode';
 
+export function recursiveSymbolProcessor(parent: vscode.DocumentSymbol, functions: { [id: number]: (symbol: vscode.DocumentSymbol) => void; }) {
+    function recursiveTree(symbol: vscode.DocumentSymbol) {
+        functions[symbol.kind](symbol);
+        for (const child of symbol.children) {
+            recursiveTree(child);
+        }
+    };
+
+    recursiveTree(parent);
+};
+
 function defaultSymbolFactory(line: vscode.TextLine, symbolKind: vscode.SymbolKind): vscode.DocumentSymbol {
     return new vscode.DocumentSymbol(
         line.text.substring(1), "",
@@ -29,14 +40,14 @@ function questionSymbolFactory(line: vscode.TextLine): vscode.DocumentSymbol {
 const symbolTypes: { [id: string]: (line: vscode.TextLine) => vscode.DocumentSymbol; } = {
     "#": (line: vscode.TextLine) => { return defaultSymbolFactory(line, vscode.SymbolKind.Class); },
     "!": (line: vscode.TextLine) => { return defaultSymbolFactory(line, vscode.SymbolKind.Method); },
+    "&": (line: vscode.TextLine) => { return defaultSymbolFactory(line, vscode.SymbolKind.File); },
     "?": questionSymbolFactory
 };
 
 export class DotStudySymbolProvider implements vscode.DocumentSymbolProvider {
-
     public provideDocumentSymbols(document: vscode.TextDocument,
-        token: vscode.CancellationToken): Promise<vscode.DocumentSymbol[]> {
-        return new Promise((resolve, reject) => {
+        _token: vscode.CancellationToken): Promise<vscode.DocumentSymbol[]> {
+        return new Promise((resolve, _reject) => {
 
             let parent: vscode.DocumentSymbol | undefined = undefined;
             let symbol: vscode.DocumentSymbol | undefined = undefined;
@@ -50,6 +61,8 @@ export class DotStudySymbolProvider implements vscode.DocumentSymbolProvider {
                 } else if (text.startsWith("!")) {
                     if (symbol) { parent?.children.push(symbol); };
                     symbol = symbolTypes["!"](line);
+                } else if (text.startsWith("&")) {
+                    symbol?.children.push(symbolTypes["&"](line));
                 } else if (text !== "") {
                     symbol?.children.push(symbolTypes["?"](line));
                 }

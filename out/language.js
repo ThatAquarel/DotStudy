@@ -1,7 +1,19 @@
 'use strict';
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.DotStudySymbolProvider = void 0;
+exports.DotStudySymbolProvider = exports.recursiveSymbolProcessor = void 0;
 const vscode = require("vscode");
+function recursiveSymbolProcessor(parent, functions) {
+    function recursiveTree(symbol) {
+        functions[symbol.kind](symbol);
+        for (const child of symbol.children) {
+            recursiveTree(child);
+        }
+    }
+    ;
+    recursiveTree(parent);
+}
+exports.recursiveSymbolProcessor = recursiveSymbolProcessor;
+;
 function defaultSymbolFactory(line, symbolKind) {
     return new vscode.DocumentSymbol(line.text.substring(1), "", symbolKind, line.range, line.range);
 }
@@ -17,11 +29,12 @@ function questionSymbolFactory(line) {
 const symbolTypes = {
     "#": (line) => { return defaultSymbolFactory(line, vscode.SymbolKind.Class); },
     "!": (line) => { return defaultSymbolFactory(line, vscode.SymbolKind.Method); },
+    "&": (line) => { return defaultSymbolFactory(line, vscode.SymbolKind.File); },
     "?": questionSymbolFactory
 };
 class DotStudySymbolProvider {
-    provideDocumentSymbols(document, token) {
-        return new Promise((resolve, reject) => {
+    provideDocumentSymbols(document, _token) {
+        return new Promise((resolve, _reject) => {
             let parent = undefined;
             let symbol = undefined;
             for (let i = 0; i < document.lineCount; i++) {
@@ -36,6 +49,9 @@ class DotStudySymbolProvider {
                     }
                     ;
                     symbol = symbolTypes["!"](line);
+                }
+                else if (text.startsWith("&")) {
+                    symbol?.children.push(symbolTypes["&"](line));
                 }
                 else if (text !== "") {
                     symbol?.children.push(symbolTypes["?"](line));
