@@ -7,7 +7,7 @@
 	},
 	"publisher": "aquarel",
 	"repository": {"url": "https://github.com/ThatAquarel/DotStudy"},
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"engines": {
 		"vscode": "^1.60.0"
 	},
@@ -23,8 +23,9 @@
 	"contributes": {
 		"commands": [
 			{
+				"category": "DotStudy",
 				"command": "dotstudy.publish",
-				"title": "DotStudy Publish"
+				"title": "Publish to Discord"
 			}
 		],
 		"customEditors": [
@@ -68,14 +69,6 @@
 					],
 					"default": null,
 					"description": "Discord bot authentication key."
-				},
-				"dotstudy.publishChannel": {
-					"type": [
-						"string",
-						"null"
-					],
-					"default": null,
-					"description": "Specifies the Discord channel in which study guides get published."
 				}
 			}
 		}

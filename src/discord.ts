@@ -12,8 +12,30 @@ export class DiscordClient {
         });
     }
 
-    sendMessage(channelId: string, message: string) {
+    fetchChannel(channelId: string) {
+        let _channel = channelId;
+    }
+
+    sendMessage(channelId: string, message: DiscordMessage) {
         const channel = this.client.channels.cache.find((a: { id: string; }) => a.id === channelId);
-        channel.send(message);
+        channel.send(...message.getMessage());
+    }
+}
+
+export class DiscordMessage {
+    text: string;
+    file: string;
+
+    constructor(text: string, file: string) {
+        this.text = text;
+        this.file = file;
+    }
+
+    getMessage() {
+        if (this.file !== "") {
+            return [this.text, { files: [this.file] }];
+        } else {
+            return [this.text];
+        }
     }
 }

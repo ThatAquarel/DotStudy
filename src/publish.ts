@@ -1,9 +1,60 @@
 'use strict';
 import * as vscode from 'vscode';
-import { DiscordClient } from './discord';
+import { DiscordClient, DiscordMessage } from './discord';
 import { recursiveSymbolProcessor } from './language';
 
-export function publish() {
+interface ChannelPickItem extends vscode.QuickPickItem {
+    _discordId: string;
+}
+
+export async function publish() {
+    const key = vscode.workspace.getConfiguration('').get("dotstudy.botAuthKey") as string;
+    if (key === null) { return; };
+
+    let discordClient: DiscordClient = await new Promise((resolve, _reject) => {
+        new DiscordClient(key, (_client: DiscordClient) => {
+            resolve(_client);
+        });
+    });
+
+    const textChannels: any[] = Array.from(
+        discordClient.client.channels.cache.values()
+    ).filter(x => (x as any).type === "text");
+
+    const items = textChannels.map(x => {
+        return {
+            label: x.name,
+            description: (x.topic === null) ? "" : x.topic,
+            _discordId: x.id
+        };
+    });
+
+    const selection: vscode.QuickPickItem = await new Promise((resolve, _reject) => {
+        const quickPick = vscode.window.createQuickPick();
+        quickPick.items = items;
+        quickPick.onDidChangeSelection(selection => {
+            resolve(selection[0]);
+        });
+        quickPick.onDidHide(() => quickPick.dispose());
+        quickPick.show();
+    });
+
+    const channel = (selection as ChannelPickItem)._discordId;
+
+    const editor = vscode.window.activeTextEditor;
+    if (editor === undefined) { return; };
+
+    const symbols = await vscode.commands.executeCommand(
+        "vscode.executeDocumentSymbolProvider",
+        editor.document.uri
+    ) as vscode.DocumentSymbol[];
+
+    let path = editor?.document.fileName;
+    path = (path === undefined) ? ".\\" : path;
+    path = path.substring(0, path.lastIndexOf("\\") + 1);
+
+    const discordMessages: DiscordMessage[] = discordFormattedMessages(symbols, path);
+
     vscode.window.withProgress({
         location: vscode.ProgressLocation.Notification,
         title: "DotStudy Publish to Discord",
@@ -12,131 +63,62 @@ export function publish() {
         token.onCancellationRequested(() => {
             console.log("Canceled DotStudy Publish");
         });
+        const p = new Promise<void>(async resolve => {
+            const step = Math.round(100 / discordMessages.length);
+            for (let i = 0; i < discordMessages.length; i++) {
+                setTimeout(() => {
+                    progress.report({ increment: i * step, message: vscode.window.activeTextEditor?.document.uri.fsPath });
+                    discordClient.sendMessage(channel, discordMessages[i]);
+                }, i * 250);
+            }
 
-        const p = new Promise<void>(resolve => {
-            let editor = vscode.window.activeTextEditor;
-            if (editor === undefined) {
+            setTimeout(() => {
+                progress.report({ increment: 100, message: vscode.window.activeTextEditor?.document.uri.fsPath });
                 resolve();
-                return;
-            };
-
-            vscode.commands.executeCommand(
-                "vscode.executeDocumentSymbolProvider",
-                editor.document.uri
-            ).then((values: unknown) => {
-                let symbols = values as vscode.DocumentSymbol[];
-                let strings = discordFormattedString(symbols);
-                let messages = discordSplitMessages(strings);
-
-                const key = vscode.workspace.getConfiguration('').get("dotstudy.botAuthKey") as string;
-                const channel = vscode.workspace.getConfiguration('').get("dotstudy.publishChannel") as string;
-                if (key === null || channel === null) {
-                    resolve();
-                    return;
-                }
-
-                new DiscordClient(key, (client: DiscordClient) => {
-                    let step = Math.round(100 / messages.length);
-
-                    for (let i = 0; i < messages.length; i++) {
-                        setTimeout(() => {
-                            progress.report({ increment: i * step, message: vscode.window.activeTextEditor?.document.uri.fsPath });
-                            client.sendMessage(channel, messages[i]);
-                        }, i * 250);
-                    }
-
-                    setTimeout(() => {
-                        progress.report({ increment: 100, message: vscode.window.activeTextEditor?.document.uri.fsPath });
-                        resolve();
-                    }, messages.length * 250 + 5);
-                });
-            });
+            }, discordMessages.length * 250 + 5);
         });
 
         return p;
     });
 }
 
-function discordFormattedString(symbols: vscode.DocumentSymbol[]): string[] {
-    let formattedStrings: string[] = [];
-    let i = -1;
+function discordFormattedMessages(symbols: vscode.DocumentSymbol[], path: string): DiscordMessage[] {
+    let messages: DiscordMessage[] = [new DiscordMessage("", "")];
+    let i = 0;
 
-    // function stringifySymbols(symbol: vscode.DocumentSymbol) {
-    //     switch (symbol.kind) {
-    //         case vscode.SymbolKind.Class: {
-    //             formattedStrings.push("");
-    //             i++;
-    //             formattedStrings[i] += `__**${symbol.name}**__\n`;
-    //             break;
-    //         }
-    //         case vscode.SymbolKind.Method: {
-    //             formattedStrings.push("");
-    //             i++;
-    //             formattedStrings[i] += `** **\n**${symbol.name}**\n`;
-    //             break;
-    //         }
-    //         case vscode.SymbolKind.Field: {
-    //             formattedStrings[i] += symbol.name;
-    //             formattedStrings[i] += ` ||${symbol.detail}||\n`;
-    //             break;
-    //         }
-    //     }
+    let newMessage = () => {
+        messages.push(new DiscordMessage("", ""));
+        i++;
+    };
 
-    //     for (const child of symbol.children) {
-    //         stringifySymbols(child);
-    //     }
-    // }
-    // stringifySymbols(symbols[0]);
+    let pushMessages = (text: string) => {
+        if (messages[i].text.length + text.length > 2000) { newMessage(); };
+        messages[i].text += text;
+    };
 
     recursiveSymbolProcessor(
         symbols[0],
         {
             [vscode.SymbolKind.Class]: (symbol: vscode.DocumentSymbol) => {
-                formattedStrings.push("");
-                i++;
-                formattedStrings[i] += `__**${symbol.name}**__\n`;
+                pushMessages(`__**${symbol.name}**__\n`);
             },
             [vscode.SymbolKind.Method]: (symbol: vscode.DocumentSymbol) => {
-                formattedStrings.push("");
-                i++;
-                formattedStrings[i] += `** **\n**${symbol.name}**\n`;
+                pushMessages(`** **\n**${symbol.name}**\n`);
+            },
+            [vscode.SymbolKind.File]: (symbol: vscode.DocumentSymbol) => {
+                messages[i].file = path + symbol.name;
+                newMessage();
             },
             [vscode.SymbolKind.Field]: (symbol: vscode.DocumentSymbol) => {
-                formattedStrings[i] += symbol.name;
-                formattedStrings[i] += ` ||${symbol.detail}||\n`;
+                let text = symbol.name;
+                let detail = symbol.detail.trim();
+                if (detail !== "") { text += ` ||${detail}||`; };
+                text += "\n";
+
+                pushMessages(text);
             }
         }
     );
 
-    return formattedStrings;
-}
-
-function discordSplitMessages(strings: string[]): string[] {
-    let allMessages: string[] = [];
-
-    for (const text of strings) {
-        let messages: string[] = [];
-
-        let lineBreakIndices = [...text.matchAll(/\n/g)].map(match => match.index ?? -1);
-        let lineBreakIndicesMod = lineBreakIndices.map((value) => { return value % 1500; });
-        let startingIndex = 0;
-
-        for (let i = 0; i < lineBreakIndices.length; i++) {
-            let currentLineBreak = lineBreakIndicesMod[i];
-            let nextLineBreak = lineBreakIndicesMod[i + 1];
-
-            if (nextLineBreak === undefined) { nextLineBreak = -1; };
-
-            if (currentLineBreak >= nextLineBreak) {
-                messages.push(text.substring(startingIndex, lineBreakIndices[i] + 1));
-                startingIndex = lineBreakIndices[i] + 1;
-            }
-        }
-
-        for (const message of messages) {
-            allMessages.push(message);
-        }
-    }
-
-    return allMessages;
+    return messages;
 }
