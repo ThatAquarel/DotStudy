@@ -1,0 +1,41 @@
+{
+	"fileTypes": [],
+	"injectionSelector": "L:meta.paragraph.markdown - (comment, string, markup.study.inline.markdown)",
+	"patterns": [
+		{
+			"include": "#study_inline"
+		},
+		{
+			"include": "#study_image"
+		}
+	],
+	"repository": {
+		"study_inline": {
+			"name": "markup.study.inline.markdown",
+			"match": "(?<=\\G|^)(?<!\\.|\\?)([^\\.\\?]+)(\\.|\\?)(?=\\s|\\W|$)",
+			"captures": {
+				"1": {
+					"name": "entity.name.tag.study.markdown",
+					"patterns": [
+						{
+							"include": "text.html.markdown#inline"
+						}
+					]
+				},
+				"2": {
+					"name": "punctuation.definition.tag.study.markdown"
+				}
+			}
+		},
+		"study_image": {
+			"name": "markup.study.image.markdown",
+			"match": "(?<=\\G|^)(\\&[^\\&]+)(?=\\W|$)",
+			"captures": {
+				"1": {
+					"name": "markup.underline.link.study.markdown"
+				}
+			}
+		}
+	},
+	"scopeName": "markdown.study.inline"
+}

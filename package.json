@@ -59,6 +59,13 @@
 				"language": "dotstudy-language",
 				"scopeName": "source.study",
 				"path": "./syntaxes/study.tmLanguage.json"
+			},
+			{
+				"scopeName": "markdown.study.inline",
+				"path": "./syntaxes/md-study-inline.tmLanguage.json",
+				"injectTo": [
+					"text.html.markdown"
+				]
 			}
 		],
 		"configuration": {
