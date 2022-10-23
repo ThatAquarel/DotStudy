@@ -30,36 +30,7 @@
 				"title": "Publish to Discord"
 			}
 		],
-		"customEditors": [
-			{
-				"viewType": "dotstudy.preview",
-				"displayName": "DotStudy Preview",
-				"selector": [
-					{
-						"filenamePattern": "*.study"
-					}
-				],
-				"priority": "option"
-			}
-		],
-		"languages": [
-			{
-				"id": "dotstudy-language",
-				"aliases": [
-					"DotStudy"
-				],
-				"extensions": [
-					".study"
-				],
-				"configuration": "./syntaxes/language-configuration.json"
-			}
-		],
 		"grammars": [
-			{
-				"language": "dotstudy-language",
-				"scopeName": "source.study",
-				"path": "./syntaxes/study.tmLanguage.json"
-			},
 			{
 				"scopeName": "markdown.study.inline",
 				"path": "./syntaxes/md-study-inline.tmLanguage.json",
@@ -78,14 +49,6 @@
 					],
 					"default": null,
 					"description": "Discord bot authentication key."
-				},
-				"dotstudy.remoteRaw": {
-					"type": [
-						"string",
-						"null"
-					],
-					"default": null,
-					"description": "Remote git repository"
 				}
 			}
 		}
