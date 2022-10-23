@@ -29,7 +29,7 @@
 		},
 		"study_image": {
 			"name": "markup.study.image.markdown",
-			"match": "(?<=\\G|^)(\\&[^\\&]+)(?=\\W|$)",
+			"match": "(?<=\\G|^)(\\&\\s[^\\&]+)(?=\\W|$)",
 			"captures": {
 				"1": {
 					"name": "markup.underline.link.study.markdown"
