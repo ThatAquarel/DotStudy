@@ -23,13 +23,6 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [
-			{
-				"category": "DotStudy",
-				"command": "dotstudy.publish",
-				"title": "Publish to Discord"
-			}
-		],
 		"grammars": [
 			{
 				"scopeName": "markdown.study.inline",
@@ -38,20 +31,7 @@
 					"text.html.markdown"
 				]
 			}
-		],
-		"configuration": {
-			"title": "DotStudy",
-			"properties": {
-				"dotstudy.botAuthKey": {
-					"type": [
-						"string",
-						"null"
-					],
-					"default": null,
-					"description": "Discord bot authentication key."
-				}
-			}
-		}
+		]
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
