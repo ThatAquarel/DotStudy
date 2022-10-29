@@ -12,18 +12,9 @@ pub fn publish(filename: &String) -> Result<(), String> {
     block_on(_publish(filename))
 }
 
-struct SimpleMessage<'a> {
-    text: &'a mut String,
-    image_path: &'a mut String,
-}
-
-impl<'a> SimpleMessage<'a> {
-    fn new(text_: &'a mut String, image_path_: &'a mut String) -> SimpleMessage<'a> {
-        SimpleMessage {
-            text: text_,
-            image_path: image_path_,
-        }
-    }
+struct SimpleMessage {
+    text: String,
+    image_path: String,
 }
 
 struct Handler;
@@ -50,8 +41,10 @@ async fn _publish(filename: &String) -> Result<(), String> {
     }
     match file_path.extension() {
         Some(os_str) => {
-            if os_str.to_str().expect("should be string") != "study" {
-                return Err("File extension not .studY".parse().unwrap());
+            let extension = os_str.to_str().expect("should be string");
+
+            if extension != "study" && extension != "md" {
+                return Err("File extension not .study or .md".parse().unwrap());
             }
         }
         None => {
@@ -68,7 +61,10 @@ async fn _publish(filename: &String) -> Result<(), String> {
         Err(err) => return Err(err.to_string())
     };
 
-    let mut messages: Vec<SimpleMessage> = vec![SimpleMessage::new(&mut String::new(), &mut String::new())];
+    let mut messages: Vec<SimpleMessage> = vec![SimpleMessage {
+        text: String::from(""),
+        image_path: String::from(""),
+    }];
     let mut vec_push_string = |is_image: bool, string: &str| {
         if is_image {
             let mut copy_str = String::new();
@@ -85,14 +81,20 @@ async fn _publish(filename: &String) -> Result<(), String> {
                 let msg_len = messages.len();
                 messages[msg_len - 1].image_path.push_str(path_builder.to_str().expect("str"));
 
-                messages.push(SimpleMessage::new(&mut String::new(), &mut String::new()));
+                messages.push(SimpleMessage {
+                    text: String::from(""),
+                    image_path: String::from(""),
+                });
                 return;
             }
         }
 
         let msg_len = messages.len();
-        if (messages[msg_len].text.len() + string.len()) > 1500 {
-            messages.push(SimpleMessage::new(&mut String::new(), &mut String::new()));
+        if (messages[msg_len - 1].text.len() + string.len()) > 1500 {
+            messages.push(SimpleMessage {
+                text: String::from(""),
+                image_path: String::from(""),
+            });
         }
         let msg_len = messages.len();
         messages[msg_len - 1].text.push_str(string);
@@ -115,31 +117,31 @@ async fn _publish(filename: &String) -> Result<(), String> {
                                 }
                                 HeadingLevel::H3 => {
                                     vec_push_string(false, "\n** **\n**");
-                                },
+                                }
                                 _ => {}
                             };
-                        },
+                        }
                         Tag::Emphasis => {
                             vec_push_string(false, "*");
-                        },
+                        }
                         Tag::Strong => {
                             vec_push_string(false, "**");
-                        },
+                        }
                         Tag::List(list_option) => {
                             match list_option {
                                 Some(list_start) => {
                                     list_item_count = Some(*list_start);
-                                },
+                                }
                                 None => {
                                     list_item_count = None;
                                 }
                             }
-                        },
+                        }
                         Tag::Item => {
                             match list_item_count {
-                                Some(mut item) => {
+                                Some(item) => {
                                     vec_push_string(false, &*format!("{}. ", item));
-                                    item += 1;
+                                    list_item_count = Some(list_item_count.expect("item") + 1)
                                 }
                                 None => {
                                     vec_push_string(false, "- ");
@@ -154,13 +156,13 @@ async fn _publish(filename: &String) -> Result<(), String> {
                         Tag::Heading(heading_level, ..) => {
                             match heading_level {
                                 HeadingLevel::H1 => {
-                                    vec_push_string(false, "`\n");
+                                    vec_push_string(false, "`");
                                 }
                                 HeadingLevel::H2 => {
                                     vec_push_string(false, "**__");
                                 }
                                 HeadingLevel::H3 => {
-                                    vec_push_string(false, "**");
+                                    vec_push_string(false, "**\n");
                                 }
                                 _ => {}
                             }
