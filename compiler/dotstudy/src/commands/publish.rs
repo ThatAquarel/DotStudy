@@ -1,15 +1,29 @@
 use std::{env, fs};
+use std::path::{Path, PathBuf};
 use futures::executor::block_on;
-use pulldown_cmark::{Event, Parser, html, Tag, HeadingLevel};
+use pulldown_cmark::{Event, Parser, html, Tag, HeadingLevel, CowStr};
 
 use serenity::async_trait;
-use serenity::model::channel::Message;
 use serenity::model::gateway::Ready;
-use serenity::model::Timestamp;
+use serenity::model::id::ChannelId;
 use serenity::prelude::*;
 
 pub fn publish(filename: &String) -> Result<(), String> {
     block_on(_publish(filename))
+}
+
+struct SimpleMessage<'a> {
+    text: &'a mut String,
+    image_path: &'a mut String,
+}
+
+impl<'a> SimpleMessage<'a> {
+    fn new(text_: &'a mut String, image_path_: &'a mut String) -> SimpleMessage<'a> {
+        SimpleMessage {
+            text: text_,
+            image_path: image_path_,
+        }
+    }
 }
 
 struct Handler;
@@ -17,30 +31,36 @@ struct Handler;
 #[async_trait]
 impl EventHandler for Handler {
     async fn ready(&self, _ctx: Context, _data_about_bot: Ready) {
-        let channel = match _ctx.cache.channel("954420943697092693") {
-            Some(channel) => channel,
-            None => {
-                return;
-            }
-        };
+        let message = ChannelId(954420943697092693)
+            .send_message(&_ctx, |m| {
+                m.content("test")
+            })
+            .await;
+
+        if let Err(why) = message {
+            eprintln!("Error sending message: {:?}", why);
+        }
     }
 }
 
-struct SimpleMessage {
-    text: String,
-    image_path: String,
-}
-
-impl SimpleMessage {
-   fn new() -> SimpleMessage {
-       SimpleMessage {
-           text: String::new(),
-           image_path: String::new()
-       }
-   }
-}
-
 async fn _publish(filename: &String) -> Result<(), String> {
+    let file_path = Path::new(filename);
+    if !file_path.exists() {
+        return Err("File does not exist".parse().unwrap());
+    }
+    match file_path.extension() {
+        Some(os_str) => {
+            if os_str.to_str().expect("should be string") != "study" {
+                return Err("File extension not .studY".parse().unwrap());
+            }
+        }
+        None => {
+            return Err("File extension not .study".parse().unwrap());
+        }
+    }
+
+    let file_folder = file_path.parent().expect("folder");
+
     let file_result = fs::read_to_string(filename);
 
     let file_string = match file_result {
@@ -48,7 +68,37 @@ async fn _publish(filename: &String) -> Result<(), String> {
         Err(err) => return Err(err.to_string())
     };
 
-    let mut messages: Vec<SimpleMessage> = vec![SimpleMessage::new()];
+    let mut messages: Vec<SimpleMessage> = vec![SimpleMessage::new(&mut String::new(), &mut String::new())];
+    let mut vec_push_string = |is_image: bool, string: &str| {
+        if is_image {
+            let mut copy_str = String::new();
+            copy_str.push_str(string);
+            copy_str.retain(|c| !c.is_whitespace());
+
+            let path = Path::new(&copy_str);
+            if path.exists() {
+                let mut path_builder = PathBuf::from(file_folder);
+                path_builder.push(path);
+
+                let msg_len = messages.len();
+                messages[msg_len - 1].image_path.clear();
+                let msg_len = messages.len();
+                messages[msg_len - 1].image_path.push_str(path_builder.to_str().expect("str"));
+
+                messages.push(SimpleMessage::new(&mut String::new(), &mut String::new()));
+                return;
+            }
+        }
+
+        let msg_len = messages.len();
+        if (messages[msg_len].text.len() + string.len()) > 1500 {
+            messages.push(SimpleMessage::new(&mut String::new(), &mut String::new()));
+        }
+        let msg_len = messages.len();
+        messages[msg_len - 1].text.push_str(string);
+    };
+
+    let mut list_item_count: Option<u64> = None;
 
     let parser = Parser::new(&*file_string)
         .map(|event| {
@@ -56,20 +106,103 @@ async fn _publish(filename: &String) -> Result<(), String> {
                 Event::Start(tag) => {
                     match tag {
                         Tag::Heading(heading_level, ..) => {
-                            let mut simple_msg = messages.get(messages.len()-1).expect("Messages should not be empty");
-                            simple_msg.text.push_str("**");
+                            match heading_level {
+                                HeadingLevel::H1 => {
+                                    vec_push_string(false, "`");
+                                }
+                                HeadingLevel::H2 => {
+                                    vec_push_string(false, "\n** **\n__**");
+                                }
+                                HeadingLevel::H3 => {
+                                    vec_push_string(false, "\n** **\n**");
+                                },
+                                _ => {}
+                            };
                         },
+                        Tag::Emphasis => {
+                            vec_push_string(false, "*");
+                        },
+                        Tag::Strong => {
+                            vec_push_string(false, "**");
+                        },
+                        Tag::List(list_option) => {
+                            match list_option {
+                                Some(list_start) => {
+                                    list_item_count = Some(*list_start);
+                                },
+                                None => {
+                                    list_item_count = None;
+                                }
+                            }
+                        },
+                        Tag::Item => {
+                            match list_item_count {
+                                Some(mut item) => {
+                                    vec_push_string(false, &*format!("{}. ", item));
+                                    item += 1;
+                                }
+                                None => {
+                                    vec_push_string(false, "- ");
+                                }
+                            };
+                        }
+                        _ => {}
+                    };
+                }
+                Event::End(tag) => {
+                    match tag {
+                        Tag::Heading(heading_level, ..) => {
+                            match heading_level {
+                                HeadingLevel::H1 => {
+                                    vec_push_string(false, "`\n");
+                                }
+                                HeadingLevel::H2 => {
+                                    vec_push_string(false, "**__");
+                                }
+                                HeadingLevel::H3 => {
+                                    vec_push_string(false, "**");
+                                }
+                                _ => {}
+                            }
+                        }
+                        Tag::Emphasis => {
+                            vec_push_string(false, "*");
+                        }
+                        Tag::Strong => {
+                            vec_push_string(false, "**");
+                        }
+                        Tag::List(_) => {
+                            list_item_count = None;
+                        }
+                        Tag::Item => {
+                            vec_push_string(false, "\n");
+                        }
+                        _ => {}
+                    };
+                }
+                Event::SoftBreak => {
+                    vec_push_string(false, "\n");
+                }
+                Event::HardBreak => {
+                    vec_push_string(false, "\n** **\n");
+                }
+                Event::Text(s) => {
+                    match s {
+                        CowStr::Borrowed(s) => {
+                            let first_char = s.chars().nth(0).expect("First char");
+
+                            if first_char == '&' {
+                                let mut copy_str = String::new();
+                                copy_str.push_str(s);
+                                copy_str.retain(|c| !c.is_whitespace());
+                            }
+
+                            vec_push_string(first_char == '&', s);
+                        }
+                        _ => {}
                     }
-                },
-                Event::End(tag) => println!("End: {:?}", tag),
-                Event::Html(s) => println!("Html: {:?}", s),
-                Event::Text(s) => println!("Text: {:?}", s),
-                Event::Code(s) => println!("Code: {:?}", s),
-                Event::FootnoteReference(s) => println!("FootnoteReference: {:?}", s),
-                Event::TaskListMarker(b) => println!("TaskListMarker: {:?}", b),
-                Event::SoftBreak => println!("SoftBreak"),
-                Event::HardBreak => println!("HardBreak"),
-                Event::Rule => println!("Rule"),
+                }
+                _ => {}
             };
             event
         });

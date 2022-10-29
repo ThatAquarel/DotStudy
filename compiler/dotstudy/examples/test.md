@@ -6,8 +6,6 @@
 
 Question *1*? Answer.
 Question **2**? Answer.
-Question `3`. Answer.
-Question ~~4~~. Answer. 
 Question $\textbf{2x}$. $More math$
 
 ### Ordered List
