@@ -1,5 +1,6 @@
 'use strict';
 import * as vscode from 'vscode';
+import * as path from 'path'
 import { recursiveSymbolProcessor } from './language';
 import { getCurrentEditorPath, getCurrentEditorSymbols, getRandomId } from './util';
 
@@ -7,7 +8,10 @@ export class DotStudyEditorProvider implements vscode.CustomTextEditorProvider {
 
     public static register(context: vscode.ExtensionContext): vscode.Disposable {
         const provider = new DotStudyEditorProvider(context);
-        const providerRegistration = vscode.window.registerCustomEditorProvider(DotStudyEditorProvider.viewType, provider);
+        const providerRegistration = vscode.window.registerCustomEditorProvider(
+          DotStudyEditorProvider.viewType, 
+          provider
+        );
         return providerRegistration;
     }
 
@@ -22,10 +26,12 @@ export class DotStudyEditorProvider implements vscode.CustomTextEditorProvider {
         webviewPanel: vscode.WebviewPanel,
         _token: vscode.CancellationToken
     ): Promise<void> {
+      const current_path = getCurrentEditorPath(document);
         webviewPanel.webview.options = {
             enableScripts: true,
+            localResourceRoots: [vscode.Uri.file(current_path)]
         };
-
+        
         const symbols = await new Promise((resolve, _reject) => {
             getCurrentEditorSymbols(document.uri, symbols => {
                 resolve(symbols);
@@ -36,8 +42,6 @@ export class DotStudyEditorProvider implements vscode.CustomTextEditorProvider {
             return;
         }
 
-        const remote = vscode.workspace.getConfiguration('').get("dotstudy.remoteRaw") as string;
-        const path = getCurrentEditorPath(document);
         let html = "";
         recursiveSymbolProcessor(
             symbols[0],
@@ -49,15 +53,17 @@ export class DotStudyEditorProvider implements vscode.CustomTextEditorProvider {
                     html += `<h2>${symbol.name}</h2>`;
                 },
                 [vscode.SymbolKind.File]: (symbol: vscode.DocumentSymbol) => {
-                    let absolute = vscode.Uri.file(path + symbol.name);
-                    let relative = vscode.workspace.asRelativePath(absolute);
-                    
+                    const disk_path = vscode.Uri.file(
+                     path.join(current_path, symbol.name) 
+                    );
+                    const webview_path = webviewPanel.webview.asWebviewUri(disk_path);
+
                     let id = getRandomId(16);
                     html += `
                     <div class="img-container">
                         <input type="checkbox" id="zoom-check-${id}">
                         <label for="zoom-check-${id}">
-                            <img src="${remote + relative}" alt=${symbol.name}>
+                            <img src="${webview_path}" alt=${symbol.name}>
                         </label>
                     </div>
                     `;

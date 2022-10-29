@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DotStudyEditorProvider = void 0;
 const vscode = require("vscode");
+const path = require("path");
 const language_1 = require("./language");
 const util_1 = require("./util");
 class DotStudyEditorProvider {
@@ -14,8 +15,10 @@ class DotStudyEditorProvider {
         return providerRegistration;
     }
     async resolveCustomTextEditor(document, webviewPanel, _token) {
+        const current_path = (0, util_1.getCurrentEditorPath)(document);
         webviewPanel.webview.options = {
             enableScripts: true,
+            localResourceRoots: [vscode.Uri.file(current_path)]
         };
         const symbols = await new Promise((resolve, _reject) => {
             (0, util_1.getCurrentEditorSymbols)(document.uri, symbols => {
@@ -26,8 +29,6 @@ class DotStudyEditorProvider {
             webviewPanel.webview.html = '<h1>No symbols found</h1>';
             return;
         }
-        const remote = vscode.workspace.getConfiguration('').get("dotstudy.remoteRaw");
-        const path = (0, util_1.getCurrentEditorPath)(document);
         let html = "";
         (0, language_1.recursiveSymbolProcessor)(symbols[0], {
             [vscode.SymbolKind.Class]: (symbol) => {
@@ -37,14 +38,14 @@ class DotStudyEditorProvider {
                 html += `<h2>${symbol.name}</h2>`;
             },
             [vscode.SymbolKind.File]: (symbol) => {
-                let absolute = vscode.Uri.file(path + symbol.name);
-                let relative = vscode.workspace.asRelativePath(absolute);
+                const disk_path = vscode.Uri.file(path.join(current_path, symbol.name));
+                const webview_path = webviewPanel.webview.asWebviewUri(disk_path);
                 let id = (0, util_1.getRandomId)(16);
                 html += `
                     <div class="img-container">
                         <input type="checkbox" id="zoom-check-${id}">
                         <label for="zoom-check-${id}">
-                            <img src="${remote + relative}" alt=${symbol.name}>
+                            <img src="${webview_path}" alt=${symbol.name}>
                         </label>
                     </div>
                     `;
