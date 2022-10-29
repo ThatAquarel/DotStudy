@@ -121,21 +121,17 @@ class DotStudyEditorProvider {
                 color: var(--vscode-foreground);
               }
         
-              img {
-                max-width: 30vw;
-                max-height: 50vh;
-                border-radius: 4px;
-              }
-              
               input[type=checkbox] {
                 display: none;
               }
-
+              
               .img-container img {
                 max-width: 30vw;
                 max-height: 50vh;
-                  transition: all 0.25s ease;
-                  cursor: zoom-in;
+                transition: all 0.25s ease;
+
+                border-radius: 4px;
+                cursor: zoom-in;
               }
 
               input[type=checkbox]:checked ~ label > img {
