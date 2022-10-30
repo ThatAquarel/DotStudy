@@ -96,7 +96,7 @@ export class DotStudyEditorProvider implements vscode.CustomTextEditorProvider {
               h2 {
                 font-weight: 700;
                 text-decoration: underline;
-                color: var(--vscode-checkbox-foreground);
+                color: var(--vscode-foreground);
               }
         
               h1 {
@@ -130,13 +130,13 @@ export class DotStudyEditorProvider implements vscode.CustomTextEditorProvider {
                 margin-left: 16px;
                 border-radius: 4px;
         
-                background-color: var(--vscode-input-background);
+                background-color: var(--vscode-editorWidget-background);
                 color: transparent;
                 transition: all 0.25s ease;
               }
         
               p:hover {
-                background-color: var(--vscode-focusBorder);
+                background-color: var(--vscode-focusBorder--vscode-button-secondaryBackground);
                 color: var(--vscode-foreground);
               }
         
@@ -145,7 +145,7 @@ export class DotStudyEditorProvider implements vscode.CustomTextEditorProvider {
               }
               
               .img-container img {
-                max-width: 30vw;
+                max-width: 40vw;
                 max-height: 50vh;
                 transition: all 0.25s ease;
 

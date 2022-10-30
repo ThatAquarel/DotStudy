@@ -77,7 +77,7 @@ class DotStudyEditorProvider {
               h2 {
                 font-weight: 700;
                 text-decoration: underline;
-                color: var(--vscode-checkbox-foreground);
+                color: var(--vscode-foreground);
               }
         
               h1 {
@@ -111,13 +111,13 @@ class DotStudyEditorProvider {
                 margin-left: 16px;
                 border-radius: 4px;
         
-                background-color: var(--vscode-input-background);
+                background-color: var(--vscode-editorWidget-background);
                 color: transparent;
                 transition: all 0.25s ease;
               }
         
               p:hover {
-                background-color: var(--vscode-focusBorder);
+                background-color: var(--vscode-focusBorder--vscode-button-secondaryBackground);
                 color: var(--vscode-foreground);
               }
         
@@ -126,12 +126,14 @@ class DotStudyEditorProvider {
               }
               
               .img-container img {
-                max-width: 30vw;
+                max-width: 40vw;
                 max-height: 50vh;
                 transition: all 0.25s ease;
 
                 border-radius: 4px;
                 cursor: zoom-in;
+
+                background-color: red;
               }
 
               input[type=checkbox]:checked ~ label > img {
