@@ -1,6 +1,6 @@
 'use strict';
 import * as vscode from 'vscode';
-import * as path from 'path'
+//import * as path from 'path';
 import { recursiveSymbolProcessor } from './language';
 import { getCurrentEditorPath, getCurrentEditorSymbols, getRandomId } from './util';
 
@@ -26,10 +26,10 @@ export class DotStudyEditorProvider implements vscode.CustomTextEditorProvider {
         webviewPanel: vscode.WebviewPanel,
         _token: vscode.CancellationToken
     ): Promise<void> {
-      const current_path = getCurrentEditorPath(document);
+      const currentPath = getCurrentEditorPath(document);
         webviewPanel.webview.options = {
             enableScripts: true,
-            localResourceRoots: [vscode.Uri.file(current_path)]
+            localResourceRoots: [vscode.Uri.file(currentPath)]
         };
         
         const symbols = await new Promise((resolve, _reject) => {
@@ -53,17 +53,18 @@ export class DotStudyEditorProvider implements vscode.CustomTextEditorProvider {
                     html += `<h2>${symbol.name}</h2>`;
                 },
                 [vscode.SymbolKind.File]: (symbol: vscode.DocumentSymbol) => {
-                    const disk_path = vscode.Uri.file(
-                     path.join(current_path, symbol.name) 
+                    const diskPath = vscode.Uri.file(
+                      //path.join(currentPath, symbol.name) 
+                      currentPath + symbol.name
                     );
-                    const webview_path = webviewPanel.webview.asWebviewUri(disk_path);
+                    const webviewPath = webviewPanel.webview.asWebviewUri(diskPath);
 
                     let id = getRandomId(16);
                     html += `
                     <div class="img-container">
                         <input type="checkbox" id="zoom-check-${id}">
                         <label for="zoom-check-${id}">
-                            <img src="${webview_path}" alt=${symbol.name}>
+                            <img src="${webviewPath}" alt=${symbol.name}>
                         </label>
                     </div>
                     `;

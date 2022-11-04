@@ -1,5 +1,7 @@
 'use strict';
+const discord = require("discord.js");
 import * as vscode from 'vscode';
+import path = require('path');
 import { DiscordClient, DiscordMessage } from './discord';
 import { recursiveSymbolProcessor } from './language';
 import { getCurrentEditorPath, getCurrentEditorSymbols } from './util';
@@ -20,7 +22,7 @@ export async function publish() {
 
     const textChannels: any[] = Array.from(
         discordClient.client.channels.cache.values()
-    ).filter(x => (x as any).type === "text");
+    ).filter(x => (x as any).type === discord.ChannelType.GuildText);
 
     const items = textChannels.map(x => {
         return {
@@ -59,10 +61,8 @@ export async function publish() {
         const p = new Promise<void>(async resolve => {
             const step = Math.round(100 / discordMessages.length);
             for (let i = 0; i < discordMessages.length; i++) {
-                setTimeout(() => {
-                    progress.report({ increment: i * step, message: vscode.window.activeTextEditor?.document.uri.fsPath });
-                    discordClient.sendMessage(channel, discordMessages[i]);
-                }, i * 250);
+                progress.report({ increment: i * step, message: vscode.window.activeTextEditor?.document.uri.fsPath });
+                await discordClient.sendMessage(channel, discordMessages[i]);
             }
 
             setTimeout(() => {
@@ -76,7 +76,7 @@ export async function publish() {
 }
 
 function discordFormattedMessages(symbols: vscode.DocumentSymbol[]): DiscordMessage[] {
-    const path = getCurrentEditorPath();
+    const currentEditorPath = getCurrentEditorPath();
 
     let messages: DiscordMessage[] = [new DiscordMessage("", "")];
     let i = 0;
@@ -101,7 +101,7 @@ function discordFormattedMessages(symbols: vscode.DocumentSymbol[]): DiscordMess
                 pushMessages(`** **\n**${symbol.name}**\n`);
             },
             [vscode.SymbolKind.File]: (symbol: vscode.DocumentSymbol) => {
-                messages[i].file = path + symbol.name;
+                messages[i].file = path.join(currentEditorPath, symbol.name);
                 newMessage();
             },
             [vscode.SymbolKind.Field]: (symbol: vscode.DocumentSymbol) => {

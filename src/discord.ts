@@ -1,10 +1,19 @@
 const discord = require('discord.js');
+import path = require("path");
+//import { Client, GatewayIntentBits } from "discord.js";
 
 export class DiscordClient {
     client: any;
 
     constructor(authKey: string, callback: (client: DiscordClient) => void) {
-        this.client = new discord.Client();
+        this.client = new discord.Client({
+            intents: [
+                discord.GatewayIntentBits.Guilds,
+        		discord.GatewayIntentBits.GuildMessages,
+		        discord.GatewayIntentBits.MessageContent,
+                discord.GatewayIntentBits.GuildPresences
+            ]
+        });
         this.client.login(authKey);
 
         this.client.on('ready', () => {
@@ -16,9 +25,9 @@ export class DiscordClient {
         let _channel = channelId;
     }
 
-    sendMessage(channelId: string, message: DiscordMessage) {
+    sendMessage(channelId: string, message: DiscordMessage): Promise<any> {
         const channel = this.client.channels.cache.find((a: { id: string; }) => a.id === channelId);
-        channel.send(...message.getMessage());
+        return channel.send(message.getMessage());
     }
 }
 
@@ -33,9 +42,19 @@ export class DiscordMessage {
 
     getMessage() {
         if (this.file !== "") {
-            return [this.text, { files: [this.file] }];
+            return { 
+                content: this.text,
+                files: [
+                    {
+                        attachment: this.file.split("\\").join("/"),
+                        name: path.basename(this.file),
+                    }
+                ] 
+            };
         } else {
-            return [this.text];
+            return {
+                content: this.text
+            };
         }
     }
 }
