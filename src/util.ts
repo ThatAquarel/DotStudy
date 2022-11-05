@@ -1,4 +1,5 @@
 import * as vscode from 'vscode';
+import path = require('path');
 
 export function getCurrentEditorPath(document: (null | vscode.TextDocument) = null): string {
     if (document === null) {
@@ -7,11 +8,7 @@ export function getCurrentEditorPath(document: (null | vscode.TextDocument) = nu
         document = editor.document;
     }
 
-    let path = document.fileName;
-    path = (path === undefined) ? ".\\" : path;
-    path = path.substring(0, path.lastIndexOf("\\") + 1);
-
-    return path;
+    return path.dirname(document.fileName);
 }
 
 export function getCurrentEditorSymbols(uri: (null | vscode.Uri) = null, callback: (symbols: vscode.DocumentSymbol[]) => void) {
