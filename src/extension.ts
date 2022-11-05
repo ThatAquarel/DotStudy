@@ -1,5 +1,5 @@
-'use strict';
 import * as vscode from 'vscode';
+
 import { commands } from 'vscode';
 import { DotStudySymbolProvider } from './language';
 import { DotStudyEditorProvider } from './preview';

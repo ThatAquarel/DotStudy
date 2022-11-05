@@ -48,6 +48,12 @@ export async function publish() {
             resolve(symbols);
         });
     }) as vscode.DocumentSymbol[];
+
+    if (symbols.length === 0) {
+        vscode.window.showErrorMessage("Reopen current study file in text editor and retry.");
+        return;
+    }
+
     const discordMessages: DiscordMessage[] = discordFormattedMessages(symbols);
 
     vscode.window.withProgress({
