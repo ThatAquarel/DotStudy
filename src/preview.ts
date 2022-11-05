@@ -1,6 +1,6 @@
 'use strict';
 import * as vscode from 'vscode';
-//import * as path from 'path';
+import path = require('path');
 import { recursiveSymbolProcessor } from './language';
 import { getCurrentEditorPath, getCurrentEditorSymbols, getRandomId } from './util';
 
@@ -54,8 +54,8 @@ export class DotStudyEditorProvider implements vscode.CustomTextEditorProvider {
                 },
                 [vscode.SymbolKind.File]: (symbol: vscode.DocumentSymbol) => {
                     const diskPath = vscode.Uri.file(
-                      //path.join(currentPath, symbol.name) 
-                      currentPath + symbol.name
+                      path.join(currentPath, symbol.name) 
+                      // currentPath + symbol.name
                     );
                     const webviewPath = webviewPanel.webview.asWebviewUri(diskPath);
 
